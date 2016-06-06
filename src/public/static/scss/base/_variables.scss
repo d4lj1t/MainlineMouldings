@@ -1,0 +1,205 @@
+/*
+	Variables
+	----------------------------------- */
+
+	$colours: (
+
+		// Content areas
+		'content': white,
+
+		// Buttons
+		'button': rgb(0, 113, 188),
+		'button-text': white,
+		'button-grey': rgb(228, 230, 231),
+		'button-dark': rgb(51, 51, 51),
+		'button-green': rgb(0, 146, 69),
+		'button-thin': rgb(242, 242, 242),
+		'button-thin-text': rgb(1, 113, 188),
+		'button-thin-text-hover': rgb(102, 102, 102),
+		'button-light-border': rgb(230, 230, 230),
+
+		// Ribbon
+		'ribbon-line': rgb(204, 204, 204),
+
+		// Tables
+		'table-header': rgb(233, 239, 244),
+
+		// Notifications
+		'bubble': rgb(204, 0, 0),
+		'bubble-text': white,
+		'message-success': rgb(0, 146, 69),
+		'message-action': rgb(253, 239, 197),
+		'message-action-border': rgb(249, 222, 119),
+		'message-alert': rgb(247, 147, 30),
+
+		// Backgrounds
+		'background': rgb(242, 242, 242),
+		'background-page': rgb(26, 26, 26),
+		'background-log-in': rgb(0, 85, 132),
+		'background-dashboard': rgb(230, 230, 230),
+		'background-sky': rgb(201, 243, 255),
+		'background-soil': rgb(202, 179, 132),
+		'background-light': rgb(245, 245, 245),
+
+		// Nav menus
+		'nav': rgb(26, 26, 26),
+		'nav-divider': rgb(51, 51, 51),
+		'nav-active': rgb(204, 0, 0),
+		'nav-hover': rgb(51, 51, 51),
+		'nav-text': white,
+
+		// Percentage circle
+		'percentage-background': rgb(229, 230, 231),
+		'percentage-background-dark': rgb(66, 66, 67),
+		'percentage-foreground': rgb(0, 146, 69),
+
+		// Nav menus, admin screens
+		'nav-admin': rgb(247, 247, 247),
+		'nav-admin-divider': rgb(229, 230, 231),
+		'nav-admin-border': rgb(83, 136, 129),
+
+		// Nav list, admin screens (mobile menu)
+		'nav-list-admin': rgb(244, 249, 247),
+		'nav-list-admin-border': rgb(83, 136, 129),
+
+		// Sub nav menus
+		'sub-nav': white,
+		'sub-nav-divider': rgb(242, 242, 242),
+		'sub-nav-active': rgb(242, 242, 242),
+		'sub-nav-hover': rgb(242, 242, 242),
+		'sub-nav-text': rgb(102, 102, 102),
+		'sub-nav-highlight': rgb(204, 0, 0),
+		'sub-nav-fitness': rgb(144, 72, 154),
+		'sub-nav-elearning': rgb(30, 172, 214),
+		'sub-nav-volunteering': rgb(235, 65, 130),
+		'sub-nav-text-light': rgb(179, 179, 179),
+
+		// Adventure map
+		'road': rgb(239, 224, 197),
+
+		// Progress
+		'progress-background': rgb(49, 49, 49),
+		'progress-box': rgb(26, 26, 26),
+		'progress-bar': rgb(77, 77, 77),
+		'progress-fill': rgb(0, 146, 69),
+		'progress-fill-negative': rgb(255, 0, 0),
+
+		// Activities
+		'activities-border': rgb(230, 230, 230),
+		'activities-fill': rgb(230, 230, 230),
+		'activities-border-stats': rgb(89, 89, 91),
+		'activities-fill-stats': rgb(83, 137, 131),
+		'activities-active': rgb(51, 51, 51),
+
+		// Tooltips
+		'tooltip-background': rgb(242, 242, 242),
+		'tooltip-dark': rgb(39, 37, 37),
+		'tooltip-line': rgb(204, 204, 204),
+
+		// Password strength meter
+		'password-meter': rgb(204, 204, 204),
+		'password-meter-weak': rgb(204, 0, 0),
+		'password-meter-medium': rgb(237, 123, 41),
+		'password-meter-strong': rgb(0, 146, 69),
+
+		// Copy
+		'copy': rgb(51, 51, 51),
+		'copy-light': rgb(153, 153, 153),
+		'copy-lighter': rgb(204, 204, 204),
+		'copy-lightest': rgb(242, 242, 242),
+		'copy-grey': rgb(77, 77, 77),
+		'copy-light-grey': rgb(102, 102, 102),
+		'copy-dark': rgb(26, 26, 26),
+		'copy-green': rgb(0, 146, 69),
+		'copy-yellow': rgb(250, 199, 62),
+		'copy-blue': rgb(0, 113, 188),
+		'copy-red': rgb(204, 0, 0),
+		'copy-orange': rgb(247, 147, 30),
+
+		// Form fields etc
+		'form-placeholder': rgb(128, 128, 130),
+		'form-input': white,
+		'form-input-text': rgb(77, 77, 77),
+		'form-input-border': rgb(230, 230, 230),
+		'form-invalid': rgb(204, 0, 0),
+		'form-invalid-glow': rgb(255, 6, 6),
+		'form-message': rgba(250, 199, 62, 0.3),
+		'form-message-border': rgba(250, 199, 62, 0.5),
+		'form-track-background': rgb(230, 230, 230),
+		'form-track-fill': rgb(148, 213, 241),
+		'form-thumb-border': rgb(0, 113, 188),
+		'form-radio-fill': rgb(102, 102, 102),
+
+		// Text links
+		'link': rgb(1, 113, 188),
+		'link-footer': rgb(102, 102, 102),
+
+		// Dialogs
+		'popup-background': rgb(233, 239, 244),
+
+		// Tutorial
+		'tutorial-background': rgb(83, 136, 129),
+
+		// Feel Good
+		'feel-good': rgb(0, 146, 69),
+		'feel-good-dark': rgb(0, 121, 69),
+		'feel-good-dark-border': rgb(0, 104, 55),
+
+		// Apps
+		'apps-headings': rgb(233, 239, 244),
+		'apps-tick': rgb(16, 148, 59),
+
+		// Summary
+		'summary-dark': rgb(43, 41, 41),
+		'summary-dark-text': rgb(207, 208, 210),
+
+		// Levels
+		'levels-background': rgb(39, 37, 37),
+		'levels-grey': rgb(128, 128, 130),
+		'levels-light': rgb(186, 188, 190),
+		'levels-border': rgb(61, 59, 59),
+
+		// Charts & totals
+		'charts-bar': rgb(102, 190, 143),
+		'charts-line': rgb(0, 113, 188),
+
+		'totals-light': rgb(128, 128, 128)
+	);
+
+	$properties: (
+		'input-radius': 6px,
+		'button-radius': 6px,
+		'button-increased-radius': 14px,
+		'popup-radius': 10px,
+		'tutorial-radius': 6px,
+		'tutorial-radius-large': 50px,
+		'charts-bar-radius': 3px,
+		'bubble-alternative-radius': 6px
+	);
+
+	$breakpoints: (
+
+		// Mobile first
+		'tablet-small': 500px,
+		'tablet': 768px,
+		'tablet-large': 850px,
+		'tablet-larger': 1024px,
+		'desktop': 1170px,
+		'wide': 1366px,
+
+		// Specific ranges for mobile
+		'mobile-only': 'max-width' 767px,
+		'mobile-only-portrait': (max-width 767px) (orientation portrait),
+		'mobile-only-landscape': (max-width 767px) (orientation landscape),
+
+		// Specific ranges for mobile + tablet
+		'mobile-and-small-tablet-only': 'max-width' 849px,
+		'mobile-and-tablet-only': 'max-width' 1169px,
+		'tablet-only': (min-width 768px) (max-width 1169px),
+
+		// Retina images
+		'retina': min-resolution 1.5dppx
+	);
+
+	// Tell Breakpoint to use ems
+	@include breakpoint-set('to ems', true);

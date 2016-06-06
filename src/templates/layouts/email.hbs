@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>{{title}}</title>
+
+		<meta name="viewport" content="initial-scale=1.0">
+
+		<style>
+
+			body {
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-size-adjust: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.headline {
+				color: #333333;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 22px;
+				line-height: 22px;
+
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			.headline--secondary {
+				font-size: 20px;
+				font-weight: bold;
+				line-height: 26px;
+				margin-bottom: 0;
+			}
+
+			.text,
+			.link {
+				color: #333333;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 22px;
+			}
+
+			.text {
+				display: block;
+			}
+
+			* + .text {
+				margin-top: 20px;
+			}
+
+			.headline + .text {
+				margin-top: 10px;
+			}
+
+			.preheader__text {
+				color: #4d4d4d;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 16.8px;
+			}
+
+			.link {
+				color: #0071bc;
+				text-decoration: none;
+			}
+
+			.link-image {
+				display: inline-block;
+				margin: 10px;
+			}
+
+			.header--registration .link-image {
+				margin: 2px;
+			}
+
+			.image {
+				display: block;
+			}
+
+			.image--full {
+				width: 100% !important;
+				max-width: 640px !important;
+				height: auto !important;
+			}
+
+			.button {
+				background-color: #0071bc;
+				color: #fff;
+
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 21.6px;
+				font-weight: bold;
+				padding: 18px 32px;
+
+				text-align: center;
+				text-decoration: none;
+
+				display: inline-block;
+				border-radius: 6px;
+				box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+			}
+
+			.wrapper,
+			.wrapper__cell {
+				width: 100%;
+				max-width: 660px;
+			}
+
+			.wrapper--full,
+			.wrapper--full .wrapper__cell {
+				max-width: 640px;
+			}
+
+			.wrapper {
+				min-width: 660px;
+			}
+
+			.wrapper--full {
+				margin-top: 10px;
+			}
+
+			.preheader {
+				padding: 0 0 10px;
+			}
+
+			.wrapper--full .preheader {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			.hero--border {
+				border-top: 1px solid #f2f2f2;
+			}
+
+			.hero__cell {
+				padding: 30px 15px 25px;
+			}
+
+			.hero__content {
+				padding: 10px 60px 20px;
+			}
+
+			.hero__headline {
+				color: #009245;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 40px;
+				line-height: 48px;
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			.hero__headline--black {
+				color: #333;
+			}
+
+			.hero__text {
+				color: #4d4d4d;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 22px;
+				line-height: 30px;
+			}
+
+			.hero .text {
+				font-size: 16px;
+				line-height: 24px;
+			}
+
+			.bar__cell {
+				padding: 12px 20px;
+			}
+
+			.bar__text {
+				color: #fff;
+			}
+
+			.content {
+				padding: 0 20px 20px;
+			}
+
+			.content__button-cell {
+				padding: 20px;
+			}
+
+			.steps {
+				padding: 10px;
+			}
+
+			.steps__text,
+			.steps__link {
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			.steps__columns + .steps__columns {
+				margin-top: 20px;
+			}
+
+			.steps__columns .headline,
+			.steps__columns .text {
+				text-align: left;
+			}
+
+			.footer {
+				padding: 0 0 20px;
+				text-align: center;
+			}
+
+			.footer__text {
+				color: #666;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			@media only screen and (max-width: 480px) {
+
+				span[class*="headline"] {
+					font-size: 20px !important;
+					line-height: 24px !important;
+					margin-bottom: 5px !important;
+				}
+
+				span[class*="text"] {
+					font-size: 14px !important;
+					line-height: 22px !important;
+				}
+
+				*[class] + span[class*="text"] {
+					margin-top: 10px !important;
+				}
+
+				a[class*="button"] {
+					font-size: 14px !important;
+					line-height: 16.8px !important;
+				}
+
+				table[class="wrapper"] {
+					width: 100% !important;
+				}
+
+				td[class*="hidemobile"] {
+					display: none !important;
+				}
+
+				table[class*="preheader"] {
+					padding: 0 0 10px !important;
+				}
+
+				td[class*="preheader__mobile"] {
+					text-align: center !important;
+				}
+
+				span[class*="hero__headline"] {
+					font-size: 26px !important;
+					line-height: 31.2px !important;
+				}
+
+				span[class*="hero__text"] {
+					font-size: 16px !important;
+					line-height: 22px !important;
+				}
+
+				td[class*="hero__content"] {
+					padding: 0 20px !important;
+				}
+
+				span[class*="bar__text"] {
+					font-size: 14px !important;
+					line-height: 16.8px !important;
+				}
+
+				table[class*="content"] {
+					padding-bottom: 0 !important;
+				}
+
+				td[class*="steps__column"] {
+					width: 100% !important;
+					display: block !important;
+				}
+
+				td[class*="steps__column"] + td[class*="steps__column"] {
+					margin-top: 30px !important;
+				}
+
+				span[class*="steps__headline"],
+				span[class*="steps__text"] {
+					text-align: center !important;
+				}
+
+				span[class*="footer__text"] {
+					font-size: 13px !important;
+					line-height: 20px !important;
+				}
+			}
+
+			@media only screen and (max-width: 660px) {
+				table[class*="wrapper"] {
+					min-width: 0 !important;
+				}
+			}
+
+			@media only screen and (min-width: 660px) {
+				table[class*="wrapper--full"] table[class*="preheader"] {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+			}
+
+		</style>
+	</head>
+	<body bgcolor="#f2f2f2" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+		<table width="100%" bgcolor="#f2f2f2" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td align="center" bgcolor="#f2f2f2">
+{{#is theme "registration"}}
+					<table class="wrapper wrapper--full" width="640" cellpadding="0" cellspacing="0" border="0" align="center">
+						<tr>
+							<td class="wrapper__cell" width="640">
+{{else}}
+					<table class="wrapper" width="660" cellpadding="10" cellspacing="0" border="0" align="center">
+						<tr>
+							<td class="wrapper__cell" width="660">
+{{/is}}
+
+								{% body %}
+
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+/*
+	Inputs
+	----------------------------------- */
+
+	// Range thumb (draggable spot) base styles
+	@mixin thumb {
+		background: white;
+
+		width: 28px;
+		height: 28px;
+
+		position: relative;
+		z-index: 0;
+
+		cursor: pointer;
+		display: block;
+		box-sizing: border-box;
+
+		border-radius: 50%;
+		border: 8px solid map-get($colours, 'form-thumb-border');
+		outline: none;
+		box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
+	}
+
+	// Range track base styles
+	@mixin track {
+		background: map-get($colours, 'form-track-background');
+		color: transparent;
+
+		width: 100%;
+		height: 15px;
+
+		cursor: pointer;
+		border: none;
+
+		border-radius: 8px;
+	}
+
+	// Range inputs
+	input[type='range'] {
+		$block: #{&};
+
+		-webkit-appearance: none;
+
+		background: transparent;
+
+		height: 32px;
+		padding: 0;
+		margin: 10px 0 0;
+		overflow-x: hidden;
+
+		// WebKit/Blink
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			@include thumb;
+			margin-top: -7px;
+		}
+
+		&::-webkit-slider-runnable-track {
+			-webkit-appearance: none;
+			@include track;
+		}
+
+		// Firefox
+		&::-moz-range-thumb {
+			@include thumb;
+		}
+
+		&::-moz-range-track {
+			@include track;
+		}
+
+		&::-moz-range-progress {
+			background: map-get($colours, 'form-track-fill');
+			height: 14px;
+
+			border-radius: 8px 0 0 8px;
+		}
+
+		// IE
+		&::-ms-thumb {
+			@include thumb;
+			margin-top: 0px;
+		}
+
+		&::-ms-track {
+			@include track;
+			height: 28px;
+			border-radius: 14px;
+		}
+
+		&::-ms-fill-lower {
+			background: map-get($colours, 'form-track-fill');
+			border-radius: 14px 0 0 14px;
+		}
+
+		// Disabled
+		&[disabled] {
+			opacity: 0.4;
+		}
+	}
+
+	// Number inputs
+	input[type='number'] {
+
+		appearance: textfield;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			appearance: none;
+			margin: 0;
+		}
+	}
