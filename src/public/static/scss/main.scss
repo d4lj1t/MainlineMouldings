@@ -1,26 +1,29 @@
 /*
 	Main browser styles
 	----------------------------------- */
+// Modules via npm + eyeglass
+@import 'npm/normalize-sass/normalize';
+@import 'npm/breakpoint-sass/stylesheets/breakpoint';
 
-	// Modules via npm + eyeglass
-	@import 'npm/normalize-sass/normalize';
-	@import 'npm/breakpoint-sass/stylesheets/breakpoint';
+//Bootstrap
+@import 'bootstrap-lib/bootstrap';
 
-	//Bootstrap
-	@import 'bootstrap-lib/bootstrap';
+//font-awesome
+@import 'modules/font-awesome/scss/font-awesome';
 
-	// Mixins etc
-	@import 'modules/fonts';
+// Mixins etc
+@import 'modules/fonts';
 
-	// Base partials
-	@import 'base/variables';
-	@import 'base/core';
-	@import 'base/fonts';
-	@import 'base/type';
-	@import 'base/grid';
-	@import 'base/input';
+// Base partials
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/type';
+@import 'base/grid';
+@import 'base/input';
 
+// Partials
+@import 'base/helpers';
 
-	// Partials
+@import 'partials/header';
 
 
