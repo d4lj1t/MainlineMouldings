@@ -1,29 +1,32 @@
 <!doctype html>
 <html{{#if locale}} lang="{{locale}}"{{/if}}>
-	<head>
-		<meta charset="utf-8">
-		<title>{{title}}</title>
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
 
-		{{#if description}}<!-- Meta description -->
-		<meta name="description" content="{{description}}">
+    {{#if description}}<!-- Meta description -->
+        <meta name="description" content="{{description}}">
 
-		{{/if}}<!-- Handheld support -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    {{/if}}<!-- Handheld support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Title Icon - Favicon-->
+    <link rel="shortcut icon" href="static/images/favicon.ico"/>
 
 
-		<!-- CSS includes -->
-		<link rel="stylesheet" href="static/css/main.min.css?v={{timestamp}}">
+    <!-- CSS includes -->
+    <link rel="stylesheet" href="static/css/main.min.css?v={{timestamp}}">
 
-	</head>
-	<body>
+</head>
+<body>
 
-		<div class="page page--enabled">
+<div class="page page--enabled">
 
-			{% body %}
+    {% body %}
 
-		</div>
+</div>
 
-		<!-- JavaScript includes -->
-		<script src="static/script/main.min.js"></script>
-	</body>
+<!-- JavaScript includes -->
+<script src="static/script/main.min.js"></script>
+</body>
 </html>

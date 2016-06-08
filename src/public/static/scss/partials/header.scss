@@ -1,8 +1,42 @@
 .mainline-logo {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-  height:30px;
+  height: 30px;
   background-size: 150px auto;
   background-position: -9px 0;
+}
 
+.tel-link:hover {
+  color:map-get($colours, 'brand-color-dark');
+  text-decoration: none;
+}
+
+.nav-links-wrapper {
+  display: inline-block;
+  float: right;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')){
+    float:none;
+    display:block;
+    margin-top:$helper-thick;
+  }
+
+  .nav-links {
+    list-style: none;
+
+    li {
+      display: inline;
+      margin-left: $helper-thick;
+
+      @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')){
+        &:first-child{
+          margin-left:0;
+        }
+      }
+
+      a{
+        color:map-get($colours, 'dark-grey');
+      }
+    }
+  }
 }
