@@ -406,6 +406,12 @@
   text-align: right;
 }
 
+.text-align-right-mobile{
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    text-align: right;
+  }
+}
+
 .text-decoration-none {
   text-decoration: none;
 
