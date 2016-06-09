@@ -401,6 +401,19 @@
   text-align: center;
 }
 
+//Texrt Align
+.text-align-right{
+  text-align: right;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 
 
 //backgrounds
@@ -438,8 +451,13 @@
   color: map-get($colors, 'copy-primary-dark');
 }
 
+
 .color-brand-dark {
   color: map-get($colors, 'brand-dark')
+}
+
+.color-white {
+  color:white;
 }
 
 
@@ -465,6 +483,7 @@
 .border-grey-box {
   border: 1px solid map-get($colors, 'background');
 }*/
+
 
 
 

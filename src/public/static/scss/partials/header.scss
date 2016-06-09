@@ -1,15 +1,26 @@
+.mainline-logo-wrapper{
+  &:hover {
+    .mainline-logo, .mainline-logo-text {
+      @extend .opacity-transition;
+      opacity: 0.8;
+    }
+  }
+}
+
 .mainline-logo {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
   height: 50px;
   width:230px;
-  background-size: 250px auto;
+  background-size: 235px auto;
   background-position: -15px 0;
+  @extend .opacity-transition;
 }
 
 .mainline-logo-text{
-  font-size:19px;
-  color: map-get($colors, 'copy-primary-medium')
+  font-size:18px;
+  color: map-get($colors, 'copy-primary-medium');
+  @extend .opacity-transition;
 }
 
 .tel-link {
@@ -32,7 +43,7 @@
 
 .nav-links-wrapper {
   display: inline-block;
-  text-align: right;
+
 
   @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')){
     text-align: left;
@@ -41,6 +52,7 @@
 
   .nav-links {
     list-style: none;
+    text-align: right;
 
     li {
       display: inline;

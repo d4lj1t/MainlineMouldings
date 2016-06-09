@@ -1,14 +1,27 @@
-.btn-search-wrapper{
-  top:1px;
-  right:0;
+.btn-search-wrapper {
+  top: 1px;
+  right: 0;
 }
 
 .btn-search {
-   background-color: transparent;
-   border: none;
-   color: map-get($colors, 'brand-dark');
+  background-color: transparent;
+  border: none;
+  color: map-get($colors, 'brand-dark');
 
-   &:hover, &:focus {
-     color: map-get($colors, 'brand-dark');
-   }
- }
+  &:hover, &:focus {
+    color: map-get($colors, 'brand-dark');
+  }
+}
+
+.btn-brand {
+  background-color: map-get($colors, 'copy-primary-medium');
+  @extend .opacity-transition;
+
+  &:hover, &:focus {
+    opacity: 0.8;
+    color: white;
+  }
+}
+
+
+

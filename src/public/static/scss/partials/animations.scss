@@ -1,0 +1,9 @@
+.opacity-transition {
+
+  $transition-speed: 200ms;
+
+  -webkit-transition: all $transition-speed ease-in-out;
+  -moz-transition: all $transition-speed ease-in-out;
+  -o-transition: all $transition-speed ease-in-out;
+  transition: all $transition-speed ease-in-out;
+}
