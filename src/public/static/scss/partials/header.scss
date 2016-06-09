@@ -1,7 +1,7 @@
 .mainline-logo-wrapper{
   &:hover {
     .mainline-logo, .mainline-logo-text {
-      @extend .opacity-transition;
+      @extend .transition-slow;
       opacity: 0.8;
     }
   }
@@ -14,13 +14,13 @@
   width:230px;
   background-size: 235px auto;
   background-position: -15px 0;
-  @extend .opacity-transition;
+  @extend .transition-slow;
 }
 
 .mainline-logo-text{
   font-size:18px;
   color: map-get($colors, 'copy-primary-medium');
-  @extend .opacity-transition;
+  @extend .transition-slow;
 }
 
 .tel-link {
@@ -69,8 +69,9 @@
 
       a{
         color:map-get($colors, 'copy-primary-dark');
-
+        @extend .transition-slow;
         &:hover, &:focus {
+          color:map-get($colors, 'brand-dark');
           text-decoration: none;
         }
       }

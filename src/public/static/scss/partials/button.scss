@@ -15,9 +15,10 @@
 
 .btn-brand {
   background-color: map-get($colors, 'copy-primary-medium');
-  @extend .opacity-transition;
+  @extend .transition-slow;
 
   &:hover, &:focus {
+    @extend .transition-slow;
     opacity: 0.8;
     color: white;
   }
