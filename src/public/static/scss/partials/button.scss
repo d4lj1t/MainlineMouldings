@@ -1,0 +1,14 @@
+.btn-search-wrapper{
+  top:1px;
+  right:0;
+}
+
+.btn-search {
+   background-color: transparent;
+   border: none;
+   color: map-get($colors, 'brand-dark');
+
+   &:hover, &:focus {
+     color: map-get($colors, 'brand-dark');
+   }
+ }

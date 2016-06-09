@@ -2,24 +2,18 @@
 	Variables
 	----------------------------------- */
 
-$colours: (
-  'brand-color-dark':#ec5d11,
-  'brand-color-light':#ff6600,
-
-  //Copy
+$colors: (
+  //Colors
+        'brand-dark':#ec5d11,
+        'color-brand-light':#ff6600,
         'copy-primary-dark':#726260,
-        'copy-primary-light':ebecec
+        'copy-primary-medium':#818383,
+        'copy-primary-light':#ebecec
 );
 
 $properties: (
         'input-radius': 6px,
         'button-radius': 6px,
-        'button-increased-radius': 14px,
-        'popup-radius': 10px,
-        'tutorial-radius': 6px,
-        'tutorial-radius-large': 50px,
-        'charts-bar-radius': 3px,
-        'bubble-alternative-radius': 6px
 );
 
 $breakpoints: (
@@ -30,14 +24,17 @@ $breakpoints: (
         'tablet-larger': 1024px,
         'desktop': 1170px,
         'wide': 1366px,
+
   // Specific ranges for mobile
         'mobile-only': 'max-width' 767px,
         'mobile-only-portrait': (max-width 767px) (orientation portrait),
         'mobile-only-landscape': (max-width 767px) (orientation landscape),
+
   // Specific ranges for mobile + tablet
         'mobile-and-small-tablet-only': 'max-width' 849px,
         'mobile-and-tablet-only': 'max-width' 1169px,
         'tablet-only': (min-width 768px) (max-width 1169px),
+
   // Retina images
         'retina': min-resolution 1.5dppx
 );
@@ -49,6 +46,7 @@ $breakpoints: (
 
 // Helpers: set standard padding and margin values, thick and thin
 $helper-standard: 10px;
+$helper-medium:$helper-standard/2*3;
 $helper-thick: $helper-standard*2;
 $helper-thin: $helper-standard/2;
 $helper-extra-thin: $helper-standard/3;
@@ -68,11 +66,5 @@ $font-weight: (
         'strong': 500
 );
 
-//Colours
-$colours-in-house: (
-        'light-grey':rgb(242, 242, 242),
-        'extra-light-grey': rgb(251, 251, 251),
-        'success-green': #009247,
-        'table-row-grey': #f9f9f9
-);
+
 

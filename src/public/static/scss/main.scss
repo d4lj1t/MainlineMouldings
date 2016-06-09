@@ -16,13 +16,15 @@
 
 // Base partials
 @import 'base/variables';
-@import 'base/fonts';
-@import 'base/type';
 @import 'base/grid';
-@import 'base/input';
+@import 'base/fonts';
+@import 'base/helpers';
+
+
+
 
 // Partials
-@import 'base/helpers';
+@import 'partials/button';
 
 @import 'partials/header';
 

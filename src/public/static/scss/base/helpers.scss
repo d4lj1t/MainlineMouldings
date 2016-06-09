@@ -48,6 +48,32 @@
   padding-bottom: $helper-standard;
 }
 
+.medium-pad {
+  padding: $helper-medium;
+}
+
+.medium-pad-side {
+  padding: 0 $helper-medium;
+}
+
+.medium-pad-left {
+  padding-left: $helper-medium;
+}
+
+.medium-pad-right {
+  padding-right: $helper-medium;
+}
+
+.medium-pad-top {
+  padding-top: $helper-medium;
+}
+
+.medium-pad-bottom {
+  padding-bottom: $helper-medium;
+}
+
+
+
 .thick-pad {
   padding: $helper-thick;
 }
@@ -219,6 +245,35 @@
   margin-bottom: $helper-standard;
 }
 
+.medium-marg {
+  margin: $helper-medium;
+}
+
+.medium-marg-side {
+  margin: 0 $helper-medium;
+}
+
+.medium-marg-left {
+  margin-left: $helper-medium;
+}
+
+.medium-marg-right {
+  margin-right: $helper-medium;
+}
+
+.medium-marg-top {
+  margin-top: $helper-medium;
+}
+
+.medium-marg-bottom {
+  margin-bottom: $helper-medium;
+}
+
+.medium-marg-top-bottom {
+  margin-top: $helper-medium;
+  margin-bottom: $helper-medium;
+}
+
 .thick-marg {
   margin: $helper-thick;
 }
@@ -326,11 +381,11 @@
   display: none;
 }
 
-.relative {
+.relative-pos {
   position: relative;
 }
 
-.absolute {
+.absolute-pos {
   position: absolute;
 }
 
@@ -346,9 +401,13 @@
   text-align: center;
 }
 
+
+
 //backgrounds
 
-.background-extra-light-grey {
+//need to make background colors more generic
+
+/*.background-extra-light-grey {
   background-color: map-get($colours-in-house, 'extra-light-grey');
 }
 
@@ -370,64 +429,44 @@
 
 .background-light-blue {
   background: map-get($colours, 'feel-good-sky');
-}
+}*/
 
-.background-table-row {
-  background: map-get($colours-in-house, 'table-row-grey');
-}
+
 
 //colours
-.copy-primary-dark {
-  color: map-get($colours, 'copy-primary-dark');
+.color-copy-primary-dark {
+  color: map-get($colors, 'copy-primary-dark');
 }
 
-.brand-color-dark {
-  color: map-get($colours, 'brand-color-dark')
+.color-brand-dark {
+  color: map-get($colors, 'brand-dark')
 }
 
-.copy-light {
-  color: map-get($colours, 'copy-light');
+
+//Borders
+.border-bottom-primary {
+  border-bottom: 1px solid map-get($colors, 'brand-dark');
 }
 
-.copy-grey {
-  color: map-get($colours, 'copy-light-grey');
-}
 
-.copy-white {
-  color: map-get($colours, 'nav-text')
-}
-
-.copy-blue {
-  color: map-get($colours, 'copy-blue')
-}
-
-.copy-green {
-  color: map-get($colours-in-house, 'success-green')
-}
-
-.copy-red {
-  color: map-get($colours, 'copy-red')
-}
-
-.border-top-grey {
-  border-top: 1px solid map-get($colours, 'background');
+/*.border-top-grey {
+  border-top: 1px solid map-get($colors, 'background');
 }
 
 .border-bottom-grey {
-  border-bottom: 1px solid map-get($colours, 'background');
+  border-bottom: 1px solid map-get($colors, 'background');
 }
 
 .border-right-grey {
-  border-right: 1px solid map-get($colours, 'background');
+  border-right: 1px solid map-get($colors, 'background');
 }
 
-.border-bottom-primary {
-  border-bottom: 1px solid map-get($colours, 'brand-color-dark');
-}
 
 .border-grey-box {
-  border: 1px solid map-get($colours, 'background');
-}
+  border: 1px solid map-get($colors, 'background');
+}*/
+
+
 
 .word-wrap-text {
   word-wrap: break-word;
@@ -443,9 +482,8 @@
 }
 
 //hover
-
 .hover-strong:hover {
-  color: map-get($colours, 'copy-dark');
+  color: map-get($colors, 'copy-primary-dark');
   font-weight: map-get($font-weight, 'strong');
   cursor: pointer;
 }
@@ -464,13 +502,13 @@
 //responsive screens
 
 @media screen and (min-width: map-get($breakpoints, 'tablet')) {
-  .no-marg-tablet-up {
+/*  .no-marg-tablet-up {
     margin: 0;
-  }
+  }*/
 }
 
 @media screen and (max-width: map-get($breakpoints, 'tablet-large')) {
-  .tablet-down-marg-top {
+/*  .tablet-down-marg-top {
     margin-top: $helper-thick;
   }
 
@@ -480,14 +518,14 @@
 
   .position-static-tablet-down {
     position: static;
-  }
+  }*/
 }
 
 //font size
 
-.font-size-20 {
+/*.font-size-20 {
   font-size: 20px;
-}
+}*/
 
 
 
