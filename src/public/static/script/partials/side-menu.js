@@ -18,48 +18,58 @@ module.exports = function LogIn() {
     self.init = function () {
         console.log('hello hi hi');
 
+
+        var clientHeight = $(window).height();
+        $('.js-side-menu').css('height', clientHeight);
+
+
         $('.js-menu-icon').click(function () {
-            $('.js-side-menu').addClass('clicked').animate({width: '300px'});
+                var animationSpeed = 300,
+                    container = $('.js-side-menu');
+
+                $('.js-side-menu').addClass('clicked').show().stop().animate({width: '300px'}, animationSpeed);
 
 
-            $(document).mouseup(function (e) {
-                var container = $('.js-side-menu');
-                console.log('ghellhh');
+                $(document).mouseup(function (e) {
 
-                if (!container.is(e.target) // if the target of the click isn't the container...
-                    && container.has(e.target).length === 0) // ... nor a descendant of the container
-                {
-                    /*container.animate({width: '0'});*/
-                    if ($('.js-side-menu').hasClass('clicked')) {
-                        $('.js-side-menu').animate({width: '0'});
-                        $('.js-side-menu').removeClass('clicked');
+                    if (!container.is(e.target) // if the target of the click isn't the container...
+                        && container.has(e.target).length === 0) // ... nor a descendant of the container
+                    {
+                        /*container.animate({width: '0'});*/
+                        if ($('.js-side-menu').hasClass('clicked')) {
+
+                            $('.js-side-menu').stop().animate({
+                                width: '0'
+                            }, animationSpeed, function () {
+                                $(this).removeClass('clicked');
+
+                            });
+                        }
                     }
-                }
 
 
-            });
+                });
 
 
-
-    }
-    )
-    ;
-
-
-};
+            }
+        )
+        ;
 
 
-/*
- Internal
- ----------------------------------- */
+    };
+
+
+    /*
+     Internal
+     ----------------------------------- */
 
 // Log in methods
 
 
-self.init();
+    self.init();
 
 
 // Return instance
-return self;
+    return self;
 }
 ;

@@ -1,16 +1,12 @@
 .side-menu{
   background-color: map-get($colors, 'copy-primary-medium');
   position: absolute;
-  right:$helper-thick;
   top:0;
+  right:0;
   color:white;
   width:0;
-  height:100vh;
+  /*height:100vh;*/
   z-index:1;
   text-align: center;
-
-
-  @include breakpoint(map-get($breakpoints, 'mobile-only')){
-    right:$helper-standard;
-  }
+  display:none;
 }
