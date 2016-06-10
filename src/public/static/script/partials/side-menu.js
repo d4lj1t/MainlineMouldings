@@ -18,19 +18,19 @@ module.exports = function LogIn() {
     self.init = function () {
         console.log('hello hi hi');
 
-
-        var clientHeight = $(window).height();
-        $('.js-side-menu').css('height', clientHeight);
-
+        $(window).resize(function() {
+            var clientHeight = $(window).height();
+            $('.js-side-menu').css('height', clientHeight);
+        });
 
         $('.js-menu-icon').click(function () {
+
                 var animationSpeed = 300,
                     container = $('.js-side-menu');
 
                 $('.js-side-menu').addClass('clicked').show().stop().animate({width: '300px'}, animationSpeed);
 
-
-                $(document).mouseup(function (e) {
+                $(document).bind("mouseup touchend", function (e) {
 
                     if (!container.is(e.target) // if the target of the click isn't the container...
                         && container.has(e.target).length === 0) // ... nor a descendant of the container
@@ -46,16 +46,9 @@ module.exports = function LogIn() {
                             });
                         }
                     }
-
-
                 });
-
-
             }
-        )
-        ;
-
-
+        );
     };
 
 
