@@ -3,4 +3,4 @@
 	------------------------------- */
 
 	// Start application
-	new (require('partials/app'))(require('config'));
+	new (require('partials/app'));

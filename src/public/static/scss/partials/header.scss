@@ -72,7 +72,7 @@
       }
 
       a{
-        color:map-get($colors, 'copy-primary-dark');
+        color:map-get($colors, 'copy-primary-medium');
         @extend .transition-slow;
         &:hover, &:focus {
           color:map-get($colors, 'brand-dark');

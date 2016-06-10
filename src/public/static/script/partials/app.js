@@ -22,17 +22,19 @@
 
 
 			// Start other modules
-			new (require('partials/log-in'))();
+			new (require('partials/side-menu'))();
 
 
-			// 3rd party
+		/*	// 3rd party
 			require('picturefill');
 			(require('fastclick'))(document.body);
 
 			// Prevent linking on disabled <a>
 			$(document).on('click', 'a.button--disabled', function(event) {
 				event.preventDefault();
-			});
+			});*/
+
+
 		};
 
 		// Auto initialise
