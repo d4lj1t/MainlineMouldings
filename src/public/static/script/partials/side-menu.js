@@ -41,7 +41,7 @@ module.exports = function LogIn() {
                             $('.js-side-menu').stop().animate({
                                 width: '0'
                             }, animationSpeed, function () {
-                                $(this).removeClass('clicked');
+                                $(this).removeClass('clicked').hide();
 
                             });
                         }
