@@ -16,7 +16,6 @@ module.exports = function LogIn() {
      ----------------------------------- */
 
     self.init = function () {
-        console.log('hello hi hi');
 
         $(window).resize(function() {
             var clientHeight = $(window).height();
@@ -25,7 +24,7 @@ module.exports = function LogIn() {
 
         $('.js-menu-icon').click(function () {
 
-                var animationSpeed = 300,
+                var animationSpeed = 200,
                     container = $('.js-side-menu');
 
                 $('.js-side-menu').addClass('clicked').show().stop().animate({width: '300px'}, animationSpeed);
@@ -33,7 +32,8 @@ module.exports = function LogIn() {
                 $(document).bind("mouseup touchend", function (e) {
 
                     if (!container.is(e.target) // if the target of the click isn't the container...
-                        && container.has(e.target).length === 0) // ... nor a descendant of the container
+                        && container.has(e.target).length === 0 // ... nor a descendant of the container
+                        || $('.js-times-icon').is(e.target)) // ... if target is the side-menu cross icon
                     {
                         /*container.animate({width: '0'});*/
                         if ($('.js-side-menu').hasClass('clicked')) {

@@ -7,6 +7,19 @@
   width:0;
   height:100vh;
   z-index:1;
-  text-align: center;
   display:none;
+
+  ul{
+    list-style: none;
+
+    li{
+      padding:$helper-standard;
+    }
+  }
+
+  a{
+    color:white;
+
+
+  }
 }
