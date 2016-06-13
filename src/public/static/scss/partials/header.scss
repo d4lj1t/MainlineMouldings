@@ -14,6 +14,9 @@
   width:230px;
   background-size: 235px auto;
   background-position: -15px 0;
+  cursor: pointer;
+  display: inline-block;
+
   @extend .transition-slow;
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')){
@@ -26,9 +29,13 @@
 }
 
 .mainline-logo-text{
-  font-size:15px;
+  font-size:18px;
   color: map-get($colors, 'copy-primary-medium');
   @extend .transition-slow;
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    font-size:14px;
+  }
+
 }
 
 .tel-link {

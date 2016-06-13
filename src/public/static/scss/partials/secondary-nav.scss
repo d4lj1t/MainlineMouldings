@@ -18,8 +18,9 @@
       border-right: 1px solid map-get($colors, 'copy-primary-light');
       padding: 0 $helper-standard;
 
-
-
+      &.first-item {
+        border-left: 1px solid map-get($colors, 'copy-primary-light');
+      }
 
     }
   }
