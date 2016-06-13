@@ -27,7 +27,7 @@ module.exports = function LogIn() {
 
         $('.js-btn-menu').click(function () {
 
-                container.addClass('clicked').show().stop().animate({width: '300px'}, animationSpeed);
+                container.addClass('clicked').show().stop().animate({width: '250px'}, animationSpeed);
 
                 $(document).bind("mouseup touchend", function (e) {
 

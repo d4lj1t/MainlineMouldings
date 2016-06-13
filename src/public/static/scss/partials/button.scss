@@ -15,7 +15,7 @@
 
 .btn-advanced {
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
-    margin-top: -167px;
+    margin-top: -148px;
     margin-left: -50px;
     text-align: right;
   }
@@ -35,7 +35,7 @@
   @extend .transition-slow;
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
-    margin-top: -167px;
+    margin-top: -148px;
   }
 
 }

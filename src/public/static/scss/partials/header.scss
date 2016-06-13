@@ -15,10 +15,18 @@
   background-size: 235px auto;
   background-position: -15px 0;
   @extend .transition-slow;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    height: 35px;
+    width: 165px;
+    background-size: 180px auto;
+    background-position: -10px 0;
+  }
+
 }
 
 .mainline-logo-text{
-  font-size:18px;
+  font-size:15px;
   color: map-get($colors, 'copy-primary-medium');
   @extend .transition-slow;
 }
