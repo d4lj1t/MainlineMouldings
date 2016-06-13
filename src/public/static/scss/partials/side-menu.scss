@@ -1,25 +1,36 @@
-.side-menu{
+.side-menu {
   background-color: map-get($colors, 'copy-primary-medium');
   position: absolute;
-  top:0;
-  right:0;
-  color:white;
-  width:0;
-  height:100vh;
-  z-index:1;
-  display:none;
+  top: 0;
+  right: 0;
+  color: white;
+  width: 0;
+  height: 100vh;
+  z-index: 1;
+  display: none;
 
-  ul{
+  ul {
     list-style: none;
+    padding: $helper-thick;
 
-    li{
-      padding:$helper-standard;
+    li {
+      padding: $helper-standard 0;
+      border-bottom: 1px solid white;
+      @extend .transition-slow;
+
+      &:hover{
+        opacity: 0.8;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
     }
   }
 
-  a{
-    color:white;
-
+  a {
+    color: white;
 
   }
 }

@@ -1,0 +1,26 @@
+.secondary-nav-links {
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+    text-align: center;
+    /*padding: 0 $helper-standard;*/
+    color: map-get($colors, 'copy-primary-dark');
+    /*background-color:map-get($colors, 'copy-primary-medium');*/
+    cursor: pointer;
+
+    &:hover {
+      background-color: map-get($colors, 'copy-primary-medium');
+    }
+
+    .nav-menu-heading {
+      border-right: 1px solid map-get($colors, 'copy-primary-light');
+      padding: 0 $helper-standard;
+
+
+
+
+    }
+  }
+}

@@ -17,28 +17,28 @@ module.exports = function LogIn() {
 
     self.init = function () {
 
+        var animationSpeed = 200,
+            container = $('.js-side-menu');
+
         $(window).resize(function() {
             var clientHeight = $(window).height();
-            $('.js-side-menu').css('height', clientHeight);
+            container.css('height', clientHeight);
         });
 
-        $('.js-menu-icon').click(function () {
+        $('.js-btn-menu').click(function () {
 
-                var animationSpeed = 200,
-                    container = $('.js-side-menu');
-
-                $('.js-side-menu').addClass('clicked').show().stop().animate({width: '300px'}, animationSpeed);
+                container.addClass('clicked').show().stop().animate({width: '300px'}, animationSpeed);
 
                 $(document).bind("mouseup touchend", function (e) {
 
                     if (!container.is(e.target) // if the target of the click isn't the container...
                         && container.has(e.target).length === 0 // ... nor a descendant of the container
-                        || $('.js-times-icon').is(e.target)) // ... if target is the side-menu cross icon
+                        || $('.js-btn-times').is(e.target)) // ... if target is the side-menu cross icon
                     {
                         /*container.animate({width: '0'});*/
-                        if ($('.js-side-menu').hasClass('clicked')) {
+                        if (container.hasClass('clicked')) {
 
-                            $('.js-side-menu').stop().animate({
+                            container.stop().animate({
                                 width: '0'
                             }, animationSpeed, function () {
                                 $(this).removeClass('clicked').hide();

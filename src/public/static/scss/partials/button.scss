@@ -14,10 +14,10 @@
 }
 
 .btn-advanced {
-  margin-left:$helper-standard;
-  @include breakpoint(map-get($breakpoints, 'mobile-only')){
-    margin-left:0;
-    margin-top:$helper-thick;
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    margin-top: -167px;
+    margin-left: -50px;
+    text-align: right;
   }
 }
 
@@ -26,15 +26,24 @@
   @extend .transition-slow;
 
   &:hover, &:focus {
-    @extend .transition-slow;
     opacity: 0.8;
     color: white;
   }
 }
 
-.menu-btn{
-  @include breakpoint(map-get($breakpoints, 'mobile-only')){
-    margin-top:-220px;
+.btn-menu {
+  @extend .transition-slow;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    margin-top: -167px;
+  }
+
+}
+
+.btn-times {
+  @extend .transition-slow;
+  &:hover, &:focus {
+    opacity: 0.8;
   }
 }
 

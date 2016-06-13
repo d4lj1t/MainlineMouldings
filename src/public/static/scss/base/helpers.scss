@@ -471,7 +471,9 @@
 .border-bottom-primary {
   border-bottom: 1px solid map-get($colors, 'brand-dark');
 }
-
+.border-top-white {
+  border-top: 1px solid white;
+}
 
 /*.border-top-grey {
   border-top: 1px solid map-get($colors, 'background');
