@@ -23,6 +23,7 @@
 
 			// Start other modules
 			new (require('partials/side-menu'))();
+			new (require('partials/secondary-nav'))();
 
 
 		/*	// 3rd party

@@ -1,8 +1,9 @@
 .mainline-logo-wrapper{
   &:hover {
     .mainline-logo, .mainline-logo-text {
-      @extend .transition-slow;
-      opacity: 0.8;
+      /*@extend .transition-slow;*/
+      /*opacity: 0.8;*/
+      background-position: -15px -65px;
     }
   }
 }
@@ -17,7 +18,7 @@
   cursor: pointer;
   display: inline-block;
 
-  @extend .transition-slow;
+  /*@extend .transition-slow;*/
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')){
     height: 35px;
