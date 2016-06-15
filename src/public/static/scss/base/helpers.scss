@@ -72,8 +72,6 @@
   padding-bottom: $helper-medium;
 }
 
-
-
 .thick-pad {
   padding: $helper-thick;
 }
@@ -381,8 +379,16 @@
   display: none;
 }
 
-.vis-none{
-  visibility:hidden;
+//responsive screen helpers
+
+@include breakpoint(map-get($breakpoints, 'mobile-and-tablet-only')) {
+  .display-none-mobile-and-tablet {
+    display: none;
+  }
+}
+
+.vis-none {
+  visibility: hidden;
 }
 
 .relative-pos {
@@ -406,12 +412,12 @@
 }
 
 //Texrt Align
-.text-align-right{
+.text-align-right {
   text-align: right;
 }
 
-.text-align-right-mobile{
-  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+.text-align-right-mobile {
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     text-align: right;
   }
 }
@@ -419,12 +425,10 @@
 .text-decoration-none {
   text-decoration: none;
 
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 }
-
-
 
 //backgrounds
 
@@ -454,29 +458,30 @@
   background: map-get($colours, 'feel-good-sky');
 }*/
 
-
-
 //colours
 .color-copy-primary-dark {
   color: map-get($colors, 'copy-primary-dark');
 }
-
 
 .color-brand-dark {
   color: map-get($colors, 'brand-dark')
 }
 
 .color-white {
-  color:white;
+  color: white;
 }
-
 
 //Borders
 .border-bottom-primary {
   border-bottom: 1px solid map-get($colors, 'brand-dark');
 }
+
 .border-top-white {
   border-top: 1px solid white;
+}
+
+.border-bottom-white {
+  border-bottom: 1px solid white;
 }
 
 /*.border-top-grey {
@@ -495,9 +500,6 @@
 .border-grey-box {
   border: 1px solid map-get($colors, 'background');
 }*/
-
-
-
 
 .word-wrap-text {
   word-wrap: break-word;
@@ -533,23 +535,23 @@
 //responsive screens
 
 @media screen and (min-width: map-get($breakpoints, 'tablet')) {
-/*  .no-marg-tablet-up {
-    margin: 0;
-  }*/
+  /*  .no-marg-tablet-up {
+      margin: 0;
+    }*/
 }
 
 @media screen and (max-width: map-get($breakpoints, 'tablet-large')) {
-/*  .tablet-down-marg-top {
-    margin-top: $helper-thick;
-  }
+  /*  .tablet-down-marg-top {
+      margin-top: $helper-thick;
+    }
 
-  .tablet-down-border-none {
-    border: none;
-  }
+    .tablet-down-border-none {
+      border: none;
+    }
 
-  .position-static-tablet-down {
-    position: static;
-  }*/
+    .position-static-tablet-down {
+      position: static;
+    }*/
 }
 
 //font size
