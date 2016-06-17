@@ -4,7 +4,13 @@
       /*@extend .transition-slow;*/
       /*opacity: 0.8;*/
       background-position: -15px -65px;
+
+      @include breakpoint(map-get($breakpoints, 'mobile-only')){
+        background-position: -10px -50px;
+      }
     }
+
+
   }
 }
 
