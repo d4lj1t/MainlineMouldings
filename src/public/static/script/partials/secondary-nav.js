@@ -26,6 +26,10 @@ module.exports = function LogIn() {
                 $(this).addClass(trigger).find(menuHeadingContent).stop().slideDown( function(){
                     $(this).height('');
                 });
+
+                $('.js-nav-content-close').click(function(){
+                    $(this).closest(menuHeading).removeClass(trigger).find(menuHeadingContent).hide();
+                });
             });
 
             menuHeading.on('mouseleave', function () {
@@ -33,6 +37,7 @@ module.exports = function LogIn() {
                     $(this).removeClass(trigger).find(menuHeadingContent).hide();
                 }
             });
+
         }
 
         navEvents();
