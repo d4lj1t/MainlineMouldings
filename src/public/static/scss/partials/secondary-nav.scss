@@ -16,7 +16,7 @@
       color: white;
     }
 
-    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
       width: calc( 100% / 3 );
       display: inline-block;
     }

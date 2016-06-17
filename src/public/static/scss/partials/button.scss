@@ -15,10 +15,9 @@
 
 .btn-advanced {
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
-
-    position: fixed;
-    right: 70px;
-    top: $helper-thick;
+    position: absolute;
+    right:60px;
+    top: -113px;
   }
 }
 
@@ -50,6 +49,16 @@
   &:hover, &:focus {
     opacity: 0.8;
   }
+}
+
+.btn-search-plus{
+  margin-right:$helper-standard;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    margin-right:0;
+  }
+
+
 }
 
 
