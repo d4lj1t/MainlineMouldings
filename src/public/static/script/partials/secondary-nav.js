@@ -22,15 +22,34 @@ module.exports = function LogIn() {
             trigger = 'trigger';
 
 
-        menuHeading.mouseover(function () {
-                $(this).addClass(trigger).find(menuHeadingContent).stop().slideDown();
-            }
-        );
+       /* menuHeading.mouseover(function () {
+            $(this).addClass(trigger).find(menuHeadingContent).stop().slideDown();
+        });*/
 
-        menuHeading.mouseleave(function () {
+        menuHeading.on('mouseover', function () {
+            $(this).addClass(trigger).find(menuHeadingContent).stop().slideDown();
+        });
+
+        menuHeading.on('mouseleave', function () {
+            if($(this).hasClass(trigger)) {
                 $(this).removeClass(trigger).find(menuHeadingContent).hide();
             }
-        );
+        });
+
+      /*  menuHeading.on('touchStart', function () {
+            if($(this).hasClass(trigger)) {
+                $(this).removeClass(trigger).find(menuHeadingContent).hide();
+            }
+        });*/
+
+      /*  menuHeading.click(function () {
+            if($(this).hasClass(trigger)) {
+                $(this).removeClass(trigger).find(menuHeadingContent).hide();
+            } else {
+
+            }
+
+        });*/
     };
 
 

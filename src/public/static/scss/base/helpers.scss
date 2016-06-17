@@ -382,7 +382,13 @@
 //responsive screen helpers
 
 @include breakpoint(map-get($breakpoints, 'mobile-and-tablet-only')) {
-  .display-none-mobile-and-tablet {
+  .display-none-mobile-tablet {
+    display: none;
+  }
+}
+
+@include breakpoint(map-get($breakpoints, 'mobile-only')) {
+  .display-none-mobile {
     display: none;
   }
 }
