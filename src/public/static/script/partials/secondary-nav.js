@@ -21,26 +21,29 @@ module.exports = function LogIn() {
             menuHeadingContent = $('.js-menu-heading-content'),
             trigger = 'trigger';
 
+        function navEvents () {
+            menuHeading.on('mouseover', function () {
+                $(this).addClass(trigger).find(menuHeadingContent).stop().slideDown( function(){
+                    $(this).height('');
+                });
+            });
+
+            menuHeading.on('mouseleave', function () {
+                if ($(this).hasClass(trigger)) {
+                    $(this).removeClass(trigger).find(menuHeadingContent).hide();
+                }
+            });
+        }
+
+        navEvents();
+
 
        /* menuHeading.mouseover(function () {
             $(this).addClass(trigger).find(menuHeadingContent).stop().slideDown();
         });*/
 
-        menuHeading.on('mouseover', function () {
-            $(this).addClass(trigger).find(menuHeadingContent).stop().slideDown();
-        });
 
-        menuHeading.on('mouseleave', function () {
-            if($(this).hasClass(trigger)) {
-                $(this).removeClass(trigger).find(menuHeadingContent).hide();
-            }
-        });
 
-      /*  menuHeading.on('touchStart', function () {
-            if($(this).hasClass(trigger)) {
-                $(this).removeClass(trigger).find(menuHeadingContent).hide();
-            }
-        });*/
 
       /*  menuHeading.click(function () {
             if($(this).hasClass(trigger)) {
