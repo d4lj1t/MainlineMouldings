@@ -24,7 +24,7 @@ module.exports = function LogIn() {
             clicked = ('clicked'),
             sideMenuWidth = '250px';
 
-        $(window).resize(function() {
+        $(window).resize(function () {
             var clientHeight = $(window).height();
             container.css('min-height', clientHeight);
         });
@@ -46,24 +46,28 @@ module.exports = function LogIn() {
                                 width: '0'
                             }, animationSpeed, function () {
                                 $(this).removeClass(clicked).hide();
-
+                                $('.js-secondary-nav-item').removeClass('clicked');
+                                $('.js-secondary-nav-item-content').hide();
                             });
                         }
                     }
+
+                    return false;
                 });
 
-                $('.js-secondary-nav-item').click(function(){
 
-                    if(!$(this).hasClass('clicked')) {
-                        $(this).addClass('clicked').next().slideDown();
-                    } else{
-                        $(this).removeClass('clicked').next().slideUp();
-                    }
-
-                });
             }
         );
 
+        $('.js-secondary-nav-item').click(function () {
+
+            if (!$(this).hasClass('clicked')) {
+                $(this).addClass('clicked').next().stop().slideDown();
+            } else {
+                $(this).removeClass('clicked').next().stop().slideUp();
+            }
+
+        });
 
     };
 
