@@ -59,7 +59,7 @@ module.exports = function LogIn() {
             }
         );
 
-       /* $('.js-secondary-nav-item').click(function () {
+        $('.js-secondary-nav-item').click(function () {
 
             if (!$(this).hasClass('clicked')) {
                 $('.js-secondary-nav-item.clicked').removeClass('clicked').next().slideUp();
@@ -69,7 +69,7 @@ module.exports = function LogIn() {
                 $(this).removeClass('clicked').next().stop().slideUp();
             }
 
-        });*/
+        });
 
     };
 
