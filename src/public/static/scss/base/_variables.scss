@@ -36,7 +36,7 @@ $breakpoints: (
         'tablet-only': (min-width 768px) (max-width 1169px),
 
         //specific range for small tablet up
-        'large-tablet-up': (min-width 850px),
+        'large-tablet-up': 'min-width' 850px,
 
 
   // Retina images

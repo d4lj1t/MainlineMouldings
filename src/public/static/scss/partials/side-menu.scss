@@ -20,7 +20,7 @@
       @extend .transition-slow;
 
       &:hover {
-        a {
+        > a {
           opacity: 0.8;
         }
       }
@@ -40,11 +40,20 @@
   .secondary-nav-item {
     border-bottom: none;
 
+   /* &:hover div:first-child{
+      opacity: 0.8;
+    }
+
+    :hover .clicked{
+      color:white;
+    }*/
+
     ul {
       padding: 0 0 0 10px;
 
       li {
         border-bottom: none;
+        padding:$helper-thin 0;
       }
 
       &:first-of-type {
