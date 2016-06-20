@@ -80,6 +80,14 @@
       }
     }
 
+    &:first-child{
+      @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
+        margin-top:$helper-thick;
+      }
+    }
+
+
+
     li, a {
       padding: $helper-thin 0;
       color: white;
