@@ -108,12 +108,17 @@
   }
 }
 
+.secondary-nav-item-content{
+  margin-top: $helper-standard;
+}
+
+
 .secondary-nav-item{
   @include breakpoint(map-get($breakpoints, 'large-tablet-up')) {
     display:none;
   }
 }
 
-.secondary-nav-item-content{
-  margin-top: $helper-standard;
-}
+
+
+
