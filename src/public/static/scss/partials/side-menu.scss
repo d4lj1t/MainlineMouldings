@@ -5,7 +5,8 @@
   right: 0;
   color: white;
   width: 0;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   z-index: 1;
   display: none;
 
@@ -18,11 +19,13 @@
       border-bottom: 1px solid white;
       @extend .transition-slow;
 
-      &:hover{
-        opacity: 0.8;
+      &:hover {
+        a {
+          opacity: 0.8;
+        }
       }
 
-      a:hover{
+      a:hover {
         text-decoration: none;
       }
 
@@ -33,4 +36,27 @@
     color: white;
 
   }
+
+  .secondary-nav-item {
+    border-bottom: none;
+
+    ul {
+      padding: 0 0 0 10px;
+
+      li {
+        border-bottom: none;
+      }
+
+      &:first-of-type {
+        li {
+          border-bottom: 1px solid white;
+        }
+      }
+
+    }
+  }
+}
+
+.secondary-nav-item-content{
+  display:none;
 }

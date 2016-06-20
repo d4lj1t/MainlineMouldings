@@ -26,7 +26,7 @@ module.exports = function LogIn() {
 
         $(window).resize(function() {
             var clientHeight = $(window).height();
-            container.css('height', clientHeight);
+            container.css('min-height', clientHeight);
         });
 
         btnMenu.click(function () {
