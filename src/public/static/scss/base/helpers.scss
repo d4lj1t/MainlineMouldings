@@ -393,6 +393,12 @@
   }
 }
 
+@include breakpoint(map-get($breakpoints, 'large-tablet-up')) {
+  .display-none-large-tablet-up {
+    display: none;
+  }
+}
+
 .vis-none {
   visibility: hidden;
 }

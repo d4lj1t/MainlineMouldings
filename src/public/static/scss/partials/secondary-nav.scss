@@ -107,3 +107,9 @@
     display: block;
   }
 }
+
+.secondary-nav-item{
+  @include breakpoint(map-get($breakpoints, 'large-tablet-up')) {
+    display:none;
+  }
+}
