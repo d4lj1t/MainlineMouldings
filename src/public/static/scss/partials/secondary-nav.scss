@@ -16,8 +16,18 @@
       color: white;
     }
 
+    &:nth-child(3) {
+      @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
+        border-right: 1px solid map-get($colors, 'copy-primary-light');
+
+        &.trigger {
+          border-right: 1px solid map-get($colors, 'copy-primary-medium');
+        }
+      }
+    }
+
     @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
-      width: calc( 100% / 3 );
+      width: calc(100% / 3);
       display: inline-block;
     }
     .nav-menu-heading {
@@ -48,7 +58,7 @@
   height: auto;
   z-index: 1;
   text-align: left;
-  padding:$helper-standard;
+  padding: $helper-standard;
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     top: 53px;
   }
@@ -57,8 +67,7 @@
     list-style: none;
     padding: 0 20px 0 0;
 
-
-    &:first-child > li:first-child {
+    &:first-of-type > li:first-child {
       border-bottom: 1px solid white;
       margin-bottom: $helper-standard;
 
@@ -80,5 +89,13 @@
         color: map-get($colors, 'brand-light');
       }
     }
+  }
+}
+
+.nav-content-close {
+  display: none;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
+    display: block;
   }
 }

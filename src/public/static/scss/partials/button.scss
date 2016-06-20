@@ -16,7 +16,7 @@
 .btn-advanced {
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     position: absolute;
-    right:60px;
+    right:48px;
     top: -113px;
   }
 }
