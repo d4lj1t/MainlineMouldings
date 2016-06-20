@@ -51,8 +51,20 @@ module.exports = function LogIn() {
                         }
                     }
                 });
+
+                $('.js-secondary-nav-item').click(function(){
+
+                    if(!$(this).hasClass('clicked')) {
+                        $(this).addClass('clicked').next().slideDown();
+                    } else{
+                        $(this).removeClass('clicked').next().slideUp();
+                    }
+
+                });
             }
         );
+
+
     };
 
 
