@@ -52,7 +52,6 @@ module.exports = function LogIn() {
                         }
                     }
 
-                    return false;
                 });
 
 
