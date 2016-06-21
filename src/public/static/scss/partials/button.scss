@@ -1,3 +1,24 @@
+//helpers
+.rotate {
+
+  /* Safari */
+  -webkit-transform: rotate(-180deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-180deg);
+
+  /* IE */
+  -ms-transform: rotate(-180deg);
+
+  /* Opera */
+  -o-transform: rotate(-180deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
+
+}
+
+
 .btn-search-wrapper {
   top: 1px;
   right: 0;
@@ -56,8 +77,14 @@
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     margin-right:0;
   }
+}
 
+.btn-angle{
+  @extend .transition-slow;
+}
 
+.secondary-nav-item .clicked .btn-angle{
+  @extend .rotate;
 }
 
 
