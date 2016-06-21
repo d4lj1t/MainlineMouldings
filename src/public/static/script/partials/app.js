@@ -17,13 +17,14 @@
 
 		self.init = function() {
 
-
-
-
+			//plugins
+			/*new (require('partials/plugins/jssor.slider.mini'))();*/
 
 			// Start other modules
 			new (require('partials/side-menu'))();
 			new (require('partials/secondary-nav'))();
+			new (require('partials/jssor-slider'))();
+
 
 
 		/*	// 3rd party

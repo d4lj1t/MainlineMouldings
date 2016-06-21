@@ -1,42 +1,17 @@
-<!doctype html>
-<html{{#if locale}} lang="{{locale}}"{{/if}}>
-<head>
-    <meta charset="utf-8">
-    <title>{{title}}</title>
+module.exports = function () {
+    'use strict';
 
-    {{#if description}}<!-- Meta description -->
-        <meta name="description" content="{{description}}">
+    var self = this;
 
-    {{/if}}<!-- Handheld support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Title Icon - Favicon-->
-    <link rel="shortcut icon" href="static/images/favicon.ico"/>
+    // Dependencies
+    var $ = require('jquery');
 
 
-    <!-- CSS includes -->
-    <link rel="stylesheet" href="static/css/main.min.css?v={{timestamp}}">
+    /*
+     External methods
+     ----------------------------------- */
 
-
-</head>
-<body>
-
-<div class="page page--enabled">
-
-    {% body %}
-
-</div>
-
-<!-- JavaScript includes -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-
-<script type="text/javascript" src="static/script/partials/plugins/jssor.slider.mini.js"></script>
-<script src="static/script/main.min.js"></script>
-
-
-<!--<script type="text/javascript">
-
-
+    self.init = function () {
         var jssor_1_options = {
             $AutoPlay: true,
             $SlideWidth: 600,
@@ -70,12 +45,18 @@
         $(window).bind("orientationchange", ScaleSlider);
         //responsive code end
 
-
-</script>-->
-
+    };
 
 
+    /*
+     Internal
+     ----------------------------------- */
+
+    self.init();
 
 
-</body>
-</html>
+// Return instance
+    return self;
+}
+;
+
