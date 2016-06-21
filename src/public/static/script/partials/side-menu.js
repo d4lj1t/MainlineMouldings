@@ -64,7 +64,7 @@ module.exports = function LogIn() {
         navItem.click(function () {
 
             if (!$(this).hasClass(clicked)) {
-                $('.js-secondary-nav-item.clicked').removeClass(clicked).next().slideUp();
+                $('.js-secondary-nav-item.clicked').removeClass(clicked).next().stop().slideUp();
 
                 $(this).addClass(clicked).next().stop().slideDown();
             } else {
