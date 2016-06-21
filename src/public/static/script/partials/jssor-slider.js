@@ -14,7 +14,7 @@ module.exports = function () {
     self.init = function () {
         var jssor_1_options = {
             $AutoPlay: true,
-            $SlideWidth: 600,
+            $SlideWidth: 900,
             $Cols: 2,
             $Align: 100,
             $ArrowNavigatorOptions: {
