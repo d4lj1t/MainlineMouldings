@@ -18,10 +18,14 @@
       padding: $helper-standard 0;
       border-bottom: 1px solid white;
       @extend .transition-slow;
+      cursor: pointer;
 
       &:hover {
+        border-bottom: 1px solid map-get($colors, 'brand-light');
+
         > a {
-          opacity: 0.8;
+          display: block;
+          color: map-get($colors, 'brand-light');
         }
       }
 
@@ -40,20 +44,20 @@
   .secondary-nav-item {
     border-bottom: none;
 
-   /* &:hover div:first-child{
-      opacity: 0.8;
-    }
+    /* &:hover div:first-child{
+       opacity: 0.8;
+     }
 
-    :hover .clicked{
-      color:white;
-    }*/
+     :hover .clicked{
+       color:white;
+     }*/
 
     ul {
       padding: 0 0 0 10px;
 
       li {
         border-bottom: none;
-        padding:$helper-thin 0;
+        padding: $helper-thin 0;
       }
 
       &:first-of-type {
@@ -66,6 +70,6 @@
   }
 }
 
-.secondary-nav-item-content{
-  display:none;
+.secondary-nav-item-content {
+  display: none;
 }

@@ -48,7 +48,7 @@
 
   &:hover, &:focus {
     opacity: 0.8;
-    color: white;
+    color:map-get($colors,'brand-light');
   }
 }
 
@@ -62,12 +62,14 @@
     right:0;
   }
 
+
 }
 
 .btn-times {
   @extend .transition-slow;
   &:hover, &:focus {
     opacity: 0.8;
+    color:map-get($colors,'brand-light');
   }
 }
 

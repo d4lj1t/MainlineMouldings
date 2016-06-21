@@ -10,6 +10,7 @@
     cursor: pointer;
     border-left: 1px solid map-get($colors, 'copy-primary-light');
 
+
     &.trigger {
       background-color: map-get($colors, 'copy-primary-medium');
       border-left: 1px solid map-get($colors, 'copy-primary-medium');
@@ -85,11 +86,13 @@
         margin-top:$helper-thick;
       }
     }
-
+    a{
+      display: block;
+      padding: $helper-thin 0;
+    }
 
 
     li, a {
-      padding: $helper-thin 0;
       color: white;
 
       &:hover {
@@ -116,6 +119,14 @@
 .secondary-nav-item{
   @include breakpoint(map-get($breakpoints, 'large-tablet-up')) {
     display:none;
+  }
+
+  a:hover{
+    color:map-get($colors, 'brand-light');
+  }
+
+  div:first-child:hover{
+    color:map-get($colors, 'brand-light');
   }
 }
 
