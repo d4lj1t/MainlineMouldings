@@ -22,7 +22,10 @@ module.exports = function LogIn() {
             btnMenu = $('.js-btn-menu'),
             btnTimes = $('.js-btn-times'),
             clicked = ('clicked'),
-            sideMenuWidth = '250px';
+            sideMenuWidth = '250px',
+
+            navItem = $('.js-secondary-nav-item'),
+            navItemContent = $('.js-secondary-nav-item-content');
 
         $(window).resize(function () {
             var clientHeight = $(window).height();
@@ -46,8 +49,8 @@ module.exports = function LogIn() {
                                 width: '0'
                             }, animationSpeed, function () {
                                 $(this).removeClass(clicked).hide();
-                                $('.js-secondary-nav-item').removeClass('clicked');
-                                $('.js-secondary-nav-item-content').hide();
+                                navItem.removeClass(clicked);
+                                navItemContent.hide();
                             });
                         }
                     }
@@ -58,14 +61,14 @@ module.exports = function LogIn() {
             }
         );
 
-        $('.js-secondary-nav-item').click(function () {
+        navItem.click(function () {
 
-            if (!$(this).hasClass('clicked')) {
-                $('.js-secondary-nav-item.clicked').removeClass('clicked').next().slideUp();
+            if (!$(this).hasClass(clicked)) {
+                $('.js-secondary-nav-item.clicked').removeClass(clicked).next().slideUp();
 
-                $(this).addClass('clicked').next().stop().slideDown();
+                $(this).addClass(clicked).next().stop().slideDown();
             } else {
-                $(this).removeClass('clicked').next().stop().slideUp();
+                $(this).removeClass(clicked).next().stop().slideUp();
             }
 
         });
