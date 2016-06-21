@@ -28,6 +28,16 @@
   background-image: url(../images/facebook.png);
 }
 
+.icon-mastercard-visa{
+  background-image: url(../images/mastercard-visa.svg);
+  background-repeat: no-repeat;
+  height: auto;
+  width: 60px;
+  background-size: 55px auto;
+  cursor: pointer;
+  display: inline-block;
+}
+
 //font-awesome
 .fa{
   cursor: pointer;
