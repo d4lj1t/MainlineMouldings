@@ -1,48 +1,52 @@
-<!-- Shared header -->
-<header class="col-md-12 no-pad-side border-bottom-primary">
-    <div class="row no-marg">
-        <div class="col-md-12 col-sm-12 col-xs-12 no-pad-side thick-pad-top-bottom">
-            <div class="col-md-4 no-pad-side">
-                <a href="#" class="mainline-logo-wrapper text-decoration-none">
-                    <div class="mainline-logo">
-                        &nbsp;
+<header class="container-fluid border-bottom-primary">
+    <div class="container">
+        <div class="col-md-12 no-pad-side">
+            <div class="row no-marg">
+                <div class="col-md-12 col-sm-12 col-xs-12 no-pad-side thick-pad-top-bottom">
+                    <div class="col-md-4 no-pad-side">
+                        <a href="#" class="mainline-logo-wrapper text-decoration-none">
+                            <div class="mainline-logo">
+                                &nbsp;
+                            </div>
+
+                            <div class="mainline-logo-text">picture framing supplies</div>
+                        </a>
+
                     </div>
+                    <nav class="col-md-8 col-sm-12 col-xs-12 no-pad-side nav-links-wrapper">
+                        <div class="row no-marg">
+                            <ul class="nav-links no-pad">
+                                <li><a href="#"><i class="fa fa-user color-brand-dark thin-pad-right" aria-hidden="true"></i><span class="display-none-mobile">Sign In</span></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-basket color-brand-dark thin-pad-right" aria-hidden="true"></i><span class="cart-items-val"><strong>3</strong></span><span class="display-none-mobile">Basket</span></a></li>
+                                <li><a class="tel-link color-brand-dark" href="tel:01949 861000"><i class="fa fa-phone thin-pad-right color-brand-dark" aria-hidden="true"></i>01949 861000</a></li>
+                            </ul>
+                        </div>
+                        <div class="row no-marg">
+                            <div class="col-md-12 col-sm-12 col-xs-12 no-pad-side marg-top">
+                                <div class="col-md-7 col-sm-8 col-xs-12 no-pad">
+                                    <form action="#">
+                                        <input type="Search" placeholder="code, colour, size, shape, finish..." class="form-control"/>
 
-                    <div class="mainline-logo-text">picture framing supplies</div>
-                </a>
-
-            </div>
-            <nav class="col-md-8 col-sm-12 col-xs-12 no-pad-side nav-links-wrapper">
-                <div class="row no-marg">
-                    <ul class="nav-links no-pad">
-                        <li><a href="#"><i class="fa fa-user color-brand-dark thin-pad-right" aria-hidden="true"></i><span class="display-none-mobile">Sign In</span></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-basket color-brand-dark thin-pad-right" aria-hidden="true"></i><span class="cart-items-val"><strong>3</strong></span><span class="display-none-mobile">Basket</span></a></li>
-                        <li><a class="tel-link color-brand-dark" href="tel:01949 861000"><i class="fa fa-phone thin-pad-right color-brand-dark" aria-hidden="true"></i>01949 861000</a></li>
-                    </ul>
-                </div>
-                <div class="row no-marg">
-                    <div class="col-md-12 col-sm-12 col-xs-12 no-pad-side marg-top">
-                        <div class="col-md-7 col-sm-8 col-xs-12 no-pad">
-                            <form action="#">
-                                <input type="Search" placeholder="code, colour, size, shape, finish..." class="form-control"/>
-
-                                <div class=" btn-search-wrapper absolute-pos">
-                                    <button type="submit" class="btn btn-search">
-                                        <span class="fa fa-search"></span>
-                                    </button>
+                                        <div class=" btn-search-wrapper absolute-pos">
+                                            <button type="submit" class="btn btn-input">
+                                                <span class="fa fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
-                            </form>
+                                <div class="col-md-3 col-sm-2 btn-advanced no-pad">
+                                    <button class="btn btn-brand-default color-white marg-left"><i class="fa fa-search-plus btn-search-plus" aria-hidden="true"></i><span class="display-none-mobile">Advanced</span></button>
+                                </div>
+                                <div class="col-md-2 col-sm-2 no-pad text-align-right btn-menu">
+                                    <button class="btn btn-brand-default marg-left color-white js-btn-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-2 btn-advanced no-pad">
-                            <button class="btn btn-brand-default color-white marg-left"><i class="fa fa-search-plus btn-search-plus" aria-hidden="true"></i><span class="display-none-mobile">Advanced</span></button>
-                        </div>
-                        <div class="col-md-2 col-sm-2 no-pad text-align-right btn-menu">
-                            <button class="btn btn-brand-default marg-left color-white js-btn-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                        </div>
-                    </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
+            {{>secondary-nav}}
         </div>
     </div>
-    {{>secondary-nav}}
 </header>
+

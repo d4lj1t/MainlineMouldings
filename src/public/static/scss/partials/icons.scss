@@ -1,0 +1,52 @@
+//icons
+.icon-angle{
+  @extend .transition-slow;
+}
+
+.secondary-nav-item .clicked .icon-angle{
+  @extend .rotate;
+}
+
+.icon-frames-forum, .icon-pinterest, .icon-facebook{
+  background-repeat: no-repeat;
+  height: auto;
+  width: 25px;
+  background-size: 23px auto;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icon-frames-forum{
+  background-image: url(../images/frames-forum.png);
+}
+
+.icon-pinterest{
+  background-image: url(../images/pinterest.png);
+}
+
+.icon-facebook{
+  background-image: url(../images/facebook.png);
+}
+
+//font-awesome
+.fa{
+  cursor: pointer;
+}
+.fa-facebook-square{
+  color:#3b5998;
+}
+
+.fa-twitter{
+  color:#55acee;
+}
+
+.fa-pinterest{
+  color:#bd081c;
+}
+
+
+
+
+
+
+

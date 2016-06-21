@@ -24,7 +24,7 @@
   right: 0;
 }
 
-.btn-search {
+.btn-input {
   background-color: transparent;
   border: none;
   color: map-get($colors, 'brand-dark');
@@ -81,13 +81,9 @@
   }
 }
 
-.btn-angle{
-  @extend .transition-slow;
-}
 
-.secondary-nav-item .clicked .btn-angle{
-  @extend .rotate;
-}
+
+
 
 
 

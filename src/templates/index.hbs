@@ -5,11 +5,13 @@ name: Home
 ---
 
 <!-- Log in box -->
-<main role="main" class="">
-
-    <div class="container relative-pos">
-        {{>side-menu}}
+<main role="main">
+    <div class="relative-pos">
         {{>header}}
+        {{>side-menu}}
+    </div>
+    <div class="container">
+
 
         <div class="row no-marg">
 
@@ -20,7 +22,9 @@ name: Home
             </div>
         </div>
 
-        {{>footer}}
+
     </div>
+    {{>footer}}
+
 
 </main>

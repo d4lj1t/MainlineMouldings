@@ -1,0 +1,15 @@
+footer {
+  background-color: map-get($colors, 'copy-primary-medium');
+  li {
+    padding-bottom: $helper-standard;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: map-get($colors, 'brand-light');
+      text-decoration: none;
+    }
+  }
+}
