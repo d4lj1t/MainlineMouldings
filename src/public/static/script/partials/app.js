@@ -18,12 +18,12 @@
 		self.init = function() {
 
 			//plugins
-			/*new (require('partials/plugins/jssor.slider.mini'))();*/
+
 
 			// Start other modules
 			new (require('partials/side-menu'))();
 			new (require('partials/secondary-nav'))();
-			new (require('partials/jssor-slider'))();
+			/*new (require('partials/jssor-slider'))();*/
 
 
 
@@ -41,6 +41,7 @@
 
 		// Auto initialise
 		self.init();
+		/*require('jquery','plugins/bootstrap.min.js');*/
 
 		// Return instance
 		return self;
