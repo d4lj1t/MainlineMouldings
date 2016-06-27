@@ -19,27 +19,45 @@
     height: 256px;
   }
 
+  &__2{
+    background-image: url("../images/wood-frame-2.jpg");
+  }
+  &__3{
+    background-image: url("../images/wood-frame-3.jpg");
+  }
+  &__4{
+    background-image: url("../images/wood-frame-4.jpg");
+  }
+
 }
 
 .pod-wrapper {
   text-align: center;
+
   &:nth-child(even) {
     padding: 0 0 0 $helper-thin;
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      padding: 0;
+    }
   }
 
   &:nth-child(odd) {
     padding: 0 $helper-thin 0 0;
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      padding: 0;
+    }
   }
 
   p {
     height: 95px;
 
     @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
-      height:115px;
+      height: 115px;
     }
 
     @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
-height:162px;
+      height: 162px;
     }
   }
 
