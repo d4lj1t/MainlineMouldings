@@ -18,7 +18,7 @@
 		self.init = function() {
 
 			//plugins
-			new(require('plugins/bootstrap.min.js'))();
+
 
 			// Start other modules
 			new (require('partials/side-menu'))();
@@ -41,7 +41,7 @@
 
 		// Auto initialise
 		self.init();
-
+		/*require('jquery','plugins/bootstrap.min.js');*/
 
 		// Return instance
 		return self;

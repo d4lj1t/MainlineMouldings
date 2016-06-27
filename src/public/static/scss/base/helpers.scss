@@ -470,6 +470,23 @@
   background: map-get($colours, 'feel-good-sky');
 }*/
 
+.background-orange {
+  background: map-get($colors, 'brand-dark');
+}
+
+//backgrounds
+.background-yellow {
+  background: map-get($colors, 'brand-yellow');
+}
+
+.background-purple {
+  background: map-get($colors, 'brand-purple');
+}
+
+.background-green {
+  background: map-get($colors, 'brand-green');
+}
+
 //colours
 .color-copy-primary-dark {
   color: map-get($colors, 'copy-primary-dark');

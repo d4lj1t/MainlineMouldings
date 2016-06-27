@@ -8,7 +8,11 @@ $colors: (
         'brand-light':#ff6600,
         'copy-primary-dark':#726260,
         'copy-primary-medium':#818383,
-        'copy-primary-light':#ebecec
+        'copy-primary-light':#ebecec,
+        'brand-yellow': #f8a829,
+        'brand-purple':#962045,
+        'brand-green':#b7a000,
+
 );
 
 $properties: (
@@ -34,6 +38,9 @@ $breakpoints: (
         'mobile-and-small-tablet-only': 'max-width' 849px,
         'mobile-and-tablet-only': 'max-width' 1169px,
         'tablet-only': (min-width 768px) (max-width 1169px),
+
+        'small-tablet-only': (min-width 768px) (max-width 1023px),
+        'large-tablet-only': (min-width 1024px) (max-width 1170px),
 
         //specific range for small tablet up
         'large-tablet-up': 'min-width' 850px,

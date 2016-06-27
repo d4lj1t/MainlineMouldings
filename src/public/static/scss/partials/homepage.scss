@@ -1,0 +1,51 @@
+.pod-image {
+  background-image: url("../images/wood-frame.jpg");
+  background-size: 100% 222px;
+  width: 100%;
+  height: 222px;
+  background-repeat: no-repeat;
+
+  @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
+    background-size: 100% 241px;
+    height: 241px;
+  }
+  @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+    background-size: 100% 299px;
+    height: 299px;
+  }
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    background-size: 100% 256px;
+    height: 256px;
+  }
+
+}
+
+.pod-wrapper {
+  text-align: center;
+  &:nth-child(even) {
+    padding: 0 0 0 $helper-thin;
+  }
+
+  &:nth-child(odd) {
+    padding: 0 $helper-thin 0 0;
+  }
+
+  p {
+    height: 95px;
+
+    @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
+      height:125px;
+    }
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+height:162px;
+    }
+  }
+
+}
+
+.pod-btn {
+  border: 1px solid white;
+  cursor: pointer;
+}
