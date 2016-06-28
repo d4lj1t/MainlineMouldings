@@ -10,12 +10,12 @@
     height: 241px;
   }
   @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
-    background-size: 100% 299px;
+    background-size: cover;
     height: 299px;
   }
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
-    background-size: 100% 317px;
+    background-size: cover;
     height: 317px;
   }
 
@@ -48,7 +48,7 @@
   &:nth-child(odd) {
     padding: 0 $helper-thin 0 0;
 
-    @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
+    @include breakpoint(map-get($breakpoints, 'mobile-and-tablet-only')) {
       padding: 0;
     }
 
