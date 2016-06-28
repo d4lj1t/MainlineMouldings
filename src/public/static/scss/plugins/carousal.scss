@@ -1,3 +1,24 @@
 .carousel-indicators {
   z-index: 2;
 }
+
+.carousal-img{
+  background-image: url("../images/1200x400.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-top: 33.33%; /* (img-height / img-width * container-width) */
+  /* (400 / 1280 * 100) */
+  background-repeat: no-repeat;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    padding-top: 66.66%; /* (img-height / img-width * container-width) */
+    /* (400 / 1280 * 100) */
+    /*display:none;*/
+  }
+
+/*  @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
+    padding-top: 33.33%; !* (img-height / img-width * container-width) *!
+
+  }*/
+}
