@@ -1,3 +1,5 @@
+
+
 .pod-image {
   background-image: url("../images/wood-frame.jpg");
   background-size: 100% 222px;
@@ -6,8 +8,8 @@
   background-repeat: no-repeat;
 
   @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
-    background-size: 100% 241px;
-    height: 241px;
+    background-size: 100% 242px;
+    height: 242px;
   }
   @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
     background-size: cover;
