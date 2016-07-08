@@ -17,14 +17,20 @@
     li {
       padding: $helper-standard 0;
       border-bottom: 1px solid white;
-      @extend .transition-slow;
       cursor: pointer;
 
+      @extend .transition-slow;
+
+      a {
+        @extend .transition-slow;
+      }
+
       &:hover {
+        color: map-get($colors, 'brand-light');
         border-bottom: 1px solid map-get($colors, 'brand-light');
 
         > a {
-          display: block;
+          display: inline-block;
           color: map-get($colors, 'brand-light');
         }
       }
@@ -33,6 +39,19 @@
         text-decoration: none;
       }
 
+    }
+
+    li.secondary-nav-item {
+
+      &:hover {
+        color: map-get($colors, 'brand-light');
+        border-bottom: none;
+      }
+
+      > a {
+        display: block;
+        color: map-get($colors, 'brand-light');
+      }
     }
   }
 
@@ -65,11 +84,115 @@
           border-bottom: 1px solid white;
         }
       }
+    }
+    .secondary-nav-item-content {
+      display: none;
 
+      ul:first-of-type li:first-child {
+        @extend .transition-slow;
+
+        &:hover {
+          border-bottom: 1px solid map-get($colors, 'brand-light');
+        }
+      }
+    }
+  }
+
+  .icon-quick-nav {
+    height: 19px;
+
+    &__speedshop {
+      width: 30px;
+      background-size: 25px auto;
+      background-image: url(../images/icons/speedshop-icon-white.svg);
+    }
+
+    &__favourites {
+      background-size: 22px auto;
+      background-image: url(../images/icons/favourites-icon-white.svg);
+    }
+
+    &__visualiser {
+      background-size: 20px auto;
+      background-image: url(../images/icons/visualiser-icon-white.svg);
+    }
+
+    &__gallery {
+      background-size: 21px auto;
+      background-image: url(../images/icons/gallery-icon-white.svg);
+    }
+
+    &__download {
+      background-size: 21px auto;
+      background-image: url(../images/icons/download-icon-white.svg);
+    }
+    &__faq {
+      background-size: 21px auto;
+      background-image: url(../images/icons/faq-icon-white.svg);
+    }
+
+  }
+
+  .quick-nav-links {
+    border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
+    ul li {
+      border-bottom: none;
+      line-height: normal;
+
+      &:hover {
+        border-bottom: none;
+
+        .icon-quick-nav__speedshop {
+          background-image: url(../images/icons/speedshop-icon-hover.svg);
+        }
+
+        .icon-quick-nav__favourites {
+
+          background-image: url(../images/icons/favourites-icon-hover.svg);
+        }
+
+        .icon-quick-nav__visualiser {
+
+          background-image: url(../images/icons/visualiser-icon-hover.svg);
+        }
+
+        .icon-quick-nav__gallery {
+
+          background-image: url(../images/icons/gallery-icon-hover.svg);
+        }
+
+        .icon-quick-nav__download {
+
+          background-image: url(../images/icons/download-icon-hover.svg);
+        }
+
+        .icon-quick-nav__faq {
+
+          background-image: url(../images/icons/faq-icon-hover.svg);
+        }
+
+      }
     }
   }
 }
 
-.secondary-nav-item-content {
-  display: none;
+
+
+div.fadeMe {
+  opacity:    0.7;
+  background: white;
+  width:      100%;
+  height:     100%;
+  z-index:    10;
+  top:        0;
+  left:       0;
+  position:   fixed;
+  display:none;
 }
+
+
+
+

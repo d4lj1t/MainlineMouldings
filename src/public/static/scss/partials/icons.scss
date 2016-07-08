@@ -1,13 +1,13 @@
 //icons
-.icon-angle{
+/*.icon-angle {
   @extend .transition-slow;
-}
+}*/
 
-.secondary-nav-item .clicked .icon-angle{
+.secondary-nav-item .clicked .icon-angle {
   @extend .rotate;
 }
 
-.icon-frames-forum, .icon-pinterest, .icon-facebook{
+.icon-frames-forum, .icon-pinterest, .icon-facebook {
   background-repeat: no-repeat;
   height: auto;
   width: 25px;
@@ -16,42 +16,135 @@
   display: inline-block;
 }
 
-.icon-frames-forum{
-  background-image: url(../images/frames-forum.png);
+.icon-frames-forum {
+  background-image: url(../images/icons/frames-forum.png);
+  @extend .hover-opacity;
 }
 
-.icon-pinterest{
-  background-image: url(../images/pinterest.png);
+.icon-pinterest {
+  background-image: url(../images/icons/pinterest.png);
+  @extend .hover-opacity;
 }
 
-.icon-facebook{
-  background-image: url(../images/facebook.png);
+.icon-facebook {
+  background-image: url(../images/icons/facebook.png);
+  @extend .hover-opacity;
+
 }
 
-.icon-mastercard-visa{
-  background-image: url(../images/mastercard-visa.svg);
+.icon-twitter{
+  @extend .hover-opacity;
+}
+
+.icon-mastercard-visa {
+  background-image: url(../images/icons/mastercard-visa.svg);
   background-repeat: no-repeat;
   height: auto;
   width: 55px;
   background-size: 55px auto;
   cursor: pointer;
+  margin-bottom:0;
+
   display: inline-block;
+  margin-right:$helper-standard;
+
+ /* @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    margin-right:0;
+    display: block;
+  }*/
+}
+
+.icon-geotrust {
+  background-image: url(../images/icons/geotrust.png);
+  background-repeat: no-repeat;
+  height: auto;
+
+
+  cursor: pointer;
+
+  display: inline-block;
+  background-size: 80px auto;
+  width: 80px;
+  vertical-align: middle;
+
+ /* @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    display: block;
+    background-size: 55px auto;
+    width: 55px;
+  }*/
+
+
+}
+
+
+
+
+
+.icon-quick-nav {
+  cursor: pointer;
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 25px;
+  @extend .transition-slow;
+
+  &__speedshop {
+    background-image: url(../images/icons/speedshop-icon.svg);
+    width: 40px;
+    background-size: 40px auto;
+  }
+
+  &__favourites {
+    background-image: url(../images/icons/favourites-icon.svg);
+    width: 27px;
+    background-size: 27px auto;
+  }
+
+  &__visualiser {
+    background-image: url(../images/icons/visualiser-icon.svg);
+    width: 27px;
+    background-size: 27px auto;
+  }
+
+  &__supersearch {
+    background-image: url(../images/icons/supersearch-icon.svg);
+    width: 27px;
+    background-size: 27px auto;
+  }
+
+  &__gallery {
+    background-image: url(../images/icons/gallery-icon.svg);
+    width: 27px;
+    background-size: 27px auto;
+  }
+
+  &__download {
+    background-image: url(../images/icons/download-icon.svg);
+    width: 27px;
+    background-size: 27px auto;
+  }
+
+  &__faq {
+    background-image: url(../images/icons/faq-icon.svg);
+    width: 27px;
+    background-size: 27px auto;
+  }
 }
 
 //font-awesome
-.fa{
+.fa {
   cursor: pointer;
 }
-.fa-facebook-square{
-  color:#3b5998;
+
+.fa-facebook-square {
+  color: #3b5998;
 }
 
-.fa-twitter{
-  color:#55acee;
+.fa-twitter {
+  color: #55acee;
 }
 
-.fa-pinterest{
-  color:#bd081c;
+.fa-pinterest {
+  color: #bd081c;
 }
 
 

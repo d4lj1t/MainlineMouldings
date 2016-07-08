@@ -22,10 +22,13 @@ module.exports = function LogIn() {
             btnMenu = $('.js-btn-menu'),
             btnTimes = $('.js-btn-times'),
             clicked = ('clicked'),
-            sideMenuWidth = '250px',
+            sideMenuWidth = '270px',
 
             navItem = $('.js-secondary-nav-item'),
-            navItemContent = $('.js-secondary-nav-item-content');
+            navItemContent = $('.js-secondary-nav-item-content'),
+            overlay = $('.js-fade-me');
+
+
 
         $(window).resize(function () {
             var clientHeight = $(window).height();
@@ -34,6 +37,7 @@ module.exports = function LogIn() {
 
         btnMenu.click(function () {
 
+                overlay.fadeIn('fast');
                 container.addClass(clicked).show().stop().animate({width: sideMenuWidth}, animationSpeed);
 
                 $(document).bind("mouseup touchend", function (e) {
@@ -51,6 +55,7 @@ module.exports = function LogIn() {
                                 $(this).removeClass(clicked).hide();
                                 navItem.removeClass(clicked);
                                 navItemContent.hide();
+                                overlay.fadeOut('fast');
                             });
                         }
                     }

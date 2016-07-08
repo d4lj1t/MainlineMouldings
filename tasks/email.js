@@ -8,9 +8,9 @@
 		return function() {
 
 			// Build email templates
-			return gulp.src(plugins.path.resolve(paths.build, '*-email.html'))
+			return gulp.src(plugins.path.resolve(paths.build, 'email-*.html'))
 				.pipe(plugins.inlineCss({ preserveMediaQueries: true }))
 				.pipe(gulp.dest(paths.build))
-				.pipe(plugins.browserSync.stream({ match: '**/*-email.html' }));
+				.pipe(plugins.browserSync.stream({ match: '**/email-*.html' }));
 		};
 	};

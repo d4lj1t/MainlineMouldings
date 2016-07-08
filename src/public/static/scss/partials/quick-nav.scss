@@ -1,0 +1,69 @@
+.quick-nav-links {
+  text-align: justify;
+  line-height: 0;
+  margin-top: $helper-thick;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
+  .icon-wrapper {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    line-height: 15px;
+    cursor: pointer;
+
+    .icon-text {
+      @extend .transition-slow;
+    }
+
+    &:hover {
+      .icon-text {
+        color: map-get($colors, 'brand-dark')
+      }
+
+      .icon-quick-nav__speedshop{
+        background-image: url(../images/icons/speedshop-icon-hover.svg)
+      }
+
+      .icon-quick-nav__favourites{
+        background-image: url(../images/icons/favourites-icon-hover.svg)
+      }
+
+      .icon-quick-nav__visualiser{
+        background-image: url(../images/icons/visualiser-icon-hover.svg)
+      }
+
+      .icon-quick-nav__supersearch{
+        background-image: url(../images/icons/supersearch-icon-hover.svg)
+      }
+
+      .icon-quick-nav__gallery{
+        background-image: url(../images/icons/gallery-icon-hover.svg)
+      }
+
+      .icon-quick-nav__download{
+        background-image: url(../images/icons/download-icon-hover.svg)
+      }
+
+      .icon-quick-nav__faq{
+        background-image: url(../images/icons/faq-icon-hover.svg)
+      }
+    }
+
+    .icon-text {
+      color: map-get($colors, 'copy-primary-medium');
+      @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+        display: none;
+
+      }
+    }
+  }
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    margin: $helper-thick 0;
+  }
+}

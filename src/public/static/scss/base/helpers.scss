@@ -487,9 +487,17 @@
   background: map-get($colors, 'brand-green');
 }
 
+.background-light-grey{
+  background: map-get($colors, 'copy-primary-light');
+}
+
 //colours
 .color-copy-primary-dark {
   color: map-get($colors, 'copy-primary-dark');
+}
+
+.color-copy-primary-medium {
+  color: map-get($colors, 'copy-primary-medium');
 }
 
 .color-brand-dark {

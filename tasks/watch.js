@@ -12,7 +12,8 @@
 				pathJS = plugins.path.resolve(paths.src, '**/*.js'),
 				pathHTML = plugins.path.resolve(paths.html, '**/*.hbs'),
 				pathFonts = plugins.path.resolve(paths.src, 'static/fonts/**'),
-				pathImages = plugins.path.resolve(paths.src, 'static/images/**');
+				pathImages = plugins.path.resolve(paths.src, 'static/images/**')
+
 
 			// Watch for CSS changes
 			plugins.watch(pathCSS, plugins.batch(function (events, done) {

@@ -1,0 +1,49 @@
+.product-wrapper {
+
+  @extend .hover-opacity;
+  cursor: pointer;
+
+  &:hover{
+    color:map-get($colors, 'brand-light');
+  }
+
+  @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
+    height: 230px;
+  }
+
+  &:nth-child(odd) {
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      clear: both;
+    }
+  }
+
+  .product-item {
+    margin: 0 0 $helper-standard $helper-standard;
+  }
+
+  &:nth-child(odd) {
+    .product-item {
+      @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+        margin-left: 0;
+        margin-right: $helper-thin;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    .product-item {
+      @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+        margin-left: $helper-thin;
+      }
+    }
+  }
+
+}
+
+.title-heading {
+  h1 {
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      font-size:$font-size-h3;
+    }
+  }
+}

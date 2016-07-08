@@ -1,24 +1,28 @@
 .secondary-nav-links {
   list-style: none;
-  padding: 10px 0;
+  padding: 0;
+  margin:0;
   z-index: 3;
+  text-align: justify;
+
 
   > li {
-    display: inline;
-    text-align: center;
+    display: inline-block;
+    /*text-align: center;*/
     padding: 12px 0;
     color: map-get($colors, 'copy-primary-dark');
     cursor: pointer;
-    border-left: 1px solid map-get($colors, 'copy-primary-light');
+
 
 
     &.trigger {
       background-color: map-get($colors, 'copy-primary-medium');
-      border-left: 1px solid map-get($colors, 'copy-primary-medium');
+      /*border-left: 1px solid map-get($colors, 'copy-primary-medium');*/
+
       color: white;
     }
 
-    &:nth-child(3) {
+  /*  &:nth-child(3) {
       @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
         border-right: 1px solid map-get($colors, 'copy-primary-light');
 
@@ -26,17 +30,14 @@
           border-right: 1px solid map-get($colors, 'copy-primary-medium');
         }
       }
-    }
+    }*/
 
-    @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
-      width: calc(100% / 3);
-      display: inline-block;
-    }
     .nav-menu-heading {
-      padding: 0 $helper-thick;
+
+      padding: 0 $helper-standard;
 
       @include breakpoint(map-get($breakpoints, 'mobile-and-tablet-only')) {
-        padding: 0 $helper-standard;
+        /*padding: 0 $helper-standard;*/
       }
 
     }
@@ -46,13 +47,32 @@
         display: none;
       }
     }
+
+/*    &:first-child{
+       border-left: 1px solid map-get($colors, 'copy-primary-light');
+     }
+
+    &:last-child{
+      border-right: 1px solid map-get($colors, 'copy-primary-light');
+    }*/
+
+ /*   border-left: 1px solid map-get($colors, 'copy-primary-light');
+    border-right: 1px solid map-get($colors, 'copy-primary-light');
+    border-top: 1px solid map-get($colors, 'copy-primary-light');*/
+  }
+
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
   }
 }
 
 .menu-heading-content {
+  line-height: normal;
   display: none;
   position: absolute;
-  top: 39px;
+  top: 43px;
   left: 0;
   background-color: map-get($colors, 'copy-primary-medium');
   color: white;
@@ -60,10 +80,8 @@
   height: auto;
   z-index: 1;
   text-align: left;
-  padding: $helper-standard;
-  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
-    top: 53px;
-  }
+  padding: $helper-standard $helper-standard $helper-thick;
+
 
   ul {
     list-style: none;
@@ -118,7 +136,7 @@
 
 
 .secondary-nav-item{
-  @include breakpoint(map-get($breakpoints, 'large-tablet-up')) {
+  @include breakpoint(map-get($breakpoints, 'small-tablet-up')) {
     display:none;
   }
 

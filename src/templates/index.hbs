@@ -7,80 +7,155 @@ carousal: true
 
 <!-- Log in box -->
 <main role="main">
-    <div class="relative-pos">
-        {{>header}}
+    <div class="fadeMe js-fade-me"></div>
+    <div class="">
         {{>side-menu}}
-    </div>
+        {{>header}}
 
+    </div>
     <div class="container">
-        {{!>carousal}}
-
-        <div class="col-md-12 no-pad-side">
-       <!--     <div class="col-md-6 pod-wrapper">
-                <div class="col-md-12 col-xs-12 col-sm-12 background-green no-pad-side marg-top">
-                    <div class="col-md-6 col-xs-6 col-sm-6 color-white">
-                        <h3>Wood</h3>
-
-                        <p>Our vast array of fantastically priced wood mouldings will complement both modern and traditional decor, allowing you to matach to any colour scheme and satisfy any trend.</p>
-                        <div class="thick-marg-top-bottom pod-btn thin-pad">Wood Ranges</div>
-                    </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
-                        <div class="">
-                            <div class="pod-image"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 pod-wrapper">
-                <div class="col-md-12 col-xs-12 col-sm-12 background-orange no-pad-side marg-top">
-                    <div class="col-md-6 col-xs-6 col-sm-6 color-white">
-                        <h3>Polcore</h3>
-
-                        <p>Mainline's highly specified and design-led extruded mouldings are available in more than 1000 designs, finishes and profiles. Polcore is recycled polystyrene</p>
-                        <div class="thick-marg-top-bottom pod-btn thin-pad">Polcore Ranges</div>
-                    </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
-                        <div class="">
-                            <div class="pod-image pod-image__2"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-6 pod-wrapper">
-                <div class="col-md-12 col-xs-12 col-sm-12 background-purple no-pad-side marg-top">
-                    <div class="col-md-6 col-xs-6 col-sm-6 color-white">
-                        <h3>Mountboard</h3>
-
-                        <p>Our mountboard comes in a variety of different colours, widths and cores, including backing, barrier & foam boards & speciality mountboards.</p>
-                        <div class="thick-marg-top-bottom pod-btn thin-pad">Mountboard Ranges</div>
-                    </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
-                        <div class="">
-                            <div class="pod-image pod-image__3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 pod-wrapper">
-                <div class="col-md-12 col-xs-12 col-sm-12 background-yellow no-pad-side marg-top">
-                    <div class="col-md-6 col-xs-6 col-sm-6 color-white">
-                        <h3>Polcore Basics</h3>
-
-                        <p>Polcore Basics is a range of contract mouldings where price is key. Receive 20% discount when ordering any 2 or more boxes from the Polcore Basics range</p>
-                        <div class="thick-marg-top-bottom pod-btn thin-pad">Polcore Basics Ranges</div>
-                    </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
-                        <div class="">
-                            <div class="pod-image pod-image__4"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-        </div>
+        {{>carousel}}
     </div>
 
+    <section class="container">
+        <div class="row no-marg">
+            <div class="col-md-12 no-pad-side">
+                <section class="col-md-6 pod-wrapper">
+                    <a href="#" class="col-md-12 col-xs-12 col-sm-12 background-green no-pad-side marg-top">
 
+                        <div class="col-md-6 col-xs-6 col-sm-6 color-white">
+                            <h3 class="display-none-mobile">Wood</h3>
+
+                            <p class="display-none-mobile">Our vast array of fantastically priced wood mouldings will complement both modern and traditional decor, allowing you to matach to any colour scheme and satisfy any trend.</p>
+                            <div class="pod-btn"><span>Wood Ranges</span></div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
+
+                            <div class="pod-image no-heading"></div>
+
+                        </div>
+
+                    </a>
+                </section>
+                <section class="col-md-6 pod-wrapper">
+                    <a href="#" class="col-md-12 col-xs-12 col-sm-12 background-orange no-pad-side marg-top">
+
+                        <div class="col-md-6 col-xs-6 col-sm-6 color-white">
+                            <h3 class="display-none-mobile">Polcore</h3>
+
+                            <p class="display-none-mobile">Mainline's highly specified and design-led extruded mouldings are available in more than 1000 designs, finishes and profiles. Polcore is recycled polystyrene</p>
+                            <div class="pod-btn"><span>Polcore Ranges</span></div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
+
+                            <div class="pod-image pod-image__2 no-heading"></div>
+
+                        </div>
+
+                    </a>
+                </section>
+                <section class="col-md-6 pod-wrapper">
+                    <a href="#" class="col-md-12 col-xs-12 col-sm-12 background-purple no-pad-side marg-top">
+
+                        <div class="col-md-6 col-xs-6 col-sm-6 color-white">
+                            <h3 class="display-none-mobile">Mountboard</h3>
+
+                            <p class="display-none-mobile">Our mountboard comes in a variety of different colours, widths and cores, including backing, barrier & foam boards & speciality mountboards.</p>
+                            <div class="pod-btn"><span>Mountboard Ranges</span></div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
+
+                            <div class="pod-image pod-image__3 no-heading"></div>
+
+                        </div>
+
+                    </a>
+                </section>
+                <section class="col-md-6 pod-wrapper">
+                    <a href="#" class="col-md-12 col-xs-12 col-sm-12 background-yellow no-pad-side marg-top">
+
+                        <div class="col-md-6 col-xs-6 col-sm-6 color-white">
+                            <h3 class="display-none-mobile">Polcore Basics</h3>
+
+                            <p class="display-none-mobile">Polcore Basics is a range of contract mouldings where price is key. Receive 20% discount when ordering any 2 or more boxes from the Polcore Basics range</p>
+                            <div class="pod-btn"><span>Polcore Basics Ranges</span></div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 no-pad-side">
+
+                            <div class="pod-image pod-image__4 no-heading"></div>
+
+                        </div>
+
+                    </a>
+                </section>
+            </div>
+        </div>
+
+    </section>
+
+    {{>quick-nav}}
+
+    <section class="container pods-secondary">
+        <div class="col-md-12 col-sm-12 col-xs-12 no-pad">
+            <section class="col-md-6 col-sm-6 col-xs-12 pod-wrapper">
+                <div class="col-md-6 col-xs-6 pod-wrapper marg-bottom">
+                    <div class="pod-image pod-image__5  marg-bottom">
+                        <div class="pod-heading">Savana</div>
+                    </div>
+                    <div class="pod-image pod-image__6">
+                        <div class="pod-heading">Savana</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6 pod-wrapper marg-bottom">
+                    <div class="pod-image pod-image__tall pod-image__7">
+                        <div class="pod-heading">Savana</div>
+                    </div>
+                </div>
+                <section class="pod-no-heading-wrapper">
+                    <div class="col-md-6 col-sm-6 col-xs-6 no-pad marg-bottom">
+                        <div class="pod-image no-heading"></div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 no-pad marg-bottom">
+                        <div class="pod-image pod-image__text pod-btn no-heading">
+                            <span class="no-marg"><strong>Promotion</strong></span>
+
+                            <p class="marg-top display-none-mobile">20% off a box or pack of any Polcore Bascis moulding!</p>
+
+                            <p class="marg-top display-none-mobile">Try them with our Sample Deal</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="col-md-6 col-sm-6 col-xs-12 pod-wrapper">
+                <section class="pod-no-heading-wrapper">
+                    <div class="col-md-6 col-sm-6 col-xs-6 no-pad marg-bottom">
+                        <div class="pod-image pod-image__9 no-heading"></div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 no-pad marg-bottom">
+                        <div class="pod-image pod-image__text pod-btn no-heading">
+                            <span class="no-marg"><strong>Range Information Sheets</strong></span>
+
+                            <p class="marg-top display-none-mobile">Either view online or print out, and have comprehensive details to hand of all your favourite ranges</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="col-md-6 col-sm-6 col-xs-6 pod-wrapper odd marg-bottom">
+                    <div class="pod-image pod-image__10">
+                        <div class="pod-heading">Savana</div>
+                    </div>
+                    <div class="pod-image pod-image__11 marg-top">
+                        <div class="pod-heading">Savana</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 pod-wrapper even marg-bottom">
+                    <div class="pod-image pod-image__tall pod-image__12">
+                        <div class="pod-heading">Savana</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
 
 
 

@@ -1,34 +1,183 @@
-
-
 .pod-image {
-  background-image: url("../images/wood-frame.jpg");
-  background-size: 100% 222px;
+  background-image: url("../images/wood/wood_290x250.jpg");
   width: 100%;
   height: 222px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  cursor: pointer;
+  @extend .transition-slow;
 
   @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
-    background-size: 100% 242px;
-    height: 242px;
+    height: 241px;
   }
   @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
-    background-size: cover;
-    height: 299px;
+    background-image: url("../images/wood/wood_360x210.jpg");
+    height: 201px;
   }
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
-    background-size: cover;
-    height: 317px;
+    background-image: url("../images/wood/wood_360x210.jpg");
+    height: 107px;
   }
 
-  &__2{
-    background-image: url("../images/wood-frame-2.jpg");
+  &__2 {
+    background-image: url("../images/polcore/polcore_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/polcore/polcore_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/polcore/polcore_360x210.jpg");
+    }
   }
-  &__3{
-    background-image: url("../images/wood-frame-3.jpg");
+  &__3 {
+    background-image: url("../images/mountboard/mountboard_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/mountboard/mountboard_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/mountboard/mountboard_360x210.jpg");
+    }
   }
-  &__4{
-    background-image: url("../images/wood-frame-4.jpg");
+  &__4 {
+    background-image: url("../images/basics/basics_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/basics/basics_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/basics/basics_360x210.jpg");
+    }
+  }
+
+  &__5{
+    background-image: url("../images/collages/savanna_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/collages/savanna_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/collages/savanna_360x210.jpg");
+    }
+  }
+
+  &__6{
+    background-image: url("../images/collages/quantum_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/collages/quantum_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/collages/quantum_360x210.jpg");
+    }
+  }
+
+  &__7{
+    background-image: url("../images/collages/fletcher_360x420.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/collages/fletcher_300x500.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/collages/fletcher_300x500.jpg");
+    }
+  }
+
+  &__9{
+    background-image: url("../images/collages/rangesheet_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/collages/rangesheet_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/collages/rangesheet_360x210.jpg");
+    }
+  }
+
+
+  &__10{
+    background-image: url("../images/collages/brecon_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/collages/brecon_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/collages/brecon_360x210.jpg");
+    }
+  }
+
+  &__11{
+    background-image: url("../images/collages/deco_290x250.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/collages/deco_360x210.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/collages/deco_360x210.jpg");
+    }
+  }
+
+  &__12{
+    background-image: url("../images/collages/buxton_360x420.jpg");
+
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-image: url("../images/collages/buxton_300x500.jpg");
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+      background-image: url("../images/collages/buxton_300x500.jpg");
+    }
+  }
+
+  &__tall {
+    height: 454px;
+    background-size: cover;
+
+    @include breakpoint(map-get($breakpoints, 'large-tablet-only')) {
+      background-size: cover;
+      height: 492px;
+    }
+    @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+      background-size: cover;
+      height: 201px;
+    }
+  }
+
+  .pod-heading{
+    position:absolute;
+    top:10px;
+    right:19px;
+    color:white;
+    border:1px solid white;
+    padding:$helper-thin;
+    background: rgba(0, 0, 0, .2);
+    @extend .transition-slow;
+  }
+  
+  &.no-heading:hover {
+    opacity: 1;
+  }
+
+  &:hover{
+    opacity: 0.8;
+
+    .pod-heading{
+      color: map-get($colors, 'brand-light');
+      border-color: map-get($colors, 'brand-light');
+      background: rgba(255, 255, 255, 0.8);
+    }
   }
 
 }
@@ -36,12 +185,18 @@
 .pod-wrapper {
   text-align: center;
 
+  &.odd:nth-child(even){
+    padding: 0 $helper-thin 0 0;
+  }
 
+  &.even:nth-child(odd){
+    padding: 0 0 0 $helper-thin;
+  }
 
   &:nth-child(even) {
     padding: 0 0 0 $helper-thin;
 
-    @include breakpoint(map-get($breakpoints, 'mobile-and-large-tablet-only')) {
+    @include breakpoint(map-get($breakpoints, 'mobile-and-tablet-only')) {
       padding: 0;
     }
 
@@ -50,13 +205,11 @@
   &:nth-child(odd) {
     padding: 0 $helper-thin 0 0;
 
-    @include breakpoint(map-get($breakpoints, 'mobile-and-large-tablet-only')) {
+    @include breakpoint(map-get($breakpoints, 'mobile-and-tablet-only')) {
       padding: 0;
     }
 
   }
-
-
 
   p {
     height: 95px;
@@ -66,17 +219,136 @@
     }
 
     @include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
-      height: 162px;
+      height: 84px;
     }
 
-    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
-      height: 190px;
+    /* @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+       height: 190px;
+     }*/
+  }
+
+  /* &:hover, a:hover{
+     @extend .transition-slow;
+     opacity: 0.8;
+   }*/
+  a {
+    z-index: 2;
+    @extend .transition-slow;
+    &:hover {
+      opacity: 0.8;
+
     }
   }
 
+  .pod-image__text {
+    background: none;
+    background-color: map-get($colors, 'copy-primary-medium');
+    color: white;
+    text-align: left;
+    padding: $helper-standard;
+
+    p {
+      height: auto;
+    }
+
+    @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+
+      padding: 0 $helper-standard;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+
+    }
+  }
 }
 
 .pod-btn {
   border: 1px solid white;
   cursor: pointer;
+  padding: $helper-thin;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    border: none;
+
+    height: 107px;
+    line-height: 107px;
+    padding: 0;
+
+    span {
+      font-weight: map-get($font-weight, 'strong');
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+  }
 }
+
+//pods secondary
+@include breakpoint(map-get($breakpoints, 'small-tablet-only')) {
+  .pods-secondary {
+    .pod-wrapper:nth-child(odd) {
+      padding: 0 5px 0 0;
+    }
+
+    .pod-wrapper:nth-child(even) {
+      padding: 0 0 0 5px;
+    }
+
+    .pod-wrapper.odd:nth-child(even){
+      padding: 0 $helper-thin 0 0;
+    }
+
+    .pod-wrapper.even:nth-child(odd){
+      padding: 0 0 0 $helper-thin;
+    }
+
+    .pod-image__tall {
+      height: 412px;
+    }
+
+
+
+  }
+}
+
+@include breakpoint(map-get($breakpoints, 'mobile-only')) {
+  .pods-secondary {
+    .pod-wrapper:nth-child(odd) {
+      padding: 0 5px 0 0;
+    }
+
+    .pod-wrapper.col-xs-12:nth-child(odd) {
+      padding: 0;
+    }
+
+    .pod-wrapper.col-xs-12:nth-child(even) {
+      padding: 0;
+    }
+
+    .pod-wrapper:nth-child(even) {
+      padding: 0 0 0 5px;
+    }
+
+    .pod-wrapper.odd:nth-child(even){
+      padding: 0 $helper-thin 0 0;
+    }
+
+    .pod-wrapper.even:nth-child(odd){
+      padding: 0 0 0 $helper-thin;
+    }
+
+    .pod-image__tall {
+      height: 224px;
+    }
+  }
+}
+
+.pod-no-heading-wrapper {
+ @extend .transition-slow;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+

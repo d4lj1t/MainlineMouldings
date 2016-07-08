@@ -1,4 +1,4 @@
-footer {
+.footer-wrapper {
   background-color: map-get($colors, 'copy-primary-medium');
   li {
     padding-bottom: $helper-standard;
@@ -6,10 +6,38 @@ footer {
 
   a {
     color: white;
-
+    @extend .transition-slow;
     &:hover {
       color: map-get($colors, 'brand-light');
       text-decoration: none;
     }
   }
 }
+
+.mastercard-geo-wrapper{
+  display: inline-block;
+  float: right;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    float: none;
+    margin-top:5px;
+
+
+    .icon-mastercard-visa{
+      margin-top:0;
+      vertical-align: middle;
+    }
+
+    .icon-geotrust{
+      background-size: 70px auto;
+      vertical-align: text-top;
+    }
+
+
+  }
+}
+
+.black-jack-text{
+ font-family: blackJack;
+}
+

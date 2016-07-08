@@ -22,29 +22,28 @@ $properties: (
 
 $breakpoints: (
   // Mobile first
-        'tablet-small': 500px,
-        'tablet': 768px,
-        'tablet-large': 850px,
-        'tablet-larger': 1024px,
-        'desktop': 1170px,
-        'wide': 1366px,
+        'xs': 480px,
+        'sm': 768px,
+        'md': 992px,
+        'lg': 1200px,
 
   // Specific ranges for mobile
         'mobile-only': 'max-width' 767px,
-        'mobile-only-portrait': (max-width 767px) (orientation portrait),
-        'mobile-only-landscape': (max-width 767px) (orientation landscape),
+       /* 'mobile-only-portrait': (max-width 767px) (orientation portrait),
+        'mobile-only-landscape': (max-width 767px) (orientation landscape),*/
 
   // Specific ranges for mobile + tablet
-        'mobile-and-small-tablet-only': 'max-width' 849px,
-        'mobile-and-large-tablet-only': 'max-width' 1023px,
-        'mobile-and-tablet-only': 'max-width' 1169px,
-        'tablet-only': (min-width 768px) (max-width 1169px),
+        'mobile-and-small-tablet-only': 'max-width' 767px,
+        'mobile-and-tablet-only': 'max-width' 991px,
+        'tablet-only': (min-width 768px) (max-width 1199px),
 
-        'small-tablet-only': (min-width 768px) (max-width 1023px),
-        'large-tablet-only': (min-width 1024px) (max-width 1170px),
+        'small-tablet-only': (min-width 768px) (max-width 992px),
+        'large-tablet-only': (min-width 992px) (max-width 1199px),
 
         //specific range for small tablet up
-        'large-tablet-up': 'min-width' 850px,
+        'large-tablet-up': 'min-width' 992px,
+        'small-tablet-up':'min-width' 768px,
+        'mobile-up': 'min-width' 480px,
 
 
   // Retina images
@@ -75,7 +74,7 @@ $helper-extra-thick: $helper-standard*3;
 //font-weight
 
 $font-weight: (
-        'strong': 500
+        'strong': 600
 );
 
 
