@@ -9,10 +9,9 @@
     <!-- enable media queries for windows phone 8 -->
     <meta name="format-detection" content="telephone=no">
     <!-- disable auto telephone linking in iOS -->
-    <title>Single Column</title>
+    <title>{{title}}</title>
 
-
-    <style>
+    <style type="text/css">
 
         /*responsive*/
         body {
@@ -67,6 +66,7 @@
                 width: 100% !important;
                 max-width: 100% !important;
             }
+
         }
 
         @media screen and (max-width: 400px) {
@@ -94,7 +94,7 @@
             font-size: 24px;
             font-weight: bold;
             padding-bottom: 10px;
-            color: red;
+
         }
 
         .footer-text {
@@ -409,14 +409,37 @@
 
 
         /* colors */
-        .color-pink{
-            color:#E51D9B;
+        .color-grey-medium{
+            color:#818383;
+        }
+
+        .color-grey-dark{
+            color:#726260;
         }
 
         .color-white{
             color:#fff;
         }
 
+        .color-orange{
+            color:#ff6600;
+        }
+
+
+        .tel-link{
+            text-align:right;
+            height:59px;
+
+        }
+
+        @media screen and (max-width: 599px) {
+            .tel-link{
+                text-align: left!important;
+                height:auto!important;
+
+
+            }
+        }
 
 
 
