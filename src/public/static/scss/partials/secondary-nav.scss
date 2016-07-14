@@ -4,6 +4,7 @@
   margin:0;
   z-index: 3;
   text-align: justify;
+  line-height:$helper-standard;
 
 
   > li {
@@ -72,7 +73,7 @@
   line-height: normal;
   display: none;
   position: absolute;
-  top: 43px;
+  top: 33px;
   left: 0;
   background-color: map-get($colors, 'copy-primary-medium');
   color: white;
