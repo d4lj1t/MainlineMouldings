@@ -19,6 +19,11 @@
 
   .product-item {
     margin: 0 0 $helper-standard $helper-standard;
+    text-align: center;
+
+    img{
+      max-width: 100%;
+    }
   }
 
   &:nth-child(odd) {
@@ -48,7 +53,7 @@
   }
 }
 
-.pagination-links-wrapper{
+.pagination-links-wrapper, .sort-by-wrapper{
   text-align: right;
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
