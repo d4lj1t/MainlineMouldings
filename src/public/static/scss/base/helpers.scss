@@ -442,6 +442,10 @@
   }
 }
 
+.text-underline{
+  text-decoration: underline;
+}
+
 //backgrounds
 
 //need to make background colors more generic
@@ -498,6 +502,10 @@
 
 .color-copy-primary-medium {
   color: map-get($colors, 'copy-primary-medium');
+}
+
+.color-copy-primary-light {
+  color: map-get($colors, 'copy-primary-light');
 }
 
 .color-brand-dark {
@@ -558,10 +566,24 @@
   cursor: pointer;
 }
 
+.hover-orange{
+  @extend .transition-slow;
+
+  &:hover {
+    color: map-get($colors, 'brand-light');
+  }
+}
+
 //cursor
 .cursor-pointer {
   cursor: pointer;
 }
+
+.cursor-none, .fa.cursor-none{
+  cursor: default;
+}
+
+
 
 .col-centered {
   float: none !important;

@@ -1,5 +1,6 @@
 a{
   color: map-get($colors, 'copy-primary-dark');
+  @extend .transition-slow;
 
   &:hover{
     color: map-get($colors, 'brand-light');

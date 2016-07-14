@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Home
-name: Home
+title: PLP
+name: PLP
+carousel: true
 
 ---
 
@@ -16,8 +17,28 @@ name: Home
 
 
     <section class="container">
-        <section class="marg-top-bottom">
-            <a class="" href="#">Homepage </a> <a href="#">&gt; Polcore - Gallery</a>
+        <section class="col-md-12 col-sm-12 no-pad">
+            <section class="col-md-5 col-sm-5 marg-top-bottom no-pad">
+                <a class="" href="#">Homepage </a> <a href="#">&gt; Polcoree - Gallery</a>
+            </section>
+
+            <section class="col-md-7 col-sm-7 marg-top-bottom no-pad color-copy-primary-dark pagination-links-wrapper">
+                <section class="row no-marg">
+                    <select style="width:165px" class="marg-bottom thin-pad">
+                        <option value="" disabled selected>Sort By</option>
+                        <option value="width(large - small)">Width (Large- Small)</option>
+                        <option value="width(small-large)">Width (Small - Large)</option>
+                        <option value="price(high-low)">Price (High - Low)</option>
+                        <option value="price(low-high)">Price (Low - High)</option>
+                        <option value="newness">Newness</option>
+                    </select>
+                    {{>pagination-links}}
+                </section>
+
+            </section>
+
+
+
         </section>
         <section class="title-heading">
             <h1 class="color-copy-primary-dark marg-top-bottom">Polcore - Gallery</h1>
@@ -31,7 +52,7 @@ name: Home
                     <!--<img src="../static/images/carousel/allegra.jpg">-->
 
                 </div>
-                <div class="col-md-10 no-pad-side marg-top">
+                <div class="col-md-10 no-pad-side marg-top-bottom">
                     An extensive collection of elegant picture frame mouldings with a variety of classic, contemporary and sumptuous finishes.
                 </div>
             </section>

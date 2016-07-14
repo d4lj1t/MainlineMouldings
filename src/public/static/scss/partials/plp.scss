@@ -47,3 +47,11 @@
     }
   }
 }
+
+.pagination-links-wrapper{
+  text-align: right;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    text-align: left;
+  }
+}
