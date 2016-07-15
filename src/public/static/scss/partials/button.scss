@@ -38,7 +38,7 @@
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     position: absolute;
     right:48px;
-    top: -113px;
+    top: -93px;
   }
 }
 
@@ -58,7 +58,7 @@
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
 /*    margin-top: -33px;*/
     position: absolute;
-    top: -113px;
+    top: -93px;
     right:0;
   }
 

@@ -65,7 +65,7 @@
 
   @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')){
     text-align: left;
-    margin-top:$helper-thick;
+    margin-top:$helper-standard;
   }
 
   .nav-links {
