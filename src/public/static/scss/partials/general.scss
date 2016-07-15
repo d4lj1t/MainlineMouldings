@@ -1,12 +1,4 @@
-a{
-  color: map-get($colors, 'copy-primary-dark');
-  @extend .transition-slow;
 
-  &:hover{
-    color: map-get($colors, 'brand-light');
-    text-decoration: none;
-  }
-}
 .hover-opacity {
   @extend .transition-slow;
   &:hover {
