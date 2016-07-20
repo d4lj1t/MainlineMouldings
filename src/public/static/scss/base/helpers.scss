@@ -446,6 +446,10 @@
   text-decoration: underline;
 }
 
+.line-height-1{
+  line-height: 1;
+}
+
 //backgrounds
 
 //need to make background colors more generic
@@ -508,8 +512,8 @@
   color: map-get($colors, 'copy-primary-light');
 }
 
-.color-brand-dark {
-  color: map-get($colors, 'brand-dark')
+.color-brand-light {
+  color: map-get($colors, 'brand-light')
 }
 
 .color-white {
@@ -518,7 +522,19 @@
 
 //Borders
 .border-bottom-primary {
-  border-bottom: 1px solid map-get($colors, 'brand-dark');
+   border-bottom: 1px solid map-get($colors, 'brand-light');
+ }
+
+.border-top-primary {
+  border-top: 1px solid map-get($colors, 'brand-light');
+}
+
+.border-bottom-secondary {
+  border-bottom: 1px solid map-get($colors, 'copy-primary-medium');
+}
+
+.border-top-secondary {
+  border-top: 1px solid map-get($colors, 'copy-primary-medium');
 }
 
 .border-top-white {

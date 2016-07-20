@@ -1,0 +1,11 @@
+.add-basket{
+  border-bottom: 1px solid map-get($colors, 'copy-primary-medium');
+  border-top: 1px solid map-get($colors, 'copy-primary-medium');
+
+  @extend .transition-slow;
+
+  &:hover{
+    border-bottom: 1px solid map-get($colors, 'brand-light');
+    border-top: 1px solid map-get($colors, 'brand-light');
+  }
+}

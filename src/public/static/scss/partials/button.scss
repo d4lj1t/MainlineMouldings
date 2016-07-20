@@ -27,10 +27,10 @@
 .btn-input {
   background-color: transparent;
   border: none;
-  color: map-get($colors, 'brand-dark');
+  color: map-get($colors, 'brand-light');
 
   &:hover, &:focus {
-    color: map-get($colors, 'brand-dark');
+    color: map-get($colors, 'brand-light');
   }
 }
 
