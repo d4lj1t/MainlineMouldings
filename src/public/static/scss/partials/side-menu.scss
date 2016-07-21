@@ -23,6 +23,7 @@
 
       a {
         @extend .transition-slow;
+        display: inline-block;
       }
 
       &:hover {
@@ -30,7 +31,6 @@
         border-bottom: 1px solid map-get($colors, 'brand-light');
 
         > a {
-          display: inline-block;
           color: map-get($colors, 'brand-light');
         }
       }

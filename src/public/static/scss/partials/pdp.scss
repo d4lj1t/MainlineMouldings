@@ -17,3 +17,9 @@
     float: none;
   }
 }
+
+.login-register{
+  &:hover{
+    border-bottom: 1px solid map-get($colors, 'brand-light');
+  }
+}
