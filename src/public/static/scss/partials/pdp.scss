@@ -35,3 +35,15 @@
 .visualiser-frame-wrapper:hover .icon-quick-nav__visualiser {
   background-image: url(../images/icons/visualiser-icon-hover.svg);
 }
+
+.product-img-btns-wrapper{
+  float: right;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
+    float: none;
+  }
+
+  :first-child{
+    margin:0;
+  }
+}
