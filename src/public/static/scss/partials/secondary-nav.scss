@@ -48,6 +48,7 @@
     &:nth-child(n+4) {
       @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
         display: none;
+
       }
     }
 
@@ -62,6 +63,10 @@
  /*   border-left: 1px solid map-get($colors, 'copy-primary-light');
     border-right: 1px solid map-get($colors, 'copy-primary-light');
     border-top: 1px solid map-get($colors, 'copy-primary-light');*/
+
+
+
+
   }
 
   &:after{
@@ -69,6 +74,8 @@
     display: inline-block;
     width: 100%;
   }
+
+
 }
 
 .menu-heading-content {
@@ -84,6 +91,8 @@
   z-index: 1;
   text-align: left;
   padding: $helper-standard $helper-standard $helper-thick;
+
+
 
 
   ul {
