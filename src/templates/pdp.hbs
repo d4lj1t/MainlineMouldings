@@ -4,7 +4,7 @@ title: PDP
 name: PDP
 productList: Polcore Gallery
 productDetail: Ornate
-bootstrapJs: false
+bootstrapJs: true
 pdp: true
 
 ---
@@ -199,8 +199,8 @@ pdp: true
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                          <h4>Better value!</h4>
+                        <div id="bestValueWarning" class="modal-body">
+                          <!--<h4>Better value!</h4>-->
                             <!--     <p>
                                    You might consider it better value to order by the pack:
                                </p>
@@ -208,7 +208,9 @@ pdp: true
                                    1 pack for &pound;.77(total 8.70m)
                                </p>-->
 
-                            <p class="bestValueMessage">You might consider it better value to order by the pack:<br><span class="betterValueText">1 pack for £59.77 (total 8.70m)</span><button id="acceptPack" type="button">Choose this option</button></p>
+                            <!--<p class="bestValueMessage">You might consider it better value to order by the pack:<br><span class="betterValueText">1 pack for £59.77 (total 8.70m)</span><button id="acceptPack" type="button">Choose this option</button></p>-->
+
+                            <div id="jQtext">&nbsp;</div>
 
                         </div>
                         <div class="modal-footer">
@@ -223,7 +225,7 @@ pdp: true
 
     <div id="bestValueWarning">
         <div class="closeHelp">Close help box</div>
-        <div id="jQtext">&nbsp;</div>
+        <!--<div id="jQtext">&nbsp;</div>-->
     </div>
 
 

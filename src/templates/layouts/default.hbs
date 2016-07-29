@@ -37,7 +37,11 @@
 {{#if bootstrapJs}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="static/script/plugins/bootstrap.min.js"></script>
+    <script>
+        var $i = jQuery.noConflict();
+    </script>
 {{/if}}
+
 
 {{#if pdp}}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
@@ -54,6 +58,8 @@
     <script type="text/javascript" src="static/script/pdp/product.js"></script>
 
 {{/if}}
+
+
 
 
 

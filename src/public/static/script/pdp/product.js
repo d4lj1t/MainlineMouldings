@@ -644,7 +644,7 @@ $(document).ready(function()
     // Update Lengths value
     //--------------------------------------------------------------------------
     function updateLengthsValue() {
-        
+
 
         // Get quantity of Lengths entered
         qttyLengths = parseFloat($('#quantityLengths').val());
@@ -975,6 +975,8 @@ $(document).ready(function()
 
         // Show the message (unless the page has just loaded)
         if(displayMessage != '' && firstTime != 1) {
+            $i('#myModal').modal('show');
+
             $('#jQtext').html('<h2>Better value!</h2>');
             $('#jQtext').append('<p class="bestValueMessage">' + displayMessage + '</p>');
             if (metresInCart > 0) {
