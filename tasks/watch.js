@@ -22,7 +22,7 @@
 
 			// Watch for JS changes
 			plugins.watch(pathJS, plugins.batch(function (events, done) {
-				return plugins.runSequence('javascript-lint', 'javascript', done);
+				return plugins.runSequence('javascript-lint', 'javascript', 'copy', done);
 			}));
 
 			// Watch for HTML changes

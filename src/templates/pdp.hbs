@@ -4,7 +4,8 @@ title: PDP
 name: PDP
 productList: Polcore Gallery
 productDetail: Ornate
-bootstrapJs: true
+bootstrapJs: false
+pdp: true
 
 ---
 
@@ -120,7 +121,7 @@ bootstrapJs: true
                             <div class="col-md-4 col-sm-4 col-xs-6 no-pad color-copy-primary-medium">
                                 <strong>Quantity</strong>
                                 <div class="thin-marg-top marg-bottom">
-                                    <input class="thin-pad thin-marg-right line-height-1" style="width:50px;" type="number">17.40 m
+                                    <input id="quantityLengths" class="thin-pad thin-marg-right line-height-1" style="width:50px;" type="number">17.40 m
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-6 no-pad color-copy-primary-medium">
@@ -197,10 +198,18 @@ bootstrapJs: true
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                         </div>
                         <div class="modal-body">
-                            ...
+                          <h4>Better value!</h4>
+                            <!--     <p>
+                                   You might consider it better value to order by the pack:
+                               </p>
+                               <p>
+                                   1 pack for &pound;.77(total 8.70m)
+                               </p>-->
+
+                            <p class="bestValueMessage">You might consider it better value to order by the pack:<br><span class="betterValueText">1 pack for £59.77 (total 8.70m)</span><button id="acceptPack" type="button">Choose this option</button></p>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -211,6 +220,38 @@ bootstrapJs: true
             </div>
         </section>
     </section>
+
+    <div id="bestValueWarning">
+        <div class="closeHelp">Close help box</div>
+        <div id="jQtext">&nbsp;</div>
+    </div>
+
+
+    <form id="product-form" action="/index.php?PageLink=LogIn&amp;amp;LoginMessage=AddToCart" method="post">
+        <input id="productId" name="productId" type="hidden" value="POL-4876">
+        <input id="onPromotion" name="onPromotion" type="hidden" value="0">
+        <input id="bestPromotionId" name="bestPromotionId" type="hidden" value="">
+        <input id="showDiscountText" name="showDiscountText" type="hidden" value="0">
+        <input id="metresInCart" name="metresInCart" type="hidden" value="0">
+        <input id="discountedPrice" name="discountedPrice" type="hidden" value="0">
+        <input id="discountedPricePack" name="discountedPricePack" type="hidden" value="0">
+        <input id="discountedPriceSplit" name="discountedPriceSplit" type="hidden" value="0">
+        <input id="listPrice" name="listPrice" type="hidden" value="8.09">
+        <input id="listPrice2" name="listPrice2" type="hidden" value="5.66">
+        <input id="packPrice" name="packPrice" type="hidden" value="6.87">
+        <input id="boxedQuantity" name="boxedQuantity" type="hidden" value="17.40">
+        <input id="packQuantity" name="packQuantity" type="hidden" value="8.70">
+        <input id="lengthVariationRate" name="lengthVariationRate" type="hidden" value="8">
+        <input id="mouldingLength" name="mouldingLength" type="hidden" value="2.9">
+        <input id="isApproxLength" name="isApproxLength" type="hidden" value="0">
+        <input id="productType" name="productType" type="hidden" value="Polcore">
+
+    </form>
+
+
+
+
+
 
     {{>footer}}
 
