@@ -407,8 +407,8 @@ $(document).ready(function()
             updatePacksValue();
         }
     });
-    $('#quantityLengths').keyup(function(event) {
-        console.log('hello');
+    $('#quantityLengths').on('keyup mouseup', function(event) {
+        console.log('keyup');
         if(event.keyCode != 9) { // Block tab
             updateLengthsValue();
         }
