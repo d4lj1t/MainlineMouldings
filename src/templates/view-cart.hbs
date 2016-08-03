@@ -1,7 +1,7 @@
 ---
 layout: default
-title: PLP
-name: PLP
+title: View Cart
+name: View Cart
 productList: Polcore Gallery
 
 
@@ -19,126 +19,18 @@ productList: Polcore Gallery
 
     <section class="container">
         <section class="col-md-12 col-sm-12 no-pad">
-           {{>breadcrumb}}
 
-            <section class="col-md-7 col-sm-7 marg-top-bottom no-pad color-copy-primary-dark">
-                <section class="row no-marg sort-by-wrapper">
-                    <select style="width:165px" class="marg-bottom thin-pad">
-                        <option value="" disabled selected>Sort By</option>
-                        <option value="width(large - small)">Width (Large- Small)</option>
-                        <option value="width(small-large)">Width (Small - Large)</option>
-                        <option value="price(high-low)">Price (High - Low)</option>
-                        <option value="price(low-high)">Price (Low - High)</option>
-                        <option value="newness">Newness</option>
-                    </select>
-                    {{>pagination-links}}
-                </section>
+            <h3 class="color-brand-light">Your shopping cart</h3>
+            <p>
+                Please note that we will supply mouldings to the nearest length above your order quantity and advise you of the total cost prior to despatch.
+               Boxed quantities may vary and we will charge for the nearest full box quantity (may be greater or less than the order quantity).
+            </p>
 
-            </section>
+            See our <a href="#">terms & conditions</a> for more details.
+
+            <p class="color-brand-light marg-top">An order containing moulding must have a minimum &pound;50 worth of moulding</p>
 
 
-
-        </section>
-        <section class="title-heading">
-            <h1 class="color-copy-primary-dark marg-top-bottom">Polcore - Gallery</h1>
-        </section>
-        <section class="col-md-12 no-pad">
-            <section class="col-md-5 col-sm-5 no-pad">
-                <div class="col-md-10 no-pad">
-                    <!--<img style="width:100%;" src="http://placehold.it/320x528">-->
-                    <div class="carousel-img"></div>
-
-                    <!--<img src="../static/images/carousel/allegra.jpg">-->
-
-                </div>
-                <div class="col-md-10 no-pad-side marg-top-bottom">
-                    An extensive collection of elegant picture frame mouldings with a variety of classic, contemporary and sumptuous finishes.
-                </div>
-            </section>
-            <section class="col-md-7 col-sm-7 col-xs-12 no-pad">
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img class="text-align-center" smart-src="{$text.constant}" src="../static/images/products/product.jpg">
-                        <div class="pad-top text-center">Ornate</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4  col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product.jpg">
-                        <div class="pad-top text-center">Gold</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product.jpg">
-                        <div class="pad-top text-center">Silver</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product2.jpg">
-                        <div class="pad-top text-center">Moulding & Mountboard Slips</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4  col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product3.jpg">
-                        <div class="pad-top text-center">Ornate</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product4.jpg">
-                        <div class="pad-top text-center">Bronze</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product.jpg">
-                        <div class="pad-top text-center">Moulding & Mountboard Slips</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4  col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product2.jpg">
-                        <div class="pad-top text-center">Ornate</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product4.jpg">
-                        <div class="pad-top text-center">Black</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product2.jpg">
-                        <div class="pad-top text-center">Ornate</div>
-                    </div>
-                </div>
-
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product3.jpg">
-                        <div class="pad-top text-center">Black</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product2.jpg">
-                        <div class="pad-top text-center">Ornate</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-4 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product3.jpg">
-                        <div class="pad-top text-center">Moulding & Mountboard Slips</div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="col-md-12 col-sm-12 col-xs-12 thick-marg-top-bottom no-pad-side">
-            {{>pagination-links}}
         </section>
 
 
