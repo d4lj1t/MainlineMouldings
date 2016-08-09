@@ -1,4 +1,4 @@
-.add-basket{
+/*.add-basket{
   border-bottom: 1px solid map-get($colors, 'copy-primary-medium');
   border-top: 1px solid map-get($colors, 'copy-primary-medium');
 
@@ -10,15 +10,15 @@
     border-bottom: 1px solid map-get($colors, 'brand-light');
     border-top: 1px solid map-get($colors, 'brand-light');
   }
-}
+}*/
 
-.product-img{
+/*.product-img{
   float: right;
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     float: none;
   }
-}
+}*/
 
 .login-register{
   &:hover{
@@ -36,6 +36,7 @@
   background-image: url(../images/icons/visualiser-icon-hover.svg);
 }
 
+/*
 .product-img-btns-wrapper{
   float: right;
 
@@ -46,4 +47,25 @@
   :first-child{
     margin:0;
   }
+}*/
+
+.product-img-zoom-wrapper{
+  margin-top:-60px;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    margin-top: $helper-thin;
+  }
+
+}
+
+.zoom-frame{
+  text-align: right;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    text-align: left;
+  }
+
+}
+.value-wrapper{
+  border: 1px solid map-get($colors, 'copy-primary-medium');
 }
