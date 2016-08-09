@@ -411,21 +411,23 @@
   position: absolute;
 }
 
-.text-vertical-top {
+.vertical-align-top {
   vertical-align: top;
 }
 
-.text-vertical-mid {
+.vertical-align-mid {
   vertical-align: middle;
+}
+
+.vertical-align-bottom{
+  vertical-align: bottom;
 }
 
 .text-align-center {
   text-align: center;
 }
 
-.vertical-align-bottom{
-  vertical-align: bottom;
-}
+
 
 //Texrt Align
 .text-align-right {
