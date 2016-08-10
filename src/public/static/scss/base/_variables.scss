@@ -35,6 +35,7 @@ $breakpoints: (
   // Specific ranges for mobile + tablet
         'mobile-and-small-tablet-only': 'max-width' 767px,
         'mobile-and-tablet-only': 'max-width' 991px,
+        'mobile-and-large-tablet-only': 'max-width' 1199px,
         'tablet-only': (min-width 768px) (max-width 1199px),
 
         'small-tablet-only': (min-width 768px) (max-width 992px),

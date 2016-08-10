@@ -386,6 +386,12 @@
     display: none;
   }
 }
+@include breakpoint(map-get($breakpoints, 'mobile-and-large-tablet-only')) {
+  .display-none-mobile-tablet-large {
+    display: none;
+  }
+}
+
 
 @include breakpoint(map-get($breakpoints, 'mobile-only')) {
   .display-none-mobile {
