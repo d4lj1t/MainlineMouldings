@@ -23,6 +23,7 @@
 			// Start other modules
 			new (require('partials/side-menu'))();
 			new (require('partials/secondary-nav'))();
+			new (require('partials/pdp'))();
 			/*new (require('partials/jssor-slider'))();*/
 
 

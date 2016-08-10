@@ -69,3 +69,15 @@
 .value-wrapper{
   border: 1px solid map-get($colors, 'copy-primary-medium');
 }
+
+.quantity-wrapper{
+  border: 1px solid map-get($colors, 'copy-primary-medium');
+  padding-left:$helper-standard;
+  padding-right:$helper-standard;
+
+  input{
+    border:none;
+  }
+
+
+}
