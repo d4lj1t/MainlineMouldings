@@ -81,3 +81,24 @@
 
 
 }
+
+.product-img-btns-wrapper, .product-img-zoom-wrapper{
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    text-align: center;
+  }
+}
+
+
+.product-content {
+  padding:0;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    padding-left: $helper-thick;
+  }
+}
+
+.mobile-headings{
+  @include breakpoint(map-get($breakpoints, 'small-tablet-up')) {
+    display: none;
+  }
+}
