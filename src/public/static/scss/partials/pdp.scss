@@ -89,7 +89,9 @@
 }
 
 
-.product-content {
+.product-content, .product-detail-content {
+
+
   padding:0;
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
@@ -100,5 +102,10 @@
 .mobile-headings{
   @include breakpoint(map-get($breakpoints, 'small-tablet-up')) {
     display: none;
+  }
+}
+.product-detail-content {
+  @include breakpoint(map-get($breakpoints, 'small-tablet-up')){
+    display:block!important;
   }
 }

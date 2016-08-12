@@ -439,6 +439,9 @@
 .text-align-right {
   text-align: right;
 }
+.text-align-left{
+  text-align: left;
+}
 
 .text-align-right-mobile {
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
