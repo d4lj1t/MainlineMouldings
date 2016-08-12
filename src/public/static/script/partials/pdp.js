@@ -38,7 +38,25 @@ module.exports = function LogIn() {
 
         }
 
+        function productDetailEvents() {
+
+            $('.js-product-details').click(function(){
+                console.log('click');
+                if($(this).hasClass('clicked')){
+                    $('.product-detail-content').slideUp();
+                    $(this).removeClass('clicked');
+                } else{
+                    $(this).addClass('clicked');
+                    $('.product-detail-content').slideDown();
+
+                }
+            });
+        }
+
+
+
         quantityEvents();
+        productDetailEvents();
 
 
         /* menuHeading.mouseover(function () {
