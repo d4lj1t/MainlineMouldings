@@ -90,8 +90,6 @@
 
 
 .product-content, .product-detail-content {
-
-
   padding:0;
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
@@ -104,8 +102,18 @@
     display: none;
   }
 }
-.product-detail-content {
+.product-detail-content, .product-sample-content, .product-prices-content {
   @include breakpoint(map-get($breakpoints, 'small-tablet-up')){
     display:block!important;
   }
+}
+
+.product-samples-title{
+
+  @include breakpoint(map-get($breakpoints, 'small-tablet-up')){
+    border-bottom: 1px solid map-get($colors, 'copy-primary-medium');
+  }
+
+
+
 }

@@ -41,13 +41,34 @@ module.exports = function LogIn() {
         function productDetailEvents() {
 
             $('.js-product-details').click(function(){
-                console.log('click');
                 if($(this).hasClass('clicked')){
-                    $('.product-detail-content').slideUp();
+                    $('.product-detail-content').stop().slideUp();
                     $(this).removeClass('clicked');
                 } else{
                     $(this).addClass('clicked');
-                    $('.product-detail-content').slideDown();
+                    $('.product-detail-content').stop().slideDown();
+
+                }
+            });
+
+            $('.js-product-prices').click(function(){
+                if($(this).hasClass('clicked')){
+                    $('.product-prices-content').stop().slideUp();
+                    $(this).removeClass('clicked');
+                } else{
+                    $(this).addClass('clicked');
+                    $('.product-prices-content').stop().slideDown();
+
+                }
+            });
+
+            $('.js-product-sample').click(function(){
+                if($(this).hasClass('clicked')){
+                    $('.product-sample-content').stop().slideUp();
+                    $(this).removeClass('clicked');
+                } else{
+                    $(this).addClass('clicked');
+                    $('.product-sample-content').stop().slideDown();
 
                 }
             });
