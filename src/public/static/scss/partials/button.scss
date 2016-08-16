@@ -102,11 +102,17 @@ input[type="number"]:focus {
   -moz-appearance: number-input;
 }
 
+/*
 html:not([dir="rtl"]) input {
   text-align: center;
 }
+*/
 
-
+.pdp-button{
+  @include breakpoint(map-get($breakpoints, 'small-tablet-up')) {
+    width: 258px;
+  }
+}
 
 
 
