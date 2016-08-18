@@ -94,6 +94,7 @@
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     padding-left: $helper-thick;
+    padding-right: $helper-thick;
   }
 }
 
@@ -109,6 +110,9 @@
 }
 
 .product-samples-title{
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    margin-bottom:0;
+  }
 
   @include breakpoint(map-get($breakpoints, 'small-tablet-up')){
     border-bottom: 1px solid map-get($colors, 'copy-primary-medium');
@@ -120,4 +124,12 @@
 
 .zoomWindowContainer{
   max-width:100%;
+}
+
+.add-basket-section{
+  padding:0;
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    padding-left:$helper-thick;
+    padding-right:$helper-thick;
+  }
 }

@@ -108,7 +108,7 @@ html:not([dir="rtl"]) input {
 }
 */
 
-.pdp-button{
+.pdp-button, .pdp-button.add-basket{
   @include breakpoint(map-get($breakpoints, 'small-tablet-up')) {
     width: 258px;
   }

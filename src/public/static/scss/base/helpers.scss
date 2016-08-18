@@ -405,6 +405,13 @@
   }
 }
 
+@include breakpoint(map-get($breakpoints, 'small-tablet-up')) {
+  .display-none-small-tablet-up {
+    display: none;
+  }
+}
+
+
 .vis-none {
   visibility: hidden;
 }
