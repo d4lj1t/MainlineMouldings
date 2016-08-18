@@ -83,6 +83,7 @@
 }
 
 .product-img-btns-wrapper, .product-img-zoom-wrapper{
+  text-align: center;
   @include breakpoint(map-get($breakpoints, 'mobile-only')) {
     text-align: center;
   }
