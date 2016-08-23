@@ -73,6 +73,23 @@ module.exports = function LogIn() {
                 }
             });
 
+            $('.view-items-right-arrow').click(function() {
+
+                var leftPos = $('.view-other-items').scrollLeft();
+                $(".view-other-items").animate({
+                    scrollLeft: leftPos + 150
+                }, 800);
+            });
+
+
+            $('.view-items-left-arrow').click(function() {
+
+                var leftPos = $('.view-other-items').scrollLeft();
+                $(".view-other-items").animate({
+                    scrollLeft: leftPos - 150
+                }, 800);
+            });
+
 
         }
 

@@ -140,7 +140,7 @@
   display:inline-block;
 
   @include breakpoint(map-get($breakpoints, 'mobile-only')){
-    display: block;
+    display: inline-block;
     margin-bottom: $helper-extra-thick;
     margin-right:0;
 
@@ -150,4 +150,31 @@
     }
   }
 
+}
+
+
+.view-other-items {
+  width:350px;
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  margin-left:40px;
+
+  .product-wrapper {
+    display: inline-block;
+    width: 120px;
+  }
+}
+
+.view-items-left-arrow{
+  position: absolute;
+  top:40%;
+  left:0;
+}
+
+.view-items-right-arrow{
+  position: absolute;
+  top:40%;
+  right:0;
 }

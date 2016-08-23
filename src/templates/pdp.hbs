@@ -68,6 +68,7 @@ pdp: true
                         <tbody class="color-copy-primary-medium mobile-headings">
                             <tr>
                                 <th class="pad-bottom js-product-details cursor-pointer">
+                                    <i class="fa fa-angle-right icon-angle" aria-hidden="true"></i>
                                     <strong>Product Details</strong>
                                 </th>
                             </tr>
@@ -104,6 +105,7 @@ pdp: true
                         <tbody class="color-copy-primary-medium mobile-headings">
                             <tr>
                                 <th class="pad-bottom cursor-pointer js-product-prices clicked">
+                                    <i class="fa fa-angle-right icon-angle" aria-hidden="true"></i>
                                     <strong>Prices and Quantities</strong>
                                 </th>
                             </tr>
@@ -151,8 +153,12 @@ pdp: true
 
                     <section class="col-md-12 col-sm-12 col-xs-12 no-pad marg-top">
                         <div class="col-md-6 col-md-push-6 col-sm-12 col-xs-12 no-pad color-copy-primary-medium thick-marg-bottom">
-                            <span class="col-md-12 col-sm-12 col-xs-12 no-pad-side product-samples-title pad-bottom marg-bottom display-none-mobile cursor-pointer"><strong class="">Product Samples</strong></span>
-                            <span class="col-md-12 col-sm-12 col-xs-12 no-pad-side product-samples-title pad-bottom marg-bottom mob js-product-sample cursor-pointer display-none-small-tablet-up"><strong class="">Product Samples</strong></span>
+                            <span class="col-md-12 col-sm-12 col-xs-12 no-pad-side product-samples-title pad-bottom marg-bottom display-none-mobile cursor-pointer"><strong class="">Product Samples</strong>
+                            </span>
+                            <span class="col-md-12 col-sm-12 col-xs-12 no-pad-side product-samples-title pad-bottom marg-bottom mob js-product-sample cursor-pointer display-none-small-tablet-up">
+                                <i class="fa fa-angle-right icon-angle" aria-hidden="true"></i>
+                                <strong class="">Product Samples</strong>
+                            </span>
                             <div class="product-content display-none-mobile product-sample-content">
                                 <div class="font-size-sm">
                                     Order a 0.5m sample of this moulding for &pound;1.00
@@ -210,42 +216,50 @@ pdp: true
 
             </section>
 
-            <section class="col-md-6 col-sm-12 col-xs-12 pad marg-top-bottom border-all-secondary">
+            <section class="col-md-5 col-sm-12 col-xs-12 pad marg-top-bottom border-all-secondary">
                 <h5 class="no-marg color-copy-primary-medium pad-bottom">View 12 other mouldings in the Verona range</h5>
-                <div class="product-wrapper col-md-2 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product4.jpg">
-                        <div class="pad-top text-center">Black</div>
-                    </div>
+                <div class="inline-block pull-left vertical-align-mid view-items-left-arrow">
+                    <i style="font-size:50px;" class="fa fa-angle-left icon-angle" aria-hidden="true"></i>
                 </div>
-                <div class="product-wrapper col-md-2 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product2.jpg">
-                        <div class="pad-top text-center">Ornate</div>
+                <div class="view-other-items">
+                    <div class="product-wrapper no-pad">
+                        <div class="product-item">
+                            <img src="../static/images/products/product4.jpg">
+                            <div class="pad-top text-center">Black</div>
+                        </div>
                     </div>
-                </div>
+                    <div class="product-wrapper no-pad">
+                        <div class="product-item">
+                            <img src="../static/images/products/product2.jpg">
+                            <div class="pad-top text-center">Ornate</div>
+                        </div>
+                    </div>
 
-                <div class="product-wrapper col-md-2 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product3.jpg">
-                        <div class="pad-top text-center">Black</div>
+                    <div class="product-wrapper no-pad">
+                        <div class="product-item">
+                            <img src="../static/images/products/product3.jpg">
+                            <div class="pad-top text-center">Black</div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper no-pad">
+                        <div class="product-item">
+                            <img src="../static/images/products/product2.jpg">
+                            <div class="pad-top text-center">Ornate</div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper no-pad">
+                        <div class="product-item">
+                            <img src="../static/images/products/product3.jpg">
+                            <div class="pad-top text-center">Moulding & Mountboard Slips</div>
+                        </div>
                     </div>
                 </div>
-                <div class="product-wrapper col-md-2 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product2.jpg">
-                        <div class="pad-top text-center">Ornate</div>
-                    </div>
-                </div>
-                <div class="product-wrapper col-md-2 col-sm-6 col-xs-6 no-pad">
-                    <div class="product-item">
-                        <img src="../static/images/products/product3.jpg">
-                        <div class="pad-top text-center">Moulding & Mountboard Slips</div>
-                    </div>
+                <div class="inline-block pull-right vertical-align-mid view-items-right-arrow">
+                    <i style="font-size:50px;" class="fa fa-angle-right icon-angle" aria-hidden="true"></i>
                 </div>
             </section>
 
-            <section class="col-md-6 col-sm-12 col-xs-12 pad marg-top-bottom border-all-secondary">
+            <!--<section class="col-md-6 col-sm-12 col-xs-12 pad marg-top-bottom border-all-secondary">
                 <h5 class="no-marg color-copy-primary-medium pad-bottom">Recently viewed</h5>
                 <div class="product-wrapper col-md-2 col-sm-6 col-xs-6 no-pad">
                     <div class="product-item">
@@ -278,7 +292,7 @@ pdp: true
                         <div class="pad-top text-center">Moulding & Mountboard Slips</div>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
 
         </section>
@@ -299,15 +313,15 @@ pdp: true
                         </button>
                     </div>
                     <div id="bestValueWarning" class="modal-body">
-                        <!--<h4>Better value!</h4>-->
-                        <!--     <p>
+                        <h4>Better value!</h4>
+                             <p>
                                You might consider it better value to order by the pack:
                            </p>
                            <p>
                                1 pack for &pound;.77(total 8.70m)
-                           </p>-->
+                           </p>
 
-                        <!--<p class="bestValueMessage">You might consider it better value to order by the pack:<br><span class="betterValueText">1 pack for £59.77 (total 8.70m)</span><button id="acceptPack" type="button">Choose this option</button></p>-->
+                        <p class="bestValueMessage">You might consider it better value to order by the pack:<br><span class="betterValueText">1 pack for £59.77 (total 8.70m)</span><button id="acceptPack" type="button">Choose this option</button></p>
 
                         <div id="jQtext">&nbsp;</div>
 
