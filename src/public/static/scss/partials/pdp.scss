@@ -104,6 +104,7 @@
     display: none;
   }
 }
+
 .product-detail-content, .product-sample-content, .product-prices-content {
   @include breakpoint(map-get($breakpoints, 'small-tablet-up')){
     display:block!important;
@@ -127,10 +128,26 @@
   max-width:100%;
 }
 
-.add-basket-section{
+.mobile-indent-section{
   padding:0;
   @include breakpoint(map-get($breakpoints, 'mobile-only')){
     padding-left:$helper-thick;
     padding-right:$helper-thick;
   }
+}
+
+.price-selection{
+  display:inline-block;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    display: block;
+    margin-bottom: $helper-extra-thick;
+    margin-right:0;
+
+    div{
+      float: right;
+      margin-top:0;
+    }
+  }
+
 }

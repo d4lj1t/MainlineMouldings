@@ -521,6 +521,10 @@
   background: map-get($colors, 'copy-primary-light');
 }
 
+
+.background-grey{
+  background: map-get($colors, 'copy-primary-medium');
+}
 //colours
 .color-copy-primary-dark {
   color: map-get($colors, 'copy-primary-dark');
@@ -553,6 +557,10 @@
 
 .border-bottom-secondary {
   border-bottom: 1px solid map-get($colors, 'copy-primary-medium');
+}
+
+.border-all-secondary {
+  border: 1px solid map-get($colors, 'copy-primary-medium');
 }
 
 .border-top-secondary {
