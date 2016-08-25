@@ -77,7 +77,7 @@ module.exports = function LogIn() {
 
                 var leftPos = $('.view-other-items').scrollLeft();
                 $(".view-other-items").animate({
-                    scrollLeft: leftPos + 120
+                    scrollLeft: leftPos + 240
                 }, 800);
             });
 
@@ -86,7 +86,7 @@ module.exports = function LogIn() {
 
                 var leftPos = $('.view-other-items').scrollLeft();
                 $(".view-other-items").animate({
-                    scrollLeft: leftPos - 120
+                    scrollLeft: leftPos - 240
                 }, 800);
             });
 
