@@ -213,7 +213,11 @@
   }
 }
 
-.fa.background-orange{
- width:15px;
-  text-align: center;
+
+.icon-angle{
+  @extend .transition-slow;
+}
+
+.clicked .icon-angle{
+  transform: rotate(90deg);
 }
