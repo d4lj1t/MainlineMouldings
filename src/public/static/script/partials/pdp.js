@@ -25,8 +25,6 @@ module.exports = function LogIn() {
                 var newVal = parseFloat(oldValue) + 1;
                 $('.js-quantity').attr('value', newVal);
 
-                $('.js-quantity').keyup();
-
             });
 
             $('.js-quantity-minus').click(function () {

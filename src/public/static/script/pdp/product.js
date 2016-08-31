@@ -433,7 +433,6 @@ $(document).ready(function () {
         }
     });
     $('#quantityLengths').on('keyup mouseup', function (event) {
-        console.log('keyup');
         if (event.keyCode != 9) { // Block tab
             updateLengthsValue();
         }
@@ -840,6 +839,8 @@ $(document).ready(function () {
     var packsRequired = 0;
     var boxesRequired = 0;
 
+    var popUpShowed = null;
+
     function checkBetterValue(checkVal, checkQtty) {
 
         // The quantity of moulding to be checked is the amount entered in the
@@ -1008,8 +1009,10 @@ $(document).ready(function () {
         }
 
         // Show the message (unless the page has just loaded)
+
+
         if (displayMessage != '' && firstTime != 1) {
-            /*$i('#myModal').delay(3000).modal('show');*/
+
 
             $('#jQtext').html('<h2>Better value!</h2>');
             $('#jQtext').append('<p class="bestValueMessage">' + displayMessage + '</p>');
@@ -1024,7 +1027,20 @@ $(document).ready(function () {
              top: pos.top - posY
              }).show();*/
 
-            $('#bestValueWarning').show();
+            if(popUpShowed == null) {
+                setTimeout(function () {
+                        $i('#myModal').delay(3000).modal('show');
+                        popUpShowed = 'shown';
+                        $('#bestValueWarning').show();
+                    }
+                    , 5000);
+
+
+            } else{
+                return false;
+            }
+
+
         } else {
             $('#bestValueWarning').hide();
             $('#jQtext').html('&nbsp;');
