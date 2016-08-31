@@ -23,7 +23,10 @@ module.exports = function LogIn() {
             $('.js-quantity-plus').click(function () {
                 var oldValue = $('.js-quantity').val();
                 var newVal = parseFloat(oldValue) + 1;
-                $('.js-quantity').val(newVal);
+                $('.js-quantity').attr('value', newVal);
+
+                $('.js-quantity').keyup();
+
             });
 
             $('.js-quantity-minus').click(function () {
@@ -31,7 +34,7 @@ module.exports = function LogIn() {
                 var newVal = parseFloat(oldValue) - 1;
 
                 if (oldValue > 1) {
-                    $('.js-quantity').val(newVal);
+                    $('.js-quantity').attr('value', newVal);
                 }
             });
 

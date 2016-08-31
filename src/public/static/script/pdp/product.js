@@ -2,17 +2,16 @@
 //=============================================================================
 
 // Console Log function to avoid windows errors
-logThis = function( text ){
-    if( (window['console'] !== undefined) ){
-        console.log( text );
+logThis = function (text) {
+    if ((window['console'] !== undefined)) {
+        console.log(text);
     }
 }
 
 //jQuery section
 //=============================================================================
 
-$(document).ready(function()
-{
+$(document).ready(function () {
 
     var spinViewed = 0;
     var spinType = '';
@@ -23,15 +22,14 @@ $(document).ready(function()
         spinType = $('#spinType').val();
 
         // For HTML5
-        if ( spinType == 'HTML5' ) {
+        if (spinType == 'HTML5') {
 
 
-
-        } else if ( spinType == 'Flash' ) {
+        } else if (spinType == 'Flash') {
 
             // Use either the swf preloader if this is the first viewing
             // or the final swf it has already been viewed
-            if ( spinViewed == 0 ) {
+            if (spinViewed == 0) {
                 spinViewed = 1;
                 var swfFile = $('#spinFileLoad').val();
             } else {
@@ -53,7 +51,7 @@ $(document).ready(function()
 
     // Image control
     var imageType = 'static';
-    $('#spinControl').click( function() {
+    $('#spinControl').click(function () {
         if (imageType == 'static') {
             imageType = 'spin';
             $('#spinPicSWF').show();
@@ -69,14 +67,14 @@ $(document).ready(function()
             $(this).css('background-position', '-200px 0px')
         }
     });
-    $('#spinControl').mouseover( function() {
+    $('#spinControl').mouseover(function () {
         if (imageType == 'static') {
             $(this).css('background-position', '-200px 0px')
         } else {
             $(this).css('background-position', '-200px -37px')
         }
     });
-    $('#spinControl').mouseout( function() {
+    $('#spinControl').mouseout(function () {
         if (imageType == 'static') {
             $(this).css('background-position', '0px 0px')
         } else {
@@ -97,13 +95,15 @@ $(document).ready(function()
 
     // If the "Added to cart" or "Added to favourites" flashes are shown
     // fade them out after a 5 seconds
-    setTimeout(function () { $("#addedFlashes").hide() }, 5000);
+    setTimeout(function () {
+        $("#addedFlashes").hide()
+    }, 5000);
 
 
     // Add a sample to the cart
     var sampleAdded = 0;
-    $('#addSampleToCartBtn').click( function() {
-        if(sampleAdded == 0) {
+    $('#addSampleToCartBtn').click(function () {
+        if (sampleAdded == 0) {
             sampleAdded = 1;
             $(this).attr("disabled", true);
             $(this).addClass('disabled');
@@ -112,7 +112,7 @@ $(document).ready(function()
                 ProductId: mainlineProductId,
                 CartAction: '10',
                 action: 'ajax_add_sample'
-            }, function(data) {
+            }, function (data) {
                 $('.addedToCartAdvice').text('The sample has been added to your cart');
                 $('.addedToCartAdvice').show();
                 logThis(data);
@@ -121,36 +121,35 @@ $(document).ready(function()
     });
 
 
-
     // User Product Code Button and Panel
-    $('#UserCodeBtn').live('click', function() {
-        if ( $('#AutenticatedStatus').val() == 1 ) {
+    $('#UserCodeBtn').live('click', function () {
+        if ($('#AutenticatedStatus').val() == 1) {
             $('#UserCodePanel').show();
         } else {
             window.location = 'https://mainlinemouldings.com/index.php?PageLink=LogIn&LoginMessage=AdduserProductCode'
         }
     });
-    $('#UserCodePanel .close').live('click', function() {
+    $('#UserCodePanel .close').live('click', function () {
         $('#UserCodePanel').hide();
     });
-    $('#UserEditCodeBtn').live('click', function() {
+    $('#UserEditCodeBtn').live('click', function () {
         $('#UserCodeError').hide();
         $('#UserCodePanel').show();
     });
-    $('#cancelUserCodeEntry').live('click', function() {
+    $('#cancelUserCodeEntry').live('click', function () {
         $('#UserCodePanel').hide();
     });
-    $('#saveUserCode').click( function() {
+    $('#saveUserCode').click(function () {
         var mUserProductId = $('input#userCodeEntry').val();
         var mMainlineProductId = $('input#mainlineProductId').val();
         $('#ProductIdAjax').load('/product_ajax.php', {
             userProductId: mUserProductId,
             mainlineProductId: mMainlineProductId,
             action: 'save'
-        }, function() {
+        }, function () {
             // Callback
             // Check if error
-            if ( $('#UserCodeErrorProduct').length == 0 ) {
+            if ($('#UserCodeErrorProduct').length == 0) {
                 $('#UserCodePanel').hide();
             } else {
                 var dupeProductId = $('#UserCodeErrorProduct').val();
@@ -159,14 +158,14 @@ $(document).ready(function()
             }
         });
     });
-    $('#deleteUserCode').click( function() {
+    $('#deleteUserCode').click(function () {
         var mUserProductId = $('input#userCodeEntry').val();
         var mMainlineProductId = $('input#mainlineProductId').val();
         $('#ProductIdAjax').load('/product_ajax.php', {
             userProductId: mUserProductId,
             mainlineProductId: mMainlineProductId,
             action: 'delete'
-        }, function() {
+        }, function () {
             // Callback
             $('#UserCodePanel').hide();
         });
@@ -174,19 +173,18 @@ $(document).ready(function()
 
     // Character limiter for Product Code field
     //------------------------------------------------------------------------
-    function limitChars(textid, limit, infodiv)
-    {
-        var text = $('#'+textid).val();
+    function limitChars(textid, limit, infodiv) {
+        var text = $('#' + textid).val();
         var textlength = text.length;
-        if(textlength > limit)
-        {
-            $('#' + infodiv).html('<strong>Max '+limit+' characters.</strong>');
-            $('#'+textid).val(text.substr(0,limit));
+        if (textlength > limit) {
+            $('#' + infodiv).html('<strong>Max ' + limit + ' characters.</strong>');
+            $('#' + textid).val(text.substr(0, limit));
             return false;
         }
     }
-    $(function(){
-        $('#userCodeEntry').keyup(function(){
+
+    $(function () {
+        $('#userCodeEntry').keyup(function () {
             limitChars('userCodeEntry', 9, 'charlimitinfo');
         })
     });
@@ -196,8 +194,7 @@ $(document).ready(function()
 
     // Accordion menu
     // Product Promotions List - Starts with first item open
-    if ($('#accordionPromotions').length != 0)
-    {
+    if ($('#accordionPromotions').length != 0) {
         $('#accordionPromotions').accordion({
             header: "h3",
             active: false,
@@ -218,6 +215,7 @@ $(document).ready(function()
     function UpdateRecentItems() {
         $("div#smoothDivScroll").smoothDivScroll("getAjaxContent", "/super_search_ajax.php?updateRecentItems=all", "replace")
     }
+
     // Update first time straight away
     UpdateRecentItems();
 
@@ -243,9 +241,9 @@ $(document).ready(function()
     var discountedPrice = parseFloat($('#discountedPrice').val());
     var discountedPricePack = parseFloat($('#discountedPricePack').val());
     var discountedPriceSplit = parseFloat($('#discountedPriceSplit').val());
-    var listPrice = parseFloat( $('#listPrice').val().replace(',', '') );
-    var listPrice2 = parseFloat($('#listPrice2').val().replace(',', '') );
-    var packPrice = parseFloat($('#packPrice').val().replace(',', '') );
+    var listPrice = parseFloat($('#listPrice').val().replace(',', ''));
+    var listPrice2 = parseFloat($('#listPrice2').val().replace(',', ''));
+    var packPrice = parseFloat($('#packPrice').val().replace(',', ''));
     var boxedQuantity = parseFloat($('#boxedQuantity').val());
     var packQuantity = parseFloat($('#packQuantity').val());
     var mouldingLength = parseFloat($('#mouldingLength').val());
@@ -273,23 +271,23 @@ $(document).ready(function()
     // Add to cart - form submit
     // DON'T USE 'click' for this, use 'mouseup'. Experienced problems in
     // some windows firefo browsers when using 'click'.
-    $('#cartButton').mouseup(function() {
+    $('#cartButton').mouseup(function () {
         $('#product-form').submit();
     });
 
     // Help Buttons
-    $('#helpWood').click( function() {
-        $('#helpBoxWood').css('display','block');
+    $('#helpWood').click(function () {
+        $('#helpBoxWood').css('display', 'block');
     });
-    $('.comment').click( function() {
-        $('#helpBox').css('display','block');
-        var lengthVariation = price * lengthVariationRate /100;
+    $('.comment').click(function () {
+        $('#helpBox').css('display', 'block');
+        var lengthVariation = price * lengthVariationRate / 100;
         $('.LengthVariation').html('&#163;' + lengthVariation.toFixed(2));
     });
-    $('.closeHelp').live('click', function() {
-        $('#helpBox').css('display','none');
-        $('#helpBoxWood').css('display','none');
-        $('#bestValueWarning').css('display','none');
+    $('.closeHelp').live('click', function () {
+        $('#helpBox').css('display', 'none');
+        $('#helpBoxWood').css('display', 'none');
+        $('#bestValueWarning').css('display', 'none');
     });
 
     // Function to hide all ordering unit boxes and then display the correct one
@@ -298,35 +296,35 @@ $(document).ready(function()
         console.log('hellop');
         $('.orderUnit').hide();
         // Moulding
-        if (productType == 'Polcore' || productType == 'Wood' ) {
+        if (productType == 'Polcore' || productType == 'Wood') {
             unitTxt = 'metre';
             selectedOrderingUnit = $('#orderBy option:selected').val();
             $('.orderUnit').hide();
-            if(selectedOrderingUnit == 'boxes') {
+            if (selectedOrderingUnit == 'boxes') {
                 $('#orderingBoxes').show();
                 $('#quantityBoxes').focus();
                 updateBoxesValue();
             }
-            if(selectedOrderingUnit == 'packs') {
+            if (selectedOrderingUnit == 'packs') {
                 $('#orderingPacks').show();
                 $('#quantityPacks').focus().select();
                 updatePacksValue();
             }
-            if(selectedOrderingUnit == 'lengths') {
+            if (selectedOrderingUnit == 'lengths') {
                 $('#orderingLengths').show();
                 $('#quantityLengths').focus().select();
                 updateLengthsValue();
             }
-            if(selectedOrderingUnit == 'units') {
+            if (selectedOrderingUnit == 'units') {
                 $('#orderingMetres').show();
                 $('#quantity').focus().select();
                 updateValue();
             }
             //Mountboard
-        } else if (productType == 'Mountboard' || productType == 'Backing board' ) {
+        } else if (productType == 'Mountboard' || productType == 'Backing board') {
             selectedOrderingUnit = $('#orderBy option:selected').val();
             unitTxt = 'sheet';
-            if(selectedOrderingUnit == 'boxes') {
+            if (selectedOrderingUnit == 'boxes') {
                 $('#orderingBoxes').show();
                 $('#quantityBoxes').focus().select();
                 updateBoxesValue();
@@ -340,12 +338,12 @@ $(document).ready(function()
             selectedOrderingUnit = $('#orderBy option:selected').val();
             unitTxt = 'each';
             $('.orderUnit').hide();
-            if(selectedOrderingUnit == 'boxes') {
+            if (selectedOrderingUnit == 'boxes') {
                 $('#orderingBoxes').show();
                 $('#quantityBoxes').focus().select();
                 updateBoxesValue();
             }
-            else if(selectedOrderingUnit == 'packs') {
+            else if (selectedOrderingUnit == 'packs') {
                 $('#orderingPacks').show();
                 $('#quantityPacks').focus().select();
                 updatePacksValue();
@@ -357,13 +355,14 @@ $(document).ready(function()
             }
         }
     }
+
     if (firstTime == 1) {
         setOrderingUnit();
 
     }
 
     // Ordering unit selection
-    $('#orderBy').change( function() {
+    $('#orderBy').change(function () {
         setOrderingUnit()
     });
 
@@ -371,25 +370,51 @@ $(document).ready(function()
     // Prevent 'Return' key (key 13) from submitting the form
     // 'return false' prevents the return key from submitting the form
     // and is required in order to control the Tab key (key 9)
-    $('#quantityBoxes').live("keypress", function(e) {
+    $('#quantityBoxes').live("keypress", function (e) {
         if (e.keyCode == 13 || e.keyCode == 9) {
             updateBoxesValue();
             return false;
         }
     });
-    $('#quantityPacks').live("keypress", function(e) {
+    $('#quantityPacks').live("keypress", function (e) {
         if (e.keyCode == 13 || e.keyCode == 9) {
             updatePacksValue();
             return false;
         }
     });
-    $('#quantityLengths').live("keypress", function(e) {
+    $('#quantityLengths').live("keypress", function (e) {
         if (e.keyCode == 13 || e.keyCode == 9) {
             updateLengthsValue();
             return false;
         }
     });
-    $('#quantity').live("keypress", function(e) {
+
+
+
+    //manual js addition - Daljit
+
+
+    var quantityClick = null;
+
+    $('.js-quantity-plus').click(function () {
+        if (quantityClick == null) {
+            setTimeout(function () {
+                    $('.js-quantity').keyup();
+                    quantityClick = 'triggered';
+                }
+                , 5000);
+        } else {
+            return false;
+        }
+
+    });
+
+
+
+
+
+
+    $('#quantity').live("keypress", function (e) {
         if (e.keyCode == 13 || e.keyCode == 9) {
             updateValue();
             return false;
@@ -397,41 +422,41 @@ $(document).ready(function()
     });
 
     // If quantity fields are clicked or changed with mouse and keyboard
-    $('#quantityBoxes').keyup(function(event) {
-        if(event.keyCode != 9) { // Block tab
+    $('#quantityBoxes').keyup(function (event) {
+        if (event.keyCode != 9) { // Block tab
             updateBoxesValue();
         }
     });
-    $('#quantityPacks').keyup(function(event) {
-        if(event.keyCode != 9) { // Block tab
+    $('#quantityPacks').keyup(function (event) {
+        if (event.keyCode != 9) { // Block tab
             updatePacksValue();
         }
     });
-    $('#quantityLengths').on('keyup mouseup', function(event) {
+    $('#quantityLengths').on('keyup mouseup', function (event) {
         console.log('keyup');
-        if(event.keyCode != 9) { // Block tab
+        if (event.keyCode != 9) { // Block tab
             updateLengthsValue();
         }
     });
-    $('#quantity').keyup(function(event) {
-        if(event.keyCode != 9) { // Block tab
+    $('#quantity').keyup(function (event) {
+        if (event.keyCode != 9) { // Block tab
             updateValue();
         }
     });
 
 
-
     // Accept better value suggestion for boxes
-    $('#acceptBox').live('click', function() {
+    $('#acceptBox').live('click', function () {
         $('#orderBy').val('boxes');
         $('.orderUnit').hide();
         $('#quantityBoxes').val(boxesRequired);
         $('#orderingBoxes').show();
         $('#orderBy option:selected').removeAttr('selected');
-        $('#orderBy option').each( function(){
-            if ( $(this).val() == 'boxes' ) {
+        $('#orderBy option').each(function () {
+            if ($(this).val() == 'boxes') {
                 $(this).attr('selected', 'selected');
-            };
+            }
+            ;
         });
         updateBoxesValue();
         $('#bestValueWarning').hide();
@@ -439,16 +464,17 @@ $(document).ready(function()
     });
 
     // Accept better value suggestion for packs
-    $('#acceptPack').live('click', function() {
+    $('#acceptPack').live('click', function () {
         $('#orderBy').val('packs');
         $('.orderUnit').hide();
         $('#quantityPacks').val(packsRequired);
         $('#orderingPacks').show();
         $('#orderBy option:selected').removeAttr('selected');
-        $('#orderBy option').each( function(){
-            if ( $(this).val() == 'packs' ) {
+        $('#orderBy option').each(function () {
+            if ($(this).val() == 'packs') {
                 $(this).attr('selected', 'selected');
-            };
+            }
+            ;
         });
         updatePacksValue();
         $('#bestValueWarning').hide();
@@ -465,8 +491,7 @@ $(document).ready(function()
         // Get quantity of Boxes entered
         qttyBoxes = ($('#quantityBoxes').val());
 
-        if (qttyBoxes > 0)
-        {
+        if (qttyBoxes > 0) {
             // Discount
             if (discountedPrice > 0)
                 price = qttyBoxes * boxedQuantity * discountedPrice;
@@ -483,19 +508,17 @@ $(document).ready(function()
             //supportLog('listPrice2: ' + listPrice2 + ' | price: ' + price);
 
             // If there is an active promotion
-            if (bestPromotionId != '')
-            {
+            if (bestPromotionId != '') {
                 productsInCart = $('#productsInCart' + bestPromotionId).val();
-                if ( isNaN(productsInCart)) {
+                if (isNaN(productsInCart)) {
                     productsInCart = 0;
                 }
                 promotionTotal = +qttyBoxes + +productsInCart;
                 promotionThreshold = $('#promotionThreshold' + bestPromotionId).val();
                 promotionDiscount = $('#promotionDiscount' + bestPromotionId).val();
 
-                if (promotionTotal >= promotionThreshold)
-                {
-                    promotionDiscountAmount = (listPrice2 * promotionDiscount/100).toFixed(2);
+                if (promotionTotal >= promotionThreshold) {
+                    promotionDiscountAmount = (listPrice2 * promotionDiscount / 100).toFixed(2);
                     promotionDiscountPrice = listPrice2 - promotionDiscountAmount;
                     //supportLog(' | promotionDiscountAmount: ' + promotionDiscountAmount + ' | promotionDiscountPrice' + promotionDiscountPrice + ' | ');
 
@@ -524,13 +547,13 @@ $(document).ready(function()
             var addText = ' items';
             if (productType == 'Polcore') {
                 addText = ' m';
-            } else if(productType == 'Wood') {
-                if(isApproxLength == '1') {
+            } else if (productType == 'Wood') {
+                if (isApproxLength == '1') {
                     addText = ' m approx';
                 } else {
                     addText = ' m'
                 }
-            } else if(productType == 'Mountboard' || productType == 'Backing board' ) {
+            } else if (productType == 'Mountboard' || productType == 'Backing board') {
                 addText = ' sheets';
             }
 
@@ -548,8 +571,7 @@ $(document).ready(function()
         // Get quantity of Packs entered
         qttyPacks = ($('#quantityPacks').val());
 
-        if (qttyPacks > 0)
-        {
+        if (qttyPacks > 0) {
             // Discount
             if (discountedPricePack > 0)
                 price = qttyPacks * packQuantity * discountedPricePack;
@@ -576,19 +598,17 @@ $(document).ready(function()
             /////////////////////////////////////////////////////////////////////////
 
             // If there is an active promotion
-            if (bestPromotionId != '')
-            {
+            if (bestPromotionId != '') {
                 productsInCart = $('#productsInCart' + bestPromotionId).val();
-                if ( isNaN(productsInCart)) {
+                if (isNaN(productsInCart)) {
                     productsInCart = 0;
                 }
                 promotionTotal = +qttyPacks + +productsInCart;
                 promotionThreshold = $('#promotionThreshold' + bestPromotionId).val();
                 promotionDiscount = $('#promotionDiscount' + bestPromotionId).val();
 
-                if (promotionTotal >= promotionThreshold)
-                {
-                    promotionDiscountAmount = (packPrice * promotionDiscount/100).toFixed(2);
+                if (promotionTotal >= promotionThreshold) {
+                    promotionDiscountAmount = (packPrice * promotionDiscount / 100).toFixed(2);
                     promotionDiscountPrice = packPrice - promotionDiscountAmount;
 
                     //supportLog(listPrice2 + ' | ' + promotionDiscountAmount + ' | ' + promotionDiscountPrice );
@@ -600,7 +620,7 @@ $(document).ready(function()
                         // Display additional On Promotion text and price
                         $('#discountText').show();
                         var perTxt = ' per metre';
-                        if(productType == 'Mountboard' || productType == 'Backing board' ) {
+                        if (productType == 'Mountboard' || productType == 'Backing board') {
                             perTxt = ' per sheet';
                         }
                         $('#discountText').html('Promotion Price: &#163;' + promotionDiscountPrice.toFixed(2) + perTxt);
@@ -625,13 +645,13 @@ $(document).ready(function()
             var addText = ' items';
             if (productType == 'Polcore') {
                 addText = ' m';
-            } else if(productType == 'Wood') {
-                if(isApproxLength == '1') {
+            } else if (productType == 'Wood') {
+                if (isApproxLength == '1') {
                     addText = ' m approx';
                 } else {
                     addText = ' m'
                 }
-            } else if(productType == 'Mountboard' || productType == 'Backing board' ) {
+            } else if (productType == 'Mountboard' || productType == 'Backing board') {
                 addText = ' sheets';
             }
             $('#totalQuantityPacks').text(qtty + addText);
@@ -649,8 +669,7 @@ $(document).ready(function()
         // Get quantity of Lengths entered
         qttyLengths = parseFloat($('#quantityLengths').val());
 
-        if (qttyLengths > 0)
-        {
+        if (qttyLengths > 0) {
             if (discountedPriceSplit > 0)
                 price = qttyLengths * mouldingLength * discountedPriceSplit;
             else
@@ -669,19 +688,17 @@ $(document).ready(function()
             /////////////////////////////////////////////////////////////////////////
 
             // If there is an active promotion
-            if (bestPromotionId != '')
-            {
+            if (bestPromotionId != '') {
                 productsInCart = $('#productsInCart' + bestPromotionId).val();
-                if ( isNaN(productsInCart)) {
+                if (isNaN(productsInCart)) {
                     productsInCart = 0;
                 }
                 promotionTotal = qttyLengths + productsInCart;
                 promotionThreshold = $('#promotionThreshold' + bestPromotionId).val();
                 promotionDiscount = $('#promotionDiscount' + bestPromotionId).val();
 
-                if (promotionTotal >= promotionThreshold)
-                {
-                    promotionDiscountAmount = (listPrice * promotionDiscount/100).toFixed(2);
+                if (promotionTotal >= promotionThreshold) {
+                    promotionDiscountAmount = (listPrice * promotionDiscount / 100).toFixed(2);
                     promotionDiscountPrice = listPrice - promotionDiscountAmount;
 
                     var discountPrice = qttyLengths * mouldingLength * promotionDiscountPrice;
@@ -707,8 +724,8 @@ $(document).ready(function()
 
             // Set quantity display
             var addText = 'm';
-            if(productType == 'Wood') {
-                if(isApproxLength == '1') {
+            if (productType == 'Wood') {
+                if (isApproxLength == '1') {
                     addText = ' m approx';
                 } else {
                     addText = ' m'
@@ -726,8 +743,7 @@ $(document).ready(function()
         // Get quantity entered
         qtty = parseFloat($('#quantity').val());
 
-        if (qtty > 0)
-        {
+        if (qtty > 0) {
 
             // Reset display of On Promotion text in para id 'discountText'
             $('#discountText').removeClass('showPriceAddIn');
@@ -747,19 +763,17 @@ $(document).ready(function()
             supportLog('Units Promotion - bestPromotionId: ' + bestPromotionId + ' - bestDiscount: ' + bestDiscount);
 
             // If there is an active promotion
-            if (bestPromotionId != '')
-            {
+            if (bestPromotionId != '') {
                 productsInCart = $('#productsInCart' + bestPromotionId).val();
-                if ( isNaN(productsInCart)) {
+                if (isNaN(productsInCart)) {
                     productsInCart = 0;
                 }
                 promotionTotal = qtty + productsInCart;
                 promotionThreshold = $('#promotionThreshold' + bestPromotionId).val();
                 promotionDiscount = $('#promotionDiscount' + bestPromotionId).val();
 
-                if (promotionTotal >= promotionThreshold)
-                {
-                    promotionDiscountAmount = (listPrice * promotionDiscount/100).toFixed(2);
+                if (promotionTotal >= promotionThreshold) {
+                    promotionDiscountAmount = (listPrice * promotionDiscount / 100).toFixed(2);
                     promotionDiscountPrice = listPrice - promotionDiscountAmount;
 
                     var discountPrice = qtty * promotionDiscountPrice;
@@ -791,13 +805,13 @@ $(document).ready(function()
             var addText = '';
             if (productType == 'Polcore') {
                 addText = ' m';
-            } else if(productType == 'Wood') {
-                if(isApproxLength == '1') {
+            } else if (productType == 'Wood') {
+                if (isApproxLength == '1') {
                     addText = ' m approx';
                 } else {
                     addText = ' m'
                 }
-            } else if(productType == 'Mountboard' || productType == 'Backing board' ) {
+            } else if (productType == 'Mountboard' || productType == 'Backing board') {
                 addText = ' sheet';
                 if (qtty > 1) {
                     addText = ' sheets';
@@ -830,12 +844,12 @@ $(document).ready(function()
 
         // The quantity of moulding to be checked is the amount entered in the
         // quantity box plus whatever is already in the cart
-        if(!$.isNumeric(metresInCart)) {
+        if (!$.isNumeric(metresInCart)) {
             metresInCart = 0;
         }
         checkQtty = checkQtty + metresInCart;
 
-        var	costOfPacks = 0,
+        var costOfPacks = 0,
             costOfBoxes = 0,
             considerFactor = 0.7,
             buyBoxes = false,
@@ -868,13 +882,13 @@ $(document).ready(function()
             totalMetresPacks = parseFloat(packsRequired * packQuantity).toFixed(2);
 
             promotion = checkPromotions('packs', packsRequired, packValue)
-            if ( promotion && promotion != 0 ) {
+            if (promotion && promotion != 0) {
                 packValue = promotion;
             }
             costOfPacks = parseFloat(packsRequired * packValue).toFixed(2);
             considerPacksValue = costOfPacks * considerFactor;
 
-            packUnitCost = costOfPacks/totalMetresPacks;
+            packUnitCost = costOfPacks / totalMetresPacks;
         }
         // If the product comes by the box find the number of boxes required to
         // meet the quantity requested and their cost
@@ -883,14 +897,14 @@ $(document).ready(function()
             totalMetresBoxes = parseFloat(boxesRequired * boxedQuantity).toFixed(2);
 
             promotion = checkPromotions('boxes', boxesRequired, boxValue)
-            if ( promotion && promotion != 0 ) {
+            if (promotion && promotion != 0) {
                 boxValue = promotion;
             }
             packUnitCost = packValue / packQuantity;
             costOfBoxes = parseFloat(boxesRequired * boxValue).toFixed(2);
             considerBoxesValue = costOfBoxes * considerFactor;
 
-            boxUnitCost = costOfBoxes/totalMetresBoxes;
+            boxUnitCost = costOfBoxes / totalMetresBoxes;
 
             //logThis('NNHBGTY | ' + checkVal + ' | ' + costOfBoxes + ' | ' + boxesRequired + ' | ' + boxValue + ' | ' + promotion + ' | ');
 
@@ -899,10 +913,18 @@ $(document).ready(function()
         var currentOrderByChoice = $('#orderBy').val();
         var boxPriority = false;
 
-        if (checkVal > costOfBoxes && costOfBoxes != 0 && currentOrderByChoice != 'boxes') { buyBoxes = true; }
-        if (checkVal > considerBoxesValue && considerBoxesValue != 0 && currentOrderByChoice != 'boxes' ) { considerBoxes = true; }
-        if (checkVal > costOfPacks && costOfPacks != 0 && currentOrderByChoice != 'packs') { buyPacks = true; }
-        if (checkVal > considerPacksValue && considerPacksValue != 0 && currentOrderByChoice != 'packs') { considerPacks = true; }
+        if (checkVal > costOfBoxes && costOfBoxes != 0 && currentOrderByChoice != 'boxes') {
+            buyBoxes = true;
+        }
+        if (checkVal > considerBoxesValue && considerBoxesValue != 0 && currentOrderByChoice != 'boxes') {
+            considerBoxes = true;
+        }
+        if (checkVal > costOfPacks && costOfPacks != 0 && currentOrderByChoice != 'packs') {
+            buyPacks = true;
+        }
+        if (checkVal > considerPacksValue && considerPacksValue != 0 && currentOrderByChoice != 'packs') {
+            considerPacks = true;
+        }
         // Special case where the box and pack quantities are the same AND the box and pack prices are the same
         // In this case always show the box messages
         if (costOfBoxes == costOfPacks && boxesRequired == packsRequired) {
@@ -919,15 +941,17 @@ $(document).ready(function()
         // Special case where box and pack price the same but quantities are different
         // In this case, hide the 'consider boxes' message as it will never be better value
         // as the cost per metre is the same
-        if( listPrice2 == packPrice) { considerBoxes = false; }
+        if (listPrice2 == packPrice) {
+            considerBoxes = false;
+        }
 
         // Special case where Buy Packs and Buy Boxes are both true but packs are cheaper
         // This can happen if there is a pack promotion
         // Also if the pack promotion unit price is less than the box unit price then
         // we don't want to consider boxes
-        if( (buyPacks || currentOrderByChoice == 'packs') && costOfPacks < costOfBoxes) {
+        if ((buyPacks || currentOrderByChoice == 'packs') && costOfPacks < costOfBoxes) {
             buyBoxes = false;
-            if(packUnitCost != '' && packUnitCost < listPrice2)
+            if (packUnitCost != '' && packUnitCost < listPrice2)
                 considerBoxes = false;
         }
 
@@ -948,25 +972,35 @@ $(document).ready(function()
 
         // Build the better value pop-up message
         var displayMessage = '';
-        if(boxesRequired > 1) { boxText = 'boxes'; } else { boxText = 'box' };
-        if(packsRequired > 1) { packText = 'packs'; } else { packText = 'pack' };
+        if (boxesRequired > 1) {
+            boxText = 'boxes';
+        } else {
+            boxText = 'box'
+        }
+        ;
+        if (packsRequired > 1) {
+            packText = 'packs';
+        } else {
+            packText = 'pack'
+        }
+        ;
 
-        if ( buyBoxes ) {
+        if (buyBoxes) {
             displayMessage = 'It would be cheaper for you to order by the box:<br /><span class="betterValueText">' + boxesRequired + ' ' + boxText + ' for &#163;' + costOfBoxes + ' (total ' + totalMetresBoxes + 'm)</span><button id="acceptBox" type="button">Choose this option</button>';
 
-        } else if ( considerBoxes && buyPacks ) {
-            displayMessage = 'It would be cheaper for you to order by the pack:<br /><span class="betterValueText">' + packsRequired + ' ' + packText + ' for &#163;' + costOfPacks + ' (total ' + totalMetresPacks + 'm)</span><button id="acceptPack" type="button">Choose this option</button><br /> or you might consider it better value to order by the box:<br /><span class="betterValueText">' +  boxesRequired + ' ' + boxText + ' for &#163;' + costOfBoxes + ' (total ' + totalMetresBoxes + 'm)</span>' + '<button id="acceptBox" type="button">Choose this option</button>';
+        } else if (considerBoxes && buyPacks) {
+            displayMessage = 'It would be cheaper for you to order by the pack:<br /><span class="betterValueText">' + packsRequired + ' ' + packText + ' for &#163;' + costOfPacks + ' (total ' + totalMetresPacks + 'm)</span><button id="acceptPack" type="button">Choose this option</button><br /> or you might consider it better value to order by the box:<br /><span class="betterValueText">' + boxesRequired + ' ' + boxText + ' for &#163;' + costOfBoxes + ' (total ' + totalMetresBoxes + 'm)</span>' + '<button id="acceptBox" type="button">Choose this option</button>';
 
-        } else if ( buyPacks ) {
+        } else if (buyPacks) {
             displayMessage = 'It would be cheaper for you to order by the pack:<br /><span class="betterValueText">' + packsRequired + ' ' + packText + ' for &#163;' + costOfPacks + ' (total ' + totalMetresPacks + 'm)</span><button id="acceptPack" type="button">Choose this option</button>';
 
-        }	else if ( considerBoxes && considerPacks ) {
-            displayMessage = 'You might consider it better value to order by the pack:<br /><span class="betterValueText">' + packsRequired + ' ' + packText + ' for &#163;' + costOfPacks + ' (total ' + totalMetresPacks + 'm)</span><button id="acceptPack" type="button">Choose this option</button><br /> or possibly by the box:<br /><span class="betterValueText">' +  boxesRequired + ' ' + boxText + ' for &#163;' + costOfBoxes + ' (total ' + totalMetresBoxes + 'm)</span><button id="acceptBox" type="button">Choose this option</button>';
+        } else if (considerBoxes && considerPacks) {
+            displayMessage = 'You might consider it better value to order by the pack:<br /><span class="betterValueText">' + packsRequired + ' ' + packText + ' for &#163;' + costOfPacks + ' (total ' + totalMetresPacks + 'm)</span><button id="acceptPack" type="button">Choose this option</button><br /> or possibly by the box:<br /><span class="betterValueText">' + boxesRequired + ' ' + boxText + ' for &#163;' + costOfBoxes + ' (total ' + totalMetresBoxes + 'm)</span><button id="acceptBox" type="button">Choose this option</button>';
 
-        } else if ( considerBoxes ) {
-            displayMessage = 'You might consider it better value to order by the box:<br /><span class="betterValueText">' +  boxesRequired + ' ' + boxText + ' for &#163;' + costOfBoxes + ' (total ' + totalMetresBoxes + 'm)</span><button id="acceptBox" type="button">Choose this option</button>';
+        } else if (considerBoxes) {
+            displayMessage = 'You might consider it better value to order by the box:<br /><span class="betterValueText">' + boxesRequired + ' ' + boxText + ' for &#163;' + costOfBoxes + ' (total ' + totalMetresBoxes + 'm)</span><button id="acceptBox" type="button">Choose this option</button>';
 
-        } else if ( considerPacks ) {
+        } else if (considerPacks) {
             displayMessage = 'You might consider it better value to order by the pack:<br /><span class="betterValueText">' + packsRequired + ' ' + packText + ' for &#163;' + costOfPacks + ' (total ' + totalMetresPacks + 'm)</span><button id="acceptPack" type="button">Choose this option</button>';
 
         } else {
@@ -974,21 +1008,23 @@ $(document).ready(function()
         }
 
         // Show the message (unless the page has just loaded)
-        if(displayMessage != '' && firstTime != 1) {
-            $i('#myModal').modal('show');
+        if (displayMessage != '' && firstTime != 1) {
+            /*$i('#myModal').delay(3000).modal('show');*/
 
             $('#jQtext').html('<h2>Better value!</h2>');
             $('#jQtext').append('<p class="bestValueMessage">' + displayMessage + '</p>');
             if (metresInCart > 0) {
                 $('#jQtext').append('<p class="bestValueMessage">You already have ' + metresInCart + ' metres of this moulding in your cart.<br />Total here and in cart ' + checkQtty + 'm</p>');
             }
-            var pos = $('#quantitiesPanel').position();
-            var posX = $('#quantitiesPanel').outerWidth() -10;
-            var posY = $('#bestValueWarning').outerHeight() - 30;
-            $('#bestValueWarning').css({
-                left: pos.left + posX,
-                top: pos.top - posY
-            }).show();
+            /*        var pos = $('#quantitiesPanel').position();
+             var posX = $('#quantitiesPanel').outerWidth() -10;
+             var posY = $('#bestValueWarning').outerHeight() - 30;
+             $('#bestValueWarning').css({
+             left: pos.left + posX,
+             top: pos.top - posY
+             }).show();*/
+
+            $('#bestValueWarning').show();
         } else {
             $('#bestValueWarning').hide();
             $('#jQtext').html('&nbsp;');
@@ -1006,17 +1042,16 @@ $(document).ready(function()
             promotionDiscountAmount = 0,
             promotionDiscountPrice;
 
-        bestPromotion = GetBestPromotion( qtty, orderUnit )
+        bestPromotion = GetBestPromotion(qtty, orderUnit)
         promotionId = bestPromotion[0];
         discount = bestPromotion[1];
 
         //logThis ('BBBBVCF | ' + orderUnit + ' | ' + promotionId + ' | ' + discount + ' | ');
 
-        if (discount != 0)
-        {
+        if (discount != 0) {
             if (orderUnit == 'boxes') {
 
-                promotionDiscountAmount = (listPrice2 * promotionDiscount/100).toFixed(2);
+                promotionDiscountAmount = (listPrice2 * promotionDiscount / 100).toFixed(2);
                 promotionDiscountPrice = listPrice2 - promotionDiscountAmount;
 
                 // Apply promotion price if it is less
@@ -1029,11 +1064,11 @@ $(document).ready(function()
 
             } else if (orderUnit == 'packs') {
 
-                promotionDiscountAmount = (packPrice * promotionDiscount/100).toFixed(2);
+                promotionDiscountAmount = (packPrice * promotionDiscount / 100).toFixed(2);
                 promotionDiscountPrice = packPrice - promotionDiscountAmount;
 
                 // Apply promotion price if it is less
-                if (promotionDiscountPrice < valueIn ) {
+                if (promotionDiscountPrice < valueIn) {
                     valueOut = packQuantity * promotionDiscountPrice;
                     return valueOut;
                 } else {
@@ -1047,32 +1082,32 @@ $(document).ready(function()
     }
 
     // Get best promotion
-    function GetBestPromotion( quantity, orderUnit ) {
+    function GetBestPromotion(quantity, orderUnit) {
         bestPromotionId = '';
         var bestDiscount = 0;
         var promId;
 
         // Loop through the promotions for the product
-        $('.promotionsList').each( function () {
+        $('.promotionsList').each(function () {
 
             id = $(this).val();
 
             var productsInCart = parseFloat($('#productsInCart' + id).val());
-            if ( isNaN(productsInCart)) {
+            if (isNaN(productsInCart)) {
                 productsInCart = 0;
             }
 
-            var	id = $(this).val();
+            var id = $(this).val();
             var unit = $('#promotionUnit' + id).val();
             var threshold = parseFloat($('#promotionThreshold' + id).val());
             var discount = $('#promotionDiscount' + id).val();
-            var total =  +quantity + +productsInCart;
+            var total = +quantity + +productsInCart;
 
             //logThis('product.js 1071: id=' + id + '; orderUnit=' + orderUnit + ';  unit=' + unit + ';  total=' + total + '; threshold=' + threshold + '; Discount=' + discount  + '; bestDiscount=' + bestDiscount+ ' total=' + total);
             //supportLog('id=' + id + '; unit=' + unit + '; threshold=' + threshold + '; Discount=' + discount + '; total=' + total);
 
             // Update best promotion info
-            if( unit == orderUnit && total >= threshold && discount > bestDiscount ) {
+            if (unit == orderUnit && total >= threshold && discount > bestDiscount) {
                 bestDiscount = discount;
                 bestPromotionId = id;
             }
@@ -1082,19 +1117,19 @@ $(document).ready(function()
 
         });
 
-        var bestPromotion = new Array( bestPromotionId, bestDiscount );
+        var bestPromotion = new Array(bestPromotionId, bestDiscount);
         return bestPromotion;
     }
 
 
     function supportLog(text) {
-        if( $('#Support').length > 0 ) {
+        if ($('#Support').length > 0) {
             $('#logText').append('<br />' + text)
         }
     }
 
     // Run code when page first loads
-    $(window).load(function() {
+    $(window).load(function () {
         firstTime = 0;
     });
 
