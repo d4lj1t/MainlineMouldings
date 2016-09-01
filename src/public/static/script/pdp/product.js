@@ -393,10 +393,10 @@ $(document).ready(function () {
 
     //manual js addition - Daljit
 
-
     var quantityClick = null;
 
     $('.js-quantity-plus').click(function () {
+
         if (quantityClick == null) {
             setTimeout(function () {
                     $('.js-quantity').keyup();
@@ -1029,11 +1029,11 @@ $(document).ready(function () {
 
             if(popUpShowed == null) {
                 setTimeout(function () {
-                        $i('#myModal').delay(3000).modal('show');
+                        $i('#myModal').modal('show');
                         popUpShowed = 'shown';
                         $('#bestValueWarning').show();
                     }
-                    , 5000);
+                    , 2000);
 
 
             } else{
