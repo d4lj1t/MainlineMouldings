@@ -68,6 +68,11 @@
 }
 .value-wrapper{
   border: 1px solid map-get($colors, 'copy-primary-medium');
+
+  @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')) {
+    width: 80px;
+    text-align: center;
+  }
 }
 
 .quantity-wrapper{
@@ -221,3 +226,19 @@
 .clicked .icon-angle{
   transform: rotate(90deg);
 }
+
+.bestValueMessage button{
+  float: right;
+}
+
+.betterValueText{
+  margin-bottom:20px;
+}
+
+#bestValueWarning button{
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    margin-top:10px;
+    float:none;
+  }
+}
+

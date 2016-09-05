@@ -1014,7 +1014,6 @@ $(document).ready(function () {
         if (displayMessage != '' && firstTime != 1) {
 
 
-            $('#jQtext').html('<h2>Better value!</h2>');
             $('#jQtext').append('<p class="bestValueMessage">' + displayMessage + '</p>');
             if (metresInCart > 0) {
                 $('#jQtext').append('<p class="bestValueMessage">You already have ' + metresInCart + ' metres of this moulding in your cart.<br />Total here and in cart ' + checkQtty + 'm</p>');
