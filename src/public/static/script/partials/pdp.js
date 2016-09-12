@@ -21,18 +21,18 @@ module.exports = function LogIn() {
         function quantityEvents() {
 
             $('.js-quantity-plus').click(function () {
-                var oldValue = $('.js-quantity').val();
+                var oldValue = $(this).parent().find('.js-quantity').val();
                 var newVal = parseFloat(oldValue) + 1;
-                $('.js-quantity').attr('value', newVal);
+                $(this).parent().find('.js-quantity').attr('value', newVal);
 
             });
 
             $('.js-quantity-minus').click(function () {
-                var oldValue = $('.js-quantity').val();
+                var oldValue = $(this).parent().find('.js-quantity').val();
                 var newVal = parseFloat(oldValue) - 1;
 
                 if (oldValue > 1) {
-                    $('.js-quantity').attr('value', newVal);
+                    $(this).parent().find('.js-quantity').attr('value', newVal);
                 }
             });
 
