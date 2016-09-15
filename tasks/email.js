@@ -9,7 +9,10 @@
 
 			// Build email templates
 			return gulp.src(plugins.path.resolve(paths.build, 'email-*.html'))
-				.pipe(plugins.inlineCss({ preserveMediaQueries: true }))
+				.pipe(plugins.inlineCss({
+					preserveMediaQueries: true,
+					/*removeHtmlSelectors: true*/
+				}))
 				.pipe(gulp.dest(paths.build))
 				.pipe(plugins.browserSync.stream({ match: '**/email-*.html' }));
 		};
