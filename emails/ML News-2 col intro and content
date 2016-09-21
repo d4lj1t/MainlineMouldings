@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+    <title>Email</title>
+
+
+
+    <style type="text/css">
+        @media screen and (max-width: 599px){
+            .force-row,.container{
+                width:100% !important;
+                max-width:100% !important;
+            }
+
+        }	@media screen and (max-width: 400px){
+            .container-padding{
+                padding-left:10px !important;
+                padding-right:10px !important;
+            }
+
+        }	@media screen and (max-width: 599px){
+            .tel-link{
+                padding-top:0;
+                font-size:12px;
+            }
+
+        }	@media screen and (max-width: 599px){
+            .secondary-nav td.materials,.secondary-nav td.equipment,.secondary-nav td.blade-sharpening,.secondary-nav td.gallery,.secondary-nav td.sale,.secondary-nav td.new{
+                display:none !important;
+            }
+
+        }	@media screen and (max-width: 599px){
+            .secondary-nav td.polcore{
+                width:33.3% !important;
+                padding-right:0 !important;
+                font-size:14px !important;
+            }
+
+        }	@media screen and (max-width: 599px){
+            .secondary-nav td.wood{
+                width:33.3% !important;
+                padding-right:0 !important;
+                text-align:center;
+                font-size:14px !important;
+            }
+
+        }	@media screen and (max-width: 599px){
+            .secondary-nav td.mountboard{
+                width:33.3% !important;
+                padding-right:0 !important;
+                text-align:right;
+                font-size:14px !important;
+            }
+
+        }</style></head>
+
+<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; ;line-height: 18px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0; padding: 0;" bgcolor="#F0F0F0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- 100% background wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+    <tr>
+        <td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0; border-collapse: collapse;">
+            <!-- 600px container (white background) -->
+            <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" style="border-spacing: 0; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px;">
+                <tr>
+                    <td class="background-green" align="left" style="background-color: #9D9B7F; border-collapse: collapse;">
+                        <table width="560" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row background-green" style="background-color: #9D9B7F; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td class="thin-pad-top-bottom color-white text-align-center color-grey-medium font-xs-sm" style="border-collapse: collapse; color: #fff; font-size: 12px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
+                                    <strong>New ranges for Spring 2016</strong>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding background-white" align="left" style="background-color: #ffffff; border-collapse: collapse; padding-left: 20px; padding-right: 20px;">
+                        <table width="560" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td class="pad-top text-align-right color-grey-medium font-xs text-underline" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-top: 10px; text-align: right; text-decoration: underline;">
+                                    <a href="#" class="color-grey-medium" style="color: #818383; cursor: auto; text-decoration: inherit;"><strong>View in browser</strong></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding header background-white" align="left" style="background-color: #ffffff; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;">
+                        <!-- example: two columns (simple) -->
+
+                        <!--[if mso]>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="50%" valign="top"><![endif]-->
+
+                        <table width="250" border="0" cellpadding="0" cellspacing="0" align="left" class="" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td valign="top" style="border-collapse: collapse;">
+                                    <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                            <td style="border-collapse: collapse;">
+                                                <img height="38" style="-ms-interpolation-mode: bicubic; height: 38px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/Newsletter-Logo-2.gif">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--[if mso]></td>
+                    <td width="50%" valign="top"><![endif]-->
+                        <table width="150" border="0" cellpadding="0" cellspacing="0" align="right" class="" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td class="tel-link color-orange font-md" valign="bottom" style="border-collapse: collapse; color: #ff6600; font-size: 17px; padding-top: 10px; text-align: right;">
+                                    <a href="#" class="color-orange text-decoration-none" style="color: #ff6600; cursor: auto; text-decoration: none;"><img height="15" border="0" style="-ms-interpolation-mode: bicubic; height: 15px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/icon-phone.gif"> 01949 861000</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                        <!--/ end example -->
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="container-padding background-white header border-bottom" align="left" style="background-color: #ffffff; border-bottom: 1px solid #ff6600; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row secondary-nav" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td class="pad-top polcore color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 38px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Polcore</a>
+                                </td>
+                                <td class="pad-top wood color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 28px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Wood</a>
+                                </td>
+                                <td class="pad-top mountboard color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 58px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Mountboard</a>
+                                </td>
+                                <td class="pad-top materials color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 45px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Materials</a>
+                                </td>
+                                <td class="pad-top equipment color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 52px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Equipment</a>
+                                </td>
+                                <td class="pad-top blade-sharpening color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 92px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Blade Sharpening</a>
+                                </td>
+                                <td class="pad-top gallery color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 36px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Gallery</a>
+                                </td>
+                                <td class="pad-top sale color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 21px; padding-top: 10px; width: 22px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">Sale</a>
+                                </td>
+                                <td class="pad-top new color-grey-medium font-xs" style="border-collapse: collapse; color: #818383; font-size: 10px; padding-right: 0; padding-top: 10px; width: 21px;">
+                                    <a href="#" class="color-grey-medium text-decoration-none" style="color: #818383; cursor: auto; text-decoration: none;">New</a>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/600px container -->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0; border-collapse: collapse;">
+
+            <!-- 600px container (white background) -->
+            <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" style="border-spacing: 0; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px;">
+                <tr>
+                    <td class="container-padding content" align="left" style="background-color: #ffffff; border-collapse: collapse; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px;">
+
+                        <!-- example: two columns (simple) -->
+
+                        <!--[if mso]>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="50%" valign="top"><![endif]-->
+
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+
+                                        <tr>
+                                            <td class="color-orange pad-top-bottom font-lg" valign="top" style="border-collapse: collapse; color: #ff6600; font-size: 19px; padding-bottom: 10px; padding-top: 10px;" mc:edit="title">
+                                                <strong>What's hot this season?</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom" style="border-collapse: collapse; padding-bottom: 10px;">
+                                                <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=16&amp;CategoryID=504&amp;ProductID=POL-2234&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=1&amp;nlsource=online" style="color: inherit; cursor: auto; text-decoration: none;"><img style="-ms-interpolation-mode: bicubic; width: 200px;" src="http://mainlinemouldings.com/newsletter-images/mirror_1.jpg" width="200" height="176" border="0" alt="Mainline Dahlia Mirror"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-black" style="border-collapse: collapse; color: #000000; padding-bottom: 10px;" mc:edit="intro">
+
+                                                <!--<a class="text-decoration-none pull-left" href="http://mainlinemouldings.com/index.php?DepartmentID=16&amp;CategoryID=504&amp;ProductID=POL-2234&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=1&amp;nlsource=online"><img style="width: 200px;" src="http://mainlinemouldings.com/newsletter-images/mirror_1.jpg" width="200" height="176" border="0" alt="Mainline Dahlia Mirror"></a>-->
+                                                <!--<img align="left" style="width: 170px;" src="http://mainlinemouldings.com/newsletter-images/mirror_1.jpg" width="200" height="176" border="0" alt="Mainline Dahlia Mirror">-->
+
+                                                Spring is here heralding longer days, bluer skies and the promise of an exciting year ahead. It's now officially time to cast off the winter gloom and welcome in the new!
+                                                <br><br>
+                                                Latest decor trends abound: hand crafted products; bringing nature indoors; pastels and splashes of bright colour; recycling and repurposing. With these in mind, we bring you four very different new ranges all with the focus on economy which we hope will satisfy a wide range of tastes, styles and projects.
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="color-orange pad-bottom font-md" valign="top" style="border-collapse: collapse; color: #ff6600; font-size: 17px; padding-bottom: 10px;">
+                                                <strong>Good news on on prices</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-black" style="border-collapse: collapse; color: #000000; padding-bottom: 10px;">
+                                                We constantly strive to supply the most innovative, top quality moulding from around the world, at the keenest possible rates, and this year the majority of our prices remain the same.
+                                                <br><br>
+                                                Since there are so few changes, we won't be mailing out a copy of our price guide, so please visit our website to check individual prices and to download a PDF or spreadsheet version from our
+                                                <font class="color-orange" style="color: #ff6600;"><a href="#" class="color-orange text-decoration-none hover-grey" style="color: #ff6600; cursor: auto; text-decoration: none;"><strong>site tools</strong></a></font> section. The updated price list will be available to view on 4th April and the changes will take effect from 8th April.
+                                                <br><br>
+                                                Best regards,
+                                                <br><br>
+                                                The Mainline Team
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                            <td class="color-white background-green text-align-center thin-pad-top-bottom font-15" valign="top" style="background-color: #9D9B7F; border-collapse: collapse; color: #fff; font-size: 15px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
+                                                <strong>ELEMENTS RUSTICS</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-top-bottom" style="border-collapse: collapse; padding-bottom: 10px; padding-top: 10px;">
+                                                <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=18&amp;ProductRange=Wood&amp;CategoryID=730&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=4&amp;nlsource=online" style="color: inherit; cursor: auto; text-decoration: none;"><img src="http://mainlinemouldings.com/newsletter-images/elements-rustics-range-1.jpg" width="270" height="351" border="�0?" alt="Mainline Elements Rustics Range" style="-ms-interpolation-mode: bicubic;"></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pad-bottom color-black" style="border-collapse: collapse; color: #000000; padding-bottom: 10px;">
+                                                Our new
+                                                <font class="color-orange" style="color: #ff6600;"><a href="#" class="color-orange text-decoration-none hover-grey" style="color: #ff6600; cursor: auto; text-decoration: none;"><strong>Elements Rustics</strong></a></font> wood range with its distinct timber- like finish and four earthy colours has a definite back-to-nature country vibe - the clue's in the name!
+
+                                                Radiating a warm and natural charm, our Elements Rustics will add texture and depth to traditional landscapes and watercolours, but try pairing with bold contemporary art styles too for an unconventional yet particularly happy marriage! All in all, this nature-inspired range has much to offer, not least a very keen price tag - from just &pound;1.05 per metre.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td mc:edit="extra_content_1">
+                                    Extra content 1
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+                        <!--[if mso]></td>
+                    <td width="50%" valign="top"><![endif]-->
+
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+
+                                        <tr>
+                                            <td class="color-white background-green text-align-center thin-pad-top-bottom font-15" valign="top" style="background-color: #9D9B7F; border-collapse: collapse; color: #fff; font-size: 15px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
+                                                <strong>ATLAS</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-top-bottom" style="border-collapse: collapse; padding-bottom: 10px; padding-top: 10px;">
+                                                <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=17&amp;ProductRange=Polcore&amp;CategoryID=789&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=11&amp;nlsource=online" style="color: inherit; cursor: auto; text-decoration: none;"><img src="http://mainlinemouldings.com/newsletter-images/atlas-range-1.jpg" width="270" height="412" border="0" alt="Mainline Atlas Range" style="-ms-interpolation-mode: bicubic;"></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pad-bottom color-black" style="border-collapse: collapse; color: #000000; padding-bottom: 10px;">
+                                                Our mighty
+                                                <font class="color-orange" style="color: #ff6600;"><a href="#" class="color-orange text-decoration-none hover-grey" style="color: #ff6600; cursor: auto; text-decoration: none;"><strong>Atlas</strong></a></font> collection is 80mm wide but manages to impart a refined grandeur due to its majestic tiered profile and tasteful finishes. This stately Polcore range is perfect for partnering with special pieces of art that demand centre stage and is a great choice for hanging in classic and more formal living spaces.
+                                                From &pound;1.75 per metre.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                            <td class="color-white background-green text-align-center thin-pad-top-bottom font-15" valign="top" style="background-color: #9D9B7F; border-collapse: collapse; color: #fff; font-size: 15px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
+                                                <strong>KENDAL</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-top-bottom" style="border-collapse: collapse; padding-bottom: 10px; padding-top: 10px;">
+                                                <a href="http://mainlinemouldings.com/index.php?DepartmentID=16&amp;ProductRange=Wood&amp;CategoryID=732&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=14&amp;nlsource=online" style="color: inherit; cursor: auto; text-decoration: inherit;">
+                                                    <img src="http://mainlinemouldings.com/newsletter-images/kendal-range-1.jpg" width="270" height="351" border="0" alt="Mainline Kendal Range" style="-ms-interpolation-mode: bicubic;"></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pad-bottom color-black" style="border-collapse: collapse; color: #000000; padding-bottom: 10px;">
+                                                Style savvy creative types will love our
+                                                <font class="color-orange" style="color: #ff6600;"><a href="#" class="color-orange text-decoration-none hover-grey" style="color: #ff6600; cursor: auto; text-decoration: none;"><strong>Kendal</strong></a></font> range! These charming super slim wood mouldings have a distinctly artisan feel about them and combine a distressed two-tone weathered wood finish with a delicate studded pattern on the outer edge to stylish and tasteful effect.
+
+                                                Available in four gorgeous muted colours, the Kendal's rustic elegance will harmonise beautifully with both modern and country decor and is perfect for pairing with wildlife and landscape art and a wide range of contemporary styles. From &pound;1.05 per metre.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td mc:edit="extra_content_2">
+                                    Extra content 2
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/600px container -->
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0; border-collapse: collapse;">
+            <!-- 600px container (white background) -->
+            <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" style="border-spacing: 0; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px;">
+                <tr>
+                    <td class="container-padding background-grey" align="left" style="background-color: #efefef; border-collapse: collapse; padding-left: 20px; padding-right: 20px;">
+                        <table width="560" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td class="thin-pad text-align-center color-grey-medium font-sm" style="border-collapse: collapse; color: #818383; font-size: 14px; padding: 5px; text-align: center;">
+                                    <strong>Free</strong> next day delivery on web orders over &pound;95!*
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding font-weight-bold background-grey-medium pad-top" align="left" style="background-color: #818383; border-collapse: collapse; font-weight: bold; padding-left: 20px; padding-right: 20px; padding-top: 10px;">
+                        <!-- example: two columns (simple) -->
+
+                        <!--[if mso]>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="50%" valign="top"><![endif]-->
+
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td valign="top" style="border-collapse: collapse;">
+                                    <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs" style="border-collapse: collapse; color: #fff; font-size: 10px; padding-bottom: 10px;">
+                                                <a href="http://mainlinemouldings.com/index.php?PageLink=AboutUs" class="color-white text-decoration-none" style="color: #fff; cursor: auto; text-decoration: none;">About Us</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs" style="border-collapse: collapse; color: #fff; font-size: 10px; padding-bottom: 10px;">
+                                                <a href="http://mainlinemouldings.com/index.php?DepartmentID=13" class="color-white text-decoration-none" style="color: #fff; cursor: auto; text-decoration: none;">Morso Blade Sharpening</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs" style="border-collapse: collapse; color: #fff; font-size: 10px; padding-bottom: 10px;">
+                                                <a href="http://mainlinemouldings.com/index.php?PageLink=Tools" class="color-white text-decoration-none" style="color: #fff; cursor: auto; text-decoration: none;">Site Tools Help</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--[if mso]></td>
+                    <td width="50%" valign="top"><![endif]-->
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td valign="top" style="border-collapse: collapse;">
+                                    <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs" style="border-collapse: collapse; color: #fff; font-size: 10px; padding-bottom: 10px;">
+                                                <a href="http://mainlinemouldings.com/newsletters/mailto:?Subject=I%20think%20you%20should%20read%20this%20Newsletter%20-%20http://mainlinemouldings.com/newsletters/mar2016.php" class="color-white text-decoration-none" style="color: #fff; cursor: auto; text-decoration: none;">Forward to a friend</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs" style="border-collapse: collapse; color: #fff; font-size: 10px; padding-bottom: 10px;">
+                                                <a href="http://mainlinemouldings.com/newsletters/mar2016.php?nldate=31-03-2016&nlcid=Not%20set&nllink=0&nlsource=1" class="color-white text-decoration-none" style="color: #fff; cursor: auto; text-decoration: none;">Read this Online</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs" style="border-collapse: collapse; color: #fff; font-size: 10px; padding-bottom: 10px;">
+                                                <a href="*|UNSUB|*" class="color-white text-decoration-none" style="color: #fff; cursor: auto; text-decoration: none;">Unsubscribe</a> *|EMAIL|* from this list.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                        <!--/ end example -->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding font-weight-bold background-grey-medium pad-bottom" align="left" style="background-color: #818383; border-collapse: collapse; font-weight: bold; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                                <td style="border-collapse: collapse; font-size: 17px; width: 50px;" class="font-md" valign="bottom">
+                                    <a href="http://www.facebook.com/pages/Mainline-Mouldings-Ltd/257067627637867" class="text-decoration-none" style="color: inherit; cursor: auto; text-decoration: none;"><img height="20" border="0" style="-ms-interpolation-mode: bicubic; height: 20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/facebook.gif"></a>
+                                </td>
+                                <td style="border-collapse: collapse; font-size: 17px; width: 50px;" class="font-md" valign="bottom">
+                                    <a href="https://twitter.com/#!/mainlinepolcore" class="text-decoration-none" style="color: inherit; cursor: auto; text-decoration: none;"><img height="20" border="0" style="-ms-interpolation-mode: bicubic; height: 20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/twitter.gif"></a>
+                                </td>
+                                <td style="border-collapse: collapse; font-size: 17px; width: 50px;" class="font-md" valign="bottom">
+                                    <a href="https://twitter.com/#!/mainlinepolcore" class="text-decoration-none" style="color: inherit; cursor: auto; text-decoration: none;"><img height="20" border="0" style="-ms-interpolation-mode: bicubic; height: 20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/pinterest.gif"></a>
+                                </td>
+                                <td style="border-collapse: collapse; font-size: 17px; width: 50px;" class="font-md" valign="bottom">
+                                    <a href="http://theframersforum.com/search.php?keywords=mainline" class="text-decoration-none" style="color: inherit; cursor: auto; text-decoration: none;"><img height="20px" border="0" style="-ms-interpolation-mode: bicubic; height: 20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/framersforum.gif"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+            </table>
+            <!--/600px container -->
+        </td>
+    </tr>
+
+</table>
+<!--/100% background wrapper-->
+
+
+<center>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="canspamBarWrapper" style="background-color:#FFFFFF; border-top:1px solid #E5E5E5;">
+        <tr>
+            <td align="center" valign="top" style="padding-top:10px; padding-bottom:20px;">
+                <table border="0" cellpadding="0" cellspacing="0" id="canspamBar">
+                    <tr>
+                        <td align="center" valign="top" style="color:#606060; font-family:Helvetica, Arial, sans-serif; font-size:11px; line-height:150%; padding-right:20px; padding-bottom:5px; padding-left:20px; text-align:center;">
+                            This email was sent to
+                            <a href="mailto:*|EMAIL|*" target="_blank" style="color:#404040 !important;">*|EMAIL|*</a>
+                            <br>
+                            <a href="*|ABOUT_LIST|*" target="_blank" style="color:#404040 !important;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UNSUB|*" style="color:#404040 !important;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*" style="color:#404040 !important;">update subscription preferences</a>
+                            <br>
+                            *|LIST:ADDRESSLINE|*
+                            <br>
+                            <br>
+                            *|REWARDS|*
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</center>
+</body>
+
+</html>
