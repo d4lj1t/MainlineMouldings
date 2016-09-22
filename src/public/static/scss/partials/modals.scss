@@ -11,3 +11,13 @@
 .modal-header{
   border-bottom:none;
 }*/
+
+.modal-content{
+  border:2px solid map-get($colors, 'brand-dark');
+  border-bottom: 4px solid map-get($colors, 'brand-dark');
+}
+
+.bestValueMessage button{
+  background-color: map-get($colors, 'copy-primary-medium');
+  color:white;
+}
