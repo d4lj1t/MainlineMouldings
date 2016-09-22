@@ -146,8 +146,13 @@
     margin-bottom: $helper-extra-thick;
     margin-right: 0;
 
+    > span{
+      display: inline-block;
+      width:110px;
+    }
+
     div {
-      float: right;
+      display: inline-block;
       margin-top: 0;
     }
   }
