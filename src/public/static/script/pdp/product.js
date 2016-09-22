@@ -402,7 +402,7 @@ $(document).ready(function () {
                     $('.js-quantity').keyup();
                     quantityClick = 'triggered';
                 }
-                , 5000);
+                , 2000);
         } else {
             return false;
         }
@@ -1012,7 +1012,7 @@ $(document).ready(function () {
 
 
         if (displayMessage != '' && firstTime != 1) {
-
+            $('#jQtext').html('&nbsp;');
 
             $('#jQtext').append('<p class="bestValueMessage">' + displayMessage + '</p>');
             if (metresInCart > 0) {
