@@ -25,7 +25,7 @@ name: Email
                     <td class="container-padding content" align="left">
                         <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
                             <tr>
-                                <td class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top">
+                                <td mc:edit="heading" class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top">
                                     <strong>Website developments...</strong>
                                 </td>
                             </tr>
@@ -41,7 +41,7 @@ name: Email
 
                                                 <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
                                                     <tr>
-                                                        <td class="color-black">
+                                                        <td mc:edit="intro_left_col" class="color-black">
                                                             Our mighty collection is 80mm wide but manages to impart a refined grandeur due to its majestic tiered profile and tasteful finishes. This stately Polcore range is perfect for partnering with special pieces of art that demand centre stage and is a great choice for hanging in classic and more formal living spaces.
                                                             From &pound;1.75 per metre.
                                                         </td>
@@ -55,7 +55,7 @@ name: Email
 
                                                 <table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="force-row">
                                                     <tr>
-                                                        <td class="color-black">
+                                                        <td mc:edit="intro_right_col" class="color-black">
                                                             Our mighty collection is 80mm wide but manages to impart a refined grandeur due to its majestic tiered profile and tasteful finishes. This stately Polcore range is perfect for partnering with special pieces of art that demand centre stage and is a great choice for hanging in classic and more formal living spaces.
                                                             From &pound;1.75 per metre.
                                                         </td>
@@ -68,7 +68,7 @@ name: Email
                             </tr>
                             <tr>
                                 <td class="pad-top">
-                                    <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=18&amp;ProductRange=Wood&amp;CategoryID=730&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=4&amp;nlsource=online"><img src="http://mainlinemouldings.com/newsletter-images/elements-rustics-range-1.jpg" width="100%" height="351" border=”0? alt="Mainline Elements Rustics Range"></a>
+                                    <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=18&amp;ProductRange=Wood&amp;CategoryID=730&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=4&amp;nlsource=online"><img mc:edit="intro_pic" src="http://mainlinemouldings.com/newsletter-images/elements-rustics-range-1.jpg" width="100%" height="351" border=”0? alt="Mainline Elements Rustics Range"></a>
 
                                 </td>
 
@@ -88,52 +88,73 @@ name: Email
                                 <td width="50%" valign="top"><![endif]-->
 
                         <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
-                            <tr>
-                                <td class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top">
-                                    <strong>ELEMENTS RUSTICS</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="pad-top-bottom">
-                                    <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=18&amp;ProductRange=Wood&amp;CategoryID=730&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=4&amp;nlsource=online"><img src="http://mainlinemouldings.com/newsletter-images/elements-rustics-range-1.jpg" width="270" height="351" border=”0? alt="Mainline Elements Rustics Range"></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="pad-bottom">
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                         <tr>
-                                            <td class="pad-bottom color-black">
-                                                Our new wood range with its distinct timber- like finish and four earthy colours has a definite back-to-nature country vibe - the clue's in the name!
+                                            <td mc:edit="section_heading" class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top">
+                                                <strong>ELEMENTS RUSTICS</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-top-bottom">
+                                                <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=18&amp;ProductRange=Wood&amp;CategoryID=730&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=4&amp;nlsource=online"><img mc:edit="section_img" src="http://mainlinemouldings.com/newsletter-images/elements-rustics-range-1.jpg" width="270" height="351" border=”0? alt="Mainline Elements Rustics Range"></a>
+                                            </td>
+                                        </tr>
 
-                                                Radiating a warm and natural charm, our Elements Rustics will add texture and depth to traditional landscapes and watercolours, but try pairing with bold contemporary art styles too for an unconventional yet particularly happy marriage! All in all, this nature-inspired range has much to offer, not least a very keen price tag - from just &pound;1.05 per metre.
+                                        <tr>
+                                            <td class="pad-bottom">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td mc:edit="section_text" class="pad-bottom color-black">
+                                                            Our new wood range with its distinct timber- like finish and four earthy colours has a definite back-to-nature country vibe - the clue's in the name!
+
+                                                            Radiating a warm and natural charm, our Elements Rustics will add texture and depth to traditional landscapes and watercolours, but try pairing with bold contemporary art styles too for an unconventional yet particularly happy marriage! All in all, this nature-inspired range has much to offer, not least a very keen price tag - from just &pound;1.05 per metre.
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
-
+                            <tr mc:hideable>
+                                <td mc:edit="extra_content_1">
+                                    Extra content 1
+                                </td>
+                            </tr>
 
                         </table>
 
                         <!--[if mso]></td>
                     <td width="50%" valign="top"><![endif]-->
                         <table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="force-row">
-                            <tr>
-                                <td class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top">
-                                    <strong>ATLAS</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="pad-top-bottom">
-                                    <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=17&amp;ProductRange=Polcore&amp;CategoryID=789&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=11&amp;nlsource=online"><img src="http://mainlinemouldings.com/newsletter-images/atlas-range-1.jpg" width="270" height="412" border="0" alt="Mainline Atlas Range"></a>
-                                </td>
-                            </tr>
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                            <td mc:edit="section_heading" class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top">
+                                                <strong>ATLAS</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-top-bottom">
+                                                <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=17&amp;ProductRange=Polcore&amp;CategoryID=789&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=11&amp;nlsource=online"><img mc:edit="section_img" src="http://mainlinemouldings.com/newsletter-images/atlas-range-1.jpg" width="270" height="412" border="0" alt="Mainline Atlas Range"></a>
+                                            </td>
+                                        </tr>
 
-                            <tr>
-                                <td class="pad-bottom color-black">
-                                    Our mighty collection is 80mm wide but manages to impart a refined grandeur due to its majestic tiered profile and tasteful finishes. This stately Polcore range is perfect for partnering with special pieces of art that demand centre stage and is a great choice for hanging in classic and more formal living spaces.
-                                    From &pound;1.75 per metre.
+                                        <tr>
+                                            <td mc:edit="section_text" class="pad-bottom color-black">
+                                                Our mighty collection is 80mm wide but manages to impart a refined grandeur due to its majestic tiered profile and tasteful finishes. This stately Polcore range is perfect for partnering with special pieces of art that demand centre stage and is a great choice for hanging in classic and more formal living spaces.
+                                                From &pound;1.75 per metre.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td mc:edit="extra_content_2">
+                                    Extra content 2
                                 </td>
                             </tr>
                         </table>

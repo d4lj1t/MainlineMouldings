@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+    <title>Email</title>
+
+
+
+
+    <style type="text/css">
+        body{
+            margin:0;
+            padding:0;
+            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust:100%;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:12px;
+        ;
+            line-height:18px;
+        }
+        table{
+            border-spacing:0;
+        }
+        table td{
+            border-collapse:collapse;
+        }
+        .ExternalClass{
+            width:100%;
+        }
+        .ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
+            line-height:100%;
+        }
+        .ReadMsgBody{
+            width:100%;
+            background-color:#ebebeb;
+        }
+        table{
+            mso-table-lspace:0pt;
+            mso-table-rspace:0pt;
+        }
+        img{
+            -ms-interpolation-mode:bicubic;
+        }
+        .yshortcuts a{
+            border-bottom:none !important;
+        }
+        @media screen and (max-width: 599px){
+            .force-row,.container{
+                width:100% !important;
+                max-width:100% !important;
+            }
+
+        }	@media screen and (max-width: 400px){
+            .container-padding{
+                padding-left:10px !important;
+                padding-right:10px !important;
+            }
+
+        }		.ios-footer a{
+                     color:#aaaaaa !important;
+                     text-decoration:underline;
+                 }
+        .header,.title,.subtitle,.footer-text{
+            font-family:Helvetica, Arial, sans-serif;
+        }
+        .header{
+            font-size:24px;
+            font-weight:bold;
+            padding-bottom:10px;
+        }
+        .footer-text{
+            font-size:12px;
+            line-height:16px;
+            color:#aaaaaa;
+        }
+        .footer-text a{
+            color:#aaaaaa;
+        }
+        .container{
+            width:600px;
+            max-width:600px;
+        }
+        .container-padding{
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .content{
+            padding-top:10px;
+            padding-bottom:10px;
+            background-color:#ffffff;
+        }
+        code{
+            background-color:#eee;
+            padding:0 4px;
+            font-family:Menlo, Courier, monospace;
+            font-size:13px;
+        }
+        hr{
+            border:0;
+            border-bottom:1px solid #cccccc;
+        }
+        .hr{
+            height:1px;
+            border-bottom:1px solid #cccccc;
+        }
+        .title{
+            font-size:18px;
+            font-weight:600;
+            color:#374550;
+        }
+        .subtitle{
+            font-size:16px;
+            font-weight:600;
+            color:#2469A0;
+        }
+        .subtitle span{
+            font-weight:400;
+            color:#999999;
+        }
+        .body-text{
+            font-family:Helvetica, Arial, sans-serif;
+            font-size:14px;
+            line-height:20px;
+            text-align:left;
+            color:#333333;
+        }
+        .no-marg{
+            margin:0 !important;
+        }
+        .no-pad{
+            padding:0 !important;
+        }
+        .pad{
+            padding:10px;
+        }
+        .pad-side{
+            padding-left:10px;
+            padding-right:10px;
+        }
+        .pad-left{
+            padding-left:10px;
+        }
+        .pad-right{
+            padding-right:10px;
+        }
+        .pad-top{
+            padding-top:10px;
+        }
+        .pad-bottom{
+            padding-bottom:10px;
+        }
+        .pad-top-bottom{
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .thick-pad{
+            padding:20px;
+        }
+        .thick-pad-side{
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .thick-pad-left{
+            padding-left:20px;
+        }
+        .thick-pad-right{
+            padding-right:20px;
+        }
+        .thick-pad-top{
+            padding-top:20px;
+        }
+        .thick-pad-bottom{
+            padding-bottom:20px;
+        }
+        .thick-pad-top-bottom{
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+        .thin-pad{
+            padding:5px;
+        }
+        .thin-pad-side{
+            padding-left:5px;
+            padding-right:5px;
+        }
+        .thin-pad-left{
+            padding-left:5px;
+        }
+        .thin-pad-right{
+            padding-right:5px;
+        }
+        .thin-pad-top{
+            padding-top:5px;
+        }
+        .thin-pad-bottom{
+            padding-bottom:5px;
+        }
+        .thin-pad-top-bottom{
+            padding-top:5px;
+            padding-bottom:5px;
+        }
+        .extra-thin-pad{
+            padding:3.33px;
+        }
+        .extra-thin-pad-side{
+            padding-left:2.5px;
+            padding-right:2.5px;
+        }
+        .extra-thin-pad-left{
+            padding-left:2.5px;
+        }
+        .extra-thin-pad-right{
+            padding-right:2.5px;
+        }
+        .extra-thin-pad-top{
+            padding-top:2.5px;
+        }
+        .extra-thin-pad-bottom{
+            padding-bottom:2.5px;
+        }
+        .extra-thin-pad-top-bottom{
+            padding-top:2.5px;
+            padding-bottom:2.5px;
+        }
+        .extra-thick-pad{
+            padding:30px;
+        }
+        .extra-thick-pad-side{
+            padding-left:30px;
+            padding-right:30px;
+        }
+        .extra-thick-pad-left{
+            padding-left:30px;
+        }
+        .extra-thick-pad-right{
+            padding-right:30px;
+        }
+        .extra-thick-pad-top{
+            padding-top:30px;
+        }
+        .extra-thick-pad-bottom{
+            padding-bottom:30px;
+        }
+        .extra-thick-pad-top-bottom{
+            padding-top:30px;
+            padding-bottom:30px;
+        }
+        .border-bottom{
+            border-bottom:1px solid #ff6600;
+        }
+        .border-top{
+            border-top:1px solid #ccc;
+        }
+        .border-top-bottom{
+            border-top:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+        }
+        .border-side{
+            border-left:1px solid #ccc;
+            border-right:1px solid #ccc;
+        }
+        .border-thick-bottom-pink{
+            border-bottom:2px solid #E51D9B;
+        }
+        .border-thick-top-pink{
+            border-top:2px solid #E51D9B;
+        }
+        .font-xs{
+            font-size:10px;
+        }
+        .font-xs-sm{
+            font-size:12px;
+        }
+        .font-sm{
+            font-size:14px;
+        }
+        .font-15{
+            font-size:15px;
+        }
+        .font-md{
+            font-size:17px;
+        }
+        .font-lg{
+            font-size:19px;
+        }
+        .font-weight-bold{
+            font-weight:bold;
+        }
+        .line-height-xs{
+            line-height:15px;
+        }
+        .line-height-sm{
+            line-height:19px;
+        }
+        .line-height-md{
+            line-height:23px;
+        }
+        .line-height-lg{
+            line-heighht:25px;
+        }
+        .text-align-left{
+            text-align:left;
+        }
+        .text-align-right{
+            text-align:right;
+        }
+        .text-align-center{
+            text-align:center;
+        }
+        .text-underline{
+            text-decoration:underline;
+        }
+        .text-decoration-none{
+            text-decoration:none;
+        }
+        .full-width{
+            width:100%;
+        }
+        .pull-left{
+            float:left;
+        }
+        .pull-right{
+            float:right;
+        }
+        .display-block{
+            display:block;
+        }
+        .background-grey{
+            background-color:#efefef;
+        }
+        .background-grey-medium{
+            background-color:#818383;
+        }
+        .background-white{
+            background-color:#ffffff;
+        }
+        .background-black{
+            background-color:#000000;
+        }
+        .background-green{
+            background-color:#9D9B7F;
+        }
+        .color-grey-medium{
+            color:#818383;
+        }
+        .color-grey-light{
+            color:#ebecec;
+        }
+        .color-grey-dark{
+            color:#726260;
+        }
+        .color-black{
+            color:#000000;
+        }
+        .color-white{
+            color:#fff;
+        }
+        .color-orange{
+            color:#ff6600;
+        }
+        a{
+            color:inherit;
+            text-decoration:inherit;
+            cursor:auto;
+        }
+        .tel-link{
+            text-align:right;
+            padding-top:10px;
+        }
+        .secondary-nav td{
+            padding-right:21px;
+        }
+        .secondary-nav td.polcore{
+            width:38px;
+        }
+        .secondary-nav td.wood{
+            width:28px;
+        }
+        .secondary-nav td.mountboard{
+            width:58px;
+        }
+        .secondary-nav td.materials{
+            width:45px;
+        }
+        .secondary-nav td.equipment{
+            width:52px;
+        }
+        .secondary-nav td.blade-sharpening{
+            width:92px;
+        }
+        .secondary-nav td.gallery{
+            width:36px;
+        }
+        .secondary-nav td.sale{
+            width:22px;
+        }
+        .secondary-nav td.new{
+            width:21px;
+            padding-right:0;
+        }
+        @media screen and (max-width: 599px){
+            .tel-link{
+                padding-top:0;
+                font-size:12px;
+            ;:.secondary-nav td.materials, .secondary-nav td.equipment, .secondary-nav td.blade-sharpening, .secondary-nav td.gallery, .secondary-nav td.sale, .secondary-nav td.new{
+                 display:none!important;
+             }
+
+        }	@media screen and (max-width: 599px){
+            .secondary-nav td.polcore{
+                width:33.3% !important;
+                padding-right:0!important;
+                font-size:14px !important;
+            }
+
+        }	@media screen and (max-width: 599px){
+            .secondary-nav td.wood{
+                width:33.3% !important;
+                padding-right:0!important;
+                text-align:center;
+                font-size:14px !important;
+            }
+
+        }	@media screen and (max-width: 599px){
+            .secondary-nav td.mountboard{
+                width:33.3% !important;
+                padding-right:0!important;
+                text-align:right;
+                font-size:14px !important;
+            }
+
+        }</style></head>
+
+<body style="margin:0; padding:0;" bgcolor="#F0F0F0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- 100% background wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0">
+    <tr>
+        <td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0;">
+            <!-- 600px container (white background) -->
+            <table border="0" width="600" cellpadding="0" cellspacing="0" class="container">
+                <tr>
+                    <td class="background-green" align="left">
+                        <table width="560" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row background-green">
+                            <tr>
+                                <td class="thin-pad-top-bottom color-white text-align-center color-grey-medium font-xs-sm">
+                                    <strong>New ranges for Spring 2016</strong>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding background-white" align="left">
+                        <table width="560" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
+                            <tr>
+                                <td class="pad-top text-align-right color-grey-medium font-xs text-underline">
+                                    <a href="#" class="color-grey-medium"><strong>View in browser</strong></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding header background-white" align="left">
+                        <!-- example: two columns (simple) -->
+
+                        <!--[if mso]>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="50%" valign="top"><![endif]-->
+
+                        <table width="250" border="0" cellpadding="0" cellspacing="0" align="left" class="">
+                            <tr>
+                                <td valign="top">
+                                    <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
+                                        <tr>
+                                            <td>
+                                                <img height="38" style="height:38px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/Newsletter-Logo-2.gif">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--[if mso]></td>
+                    <td width="50%" valign="top"><![endif]-->
+                        <table width="150" border="0" cellpadding="0" cellspacing="0" align="right" class="">
+                            <tr>
+                                <td class="tel-link color-orange font-md" valign="bottom">
+                                    <a href="#" class="color-orange text-decoration-none"><img height="15" border="0" style="height:15px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/icon-phone.gif"> 01949 861000</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                        <!--/ end example -->
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td class="container-padding background-white header border-bottom" align="left">
+                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row secondary-nav">
+                            <tr>
+                                <td class="pad-top polcore color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Polcore</a>
+                                </td>
+                                <td class="pad-top wood color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Wood</a>
+                                </td>
+                                <td class="pad-top mountboard color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Mountboard</a>
+                                </td>
+                                <td class="pad-top materials color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Materials</a>
+                                </td>
+                                <td class="pad-top equipment color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Equipment</a>
+                                </td>
+                                <td class="pad-top blade-sharpening color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Blade Sharpening</a>
+                                </td>
+                                <td class="pad-top gallery color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Gallery</a>
+                                </td>
+                                <td class="pad-top sale color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">Sale</a>
+                                </td>
+                                <td class="pad-top new color-grey-medium font-xs">
+                                    <a href="#" class="color-grey-medium text-decoration-none">New</a>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/600px container -->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0;">
+
+            <!-- 600px container (white background) -->
+            <table border="0" width="600" cellpadding="0" cellspacing="0" class="container">
+                <tr>
+                    <td class="container-padding content" align="left">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                            <tr>
+                                <td class="color-black">
+                                    Our mighty collection is 80mm wide but manages to impart a refined grandeur due to its majestic tiered profile and tasteful finishes. This stately Polcore range is perfect for partnering with special pieces of art that demand centre stage and is a great choice for hanging in classic and more formal living spaces.
+                                    From &pound;1.75 per metre.
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="container-padding content" align="left" style="background-color: #ffffff; border-collapse: collapse; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px;">
+
+                        <!-- example: two columns (simple) -->
+
+                        <!--[if mso]>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="50%" valign="top"><![endif]-->
+
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                            <td class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top" style="background-color: #9D9B7F; border-collapse: collapse; color: #fff; font-size: 15px; padding: 5px 0; padding-left: 10px; text-align: left;" mc:edit="item_title">
+                                                <strong>ELEMENTS RUSTICS</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-top-bottom" style="border-collapse: collapse; padding: 10px 0;" mc:edit="item_picture">
+                                                <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=18&amp;ProductRange=Wood&amp;CategoryID=730&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=4&amp;nlsource=online" style="color: inherit; cursor: auto; text-decoration: none;"><img src="http://mainlinemouldings.com/newsletter-images/elements-rustics-range-1.jpg" width="270" height="351" border="0" alt="Mainline Atlas Range" style="-ms-interpolation-mode: bicubic;"></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pad-bottom" style="border-collapse: collapse; padding-bottom: 10px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                    <tr>
+                                                        <td class="pad-bottom color-black" style="border-collapse: collapse; color: #000000; padding-bottom: 10px;" mc:edit="item_text">
+                                                            Our new wood range with its distinct timber- like finish and four earthy colours has a definite back-to-nature country vibe - the clue's in the name!
+
+                                                            Radiating a warm and natural charm, our Elements Rustics will add texture and depth to traditional landscapes and watercolours, but try pairing with bold contemporary art styles too for an unconventional yet particularly happy marriage! All in all, this nature-inspired range has much to offer, not least a very keen price tag - from just &pound;1.05 per metre.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td mc:edit="extra_content_1">
+                                    Extra content 1
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--[if mso]></td>
+                    <td width="50%" valign="top"><![endif]-->
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="force-row" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr mc:repeatable>
+                                <td style="padding-bottom:10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+
+                                        <tr>
+                                            <td class="color-white background-green text-align-left thin-pad-top-bottom pad-left font-15" valign="top" style="background-color: #9D9B7F; border-collapse: collapse; color: #fff; font-size: 15px; padding: 5px 0; padding-left: 10px; text-align: left;" mc:edit="item_title">
+                                                <strong>ATLAS</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-top-bottom" style="border-collapse: collapse; padding: 10px 0;" mc:edit="item_picture">
+                                                <a class="text-decoration-none" href="http://mainlinemouldings.com/index.php?DepartmentID=17&amp;ProductRange=Polcore&amp;CategoryID=789&amp;nldate=31-03-2016&amp;nlcid=Not set&amp;nllink=11&amp;nlsource=online" style="color: inherit; cursor: auto; text-decoration: none;"><img src="http://mainlinemouldings.com/newsletter-images/atlas-range-1.jpg" width="270" height="412" border="0" alt="Mainline Atlas Range" style="-ms-interpolation-mode: bicubic;"></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pad-bottom color-black" style="border-collapse: collapse; color: #000000; padding-bottom: 10px;" mc:edit="item_text">
+                                                Our mighty collection is 80mm wide but manages to impart a refined grandeur due to its majestic tiered profile and tasteful finishes. This stately Polcore range is perfect for partnering with special pieces of art that demand centre stage and is a great choice for hanging in classic and more formal living spaces.
+                                                From &pound;1.75 per metre.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td mc:edit="extra_content_2">
+                                    Extra content 2
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/600px container -->
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0;">
+            <!-- 600px container (white background) -->
+            <table border="0" width="600" cellpadding="0" cellspacing="0" class="container">
+                <tr>
+                    <td class="container-padding background-grey" align="left">
+                        <table width="560" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
+                            <tr>
+                                <td class="thin-pad text-align-center color-grey-medium font-sm">
+                                    <strong>Free</strong> next day delivery on web orders over &pound;95!*
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding font-weight-bold background-grey-medium pad-top" align="left">
+                        <!-- example: two columns (simple) -->
+
+                        <!--[if mso]>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="50%" valign="top"><![endif]-->
+
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
+                            <tr>
+                                <td valign="top">
+                                    <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs">
+                                                <a href="http://mainlinemouldings.com/index.php?PageLink=AboutUs" class="color-white text-decoration-none">About Us</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs">
+                                                <a href="http://mainlinemouldings.com/index.php?DepartmentID=13" class="color-white text-decoration-none">Morso Blade Sharpening</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs">
+                                                <a href="http://mainlinemouldings.com/index.php?PageLink=Tools" class="color-white text-decoration-none">Site Tools Help</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--[if mso]></td>
+                    <td width="50%" valign="top"><![endif]-->
+                        <table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="force-row">
+                            <tr>
+                                <td valign="top">
+                                    <table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row">
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs">
+                                                <a href="http://mainlinemouldings.com/newsletters/mailto:?Subject=I%20think%20you%20should%20read%20this%20Newsletter%20-%20http://mainlinemouldings.com/newsletters/mar2016.php" class="color-white text-decoration-none">Forward to a friend</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs">
+                                                <a href="http://mainlinemouldings.com/newsletters/mar2016.php?nldate=31-03-2016&nlcid=Not%20set&nllink=0&nlsource=1" class="color-white text-decoration-none">Read this Online</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pad-bottom color-white font-xs">
+                                                <a href="*|UNSUB|*&quot;" class="color-white text-decoration-none">Unsubscribe</a> *|EMAIL|* from this list.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr></table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                        <!--/ end example -->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container-padding font-weight-bold background-grey-medium pad-bottom" align="left">
+                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="">
+                            <tr>
+                                <td style="width:50px;" class="font-md" valign="bottom">
+                                    <a href="http://www.facebook.com/pages/Mainline-Mouldings-Ltd/257067627637867" class="text-decoration-none"><img height="20" border="0" style="height:20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/facebook.gif"></a>
+                                </td>
+                                <td style="width:50px;" class="font-md" valign="bottom">
+                                    <a href="https://twitter.com/#!/mainlinepolcore" class="text-decoration-none"><img height="20" border="0" style="height:20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/twitter.gif"></a>
+                                </td>
+                                <td style="width:50px;" class="font-md" valign="bottom">
+                                    <a href="https://twitter.com/#!/mainlinepolcore" class="text-decoration-none"><img height="20" border="0" style="height:20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/pinterest.gif"></a>
+                                </td>
+                                <td style="width:50px;" class="font-md" valign="bottom">
+                                    <a href="http://theframersforum.com/search.php?keywords=mainline" class="text-decoration-none"><img height="20px" border="0" style="height:20px;" src="https://raw.githubusercontent.com/d4lj1t/MainlineMouldings/master/src/public/static/images/emails/framersforum.gif"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+
+
+            </table>
+            <!--/600px container -->
+        </td>
+    </tr>
+
+</table><!--/100% background wrapper-->
+
+
+
+
+
+<center>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="canspamBarWrapper" style="background-color:#FFFFFF; border-top:1px solid #E5E5E5;">
+        <tr>
+            <td align="center" valign="top" style="padding-top:10px; padding-bottom:20px;">
+                <table border="0" cellpadding="0" cellspacing="0" id="canspamBar">
+                    <tr>
+                        <td align="center" valign="top" style="color:#606060; font-family:Helvetica, Arial, sans-serif; font-size:11px; line-height:150%; padding-right:20px; padding-bottom:5px; padding-left:20px; text-align:center;">
+                            This email was sent to <a href="mailto:*|EMAIL|*" target="_blank" style="color:#404040 !important;">*|EMAIL|*</a>
+                            <br>
+                            <a href="*|ABOUT_LIST|*" target="_blank" style="color:#404040 !important;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UNSUB|*" style="color:#404040 !important;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*" style="color:#404040 !important;">update subscription preferences</a>
+                            <br>
+                            *|LIST:ADDRESSLINE|*
+                            <br>
+                            <br>
+                            *|REWARDS|*
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</center></body>
+
+</html>
