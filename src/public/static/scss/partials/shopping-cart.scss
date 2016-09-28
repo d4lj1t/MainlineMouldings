@@ -1,0 +1,50 @@
+span.step {
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
+}
+/*
+.connecting-circles {
+  li {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 1em;
+    background: dodgerblue;
+    margin: 0 1em;
+    display: inline-block;
+    color: white;
+    position: relative;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    top: .9em;
+    left: -4em;
+    width: 20em;
+    height: .2em;
+    background: dodgerblue;
+    z-index: -1;
+  }
+
+  li:first-child::before {
+    display: none;
+  }
+
+  .active {
+    background: dodgerblue;
+  }
+
+  .active ~ li {
+    background: lightblue;
+  }
+}*/
