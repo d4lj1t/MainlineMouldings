@@ -9,6 +9,22 @@ span.step {
   margin-right: 5px;
   text-align: center;
   width: 1.6em;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: .9em;
+    left: -4em;
+    width: 4em;
+    height: .2em;
+    background: dodgerblue;
+    z-index: -1;
+  }
+
+
+
+
+
 }
 /*
 .connecting-circles {
