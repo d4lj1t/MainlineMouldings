@@ -221,7 +221,7 @@
   @extend .transition-slow;
 }
 
-.clicked .icon-angle {
+.clicked.icon-angle {
   transform: rotate(90deg);
 }
 

@@ -1,7 +1,7 @@
 //icons
-/*.icon-angle {
+.icon-angle {
   @extend .transition-slow;
-}*/
+}
 
 .secondary-nav-item .clicked .icon-angle {
   @extend .rotate;
