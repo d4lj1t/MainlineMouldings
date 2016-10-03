@@ -1,33 +1,27 @@
-span.step {
-  border-radius: 0.8em;
-  -moz-border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 1.6em;
-  text-align: center;
-  width: 1.6em;
+.circle-wrapper {
+  position: relative;
+  z-index: 3;
 
-  /*&::before{
-    content: '';
-    position: absolute;
-    top: .9em;
-    left: -4em;
-    width: 4em;
-    height: .2em;
-    background: dodgerblue;
-    z-index: -1;
-  }*/
-
+  .step {
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em;
+    z-index: 3;
+  }
 }
 
 .border-circles{
   position: absolute;
   width: 100%;
   top:50%;
-  border:1px solid red;
-  z-index: -1;
+  border:1px solid map-get($colors, 'copy-primary-medium');
+  z-index: 1;
 }
 
 
