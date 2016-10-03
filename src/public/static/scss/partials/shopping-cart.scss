@@ -6,11 +6,10 @@ span.step {
   display: inline-block;
   font-weight: bold;
   line-height: 1.6em;
-  margin-right: 5px;
   text-align: center;
   width: 1.6em;
 
-  &::before{
+  /*&::before{
     content: '';
     position: absolute;
     top: .9em;
@@ -19,48 +18,31 @@ span.step {
     height: .2em;
     background: dodgerblue;
     z-index: -1;
-  }
-
-
-
-
+  }*/
 
 }
-/*
-.connecting-circles {
-  li {
-    width: 2em;
-    height: 2em;
-    text-align: center;
-    line-height: 2em;
-    border-radius: 1em;
-    background: dodgerblue;
-    margin: 0 1em;
-    display: inline-block;
-    color: white;
-    position: relative;
-  }
 
-  li::before {
-    content: '';
-    position: absolute;
-    top: .9em;
-    left: -4em;
-    width: 20em;
-    height: .2em;
-    background: dodgerblue;
-    z-index: -1;
-  }
+.border-circles{
+  position: absolute;
+  width: 100%;
+  top:50%;
+  border:1px solid red;
+  z-index: -1;
+}
 
-  li:first-child::before {
-    display: none;
-  }
 
-  .active {
-    background: dodgerblue;
-  }
 
-  .active ~ li {
-    background: lightblue;
+.cart-items-list-container{
+  padding:0;
+
+  @include breakpoint(map-get($breakpoints, 'large-tablet-up')) {
+  padding-right:$helper-thick;
   }
-}*/
+}
+
+.journey-steps-container{
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
